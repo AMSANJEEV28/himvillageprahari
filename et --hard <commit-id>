@@ -1,0 +1,259 @@
+[33mcommit 1d83b211aa029e72122d66af3874a4d00d6a2c1d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 8f4f34c 69b5c54
+Author: A M SANJEEV <81654437+AMSANJEEV28@users.noreply.github.com>
+Date:   Sun Dec 22 22:16:06 2024 +0530
+
+    Merge pull request #19 from arjunchavhan024/main
+    
+    Contact Us Page
+
+[33mcommit 8f4f34ce189da3c8e009c22fe3f53d0f76ce7017[m
+Author: A M SANJEEV <81654437+AMSANJEEV28@users.noreply.github.com>
+Date:   Sun Dec 22 22:12:21 2024 +0530
+
+    Delete img/upi_1734695421512.png
+
+[33mcommit 4667a045c7b36e499b01f24e16d6a2a0ad7c529b[m
+Author: A M SANJEEV <81654437+AMSANJEEV28@users.noreply.github.com>
+Date:   Sun Dec 22 22:11:07 2024 +0530
+
+    Update mission-vision.html
+
+[33mcommit 69b5c542c3cc7df58a4b8285b8518ee94e3627f5[m
+Merge: 93f09c9 06c901b
+Author: A M SANJEEV <81654437+AMSANJEEV28@users.noreply.github.com>
+Date:   Sun Dec 22 22:08:55 2024 +0530
+
+    Merge branch 'main' into main
+
+[33mcommit 06c901bf858d0a66ddb57a12e9a15703c1db4877[m
+Merge: 78638d7 fe88c1b
+Author: A M SANJEEV <81654437+AMSANJEEV28@users.noreply.github.com>
+Date:   Sun Dec 22 22:05:39 2024 +0530
+
+    Merge pull request #18 from AKashAMode/main
+    
+    mission page
+
+[33mcommit 93f09c9a74deb489161c247842a688a24d0639a9[m
+Author: Arjun Chavhan <ac4718770@gmail.com>
+Date:   Sun Dec 22 21:29:46 2024 +0530
+
+    Contact Us Page
+
+[33mcommit 78638d7e3f6db4d32020ee0daf42bcff6a284893[m
+Merge: 4aab9fd 3b0d24e
+Author: A M SANJEEV <81654437+AMSANJEEV28@users.noreply.github.com>
+Date:   Sun Dec 22 20:50:50 2024 +0530
+
+    Merge pull request #17 from Avantika098/main
+    
+    updated about page
+
+[33mcommit 3b0d24e44dc52219a26a3ddc2cbc4885034576f7[m
+Author: Avantika Devrari <137681051+Avantika098@users.noreply.github.com>
+Date:   Sun Dec 22 20:33:04 2024 +0530
+
+    Add files via upload
+
+[33mcommit 4f5f13131e76bf267f1e0f747a715ef9f30cf985[m
+Author: Avantika Devrari <137681051+Avantika098@users.noreply.github.com>
+Date:   Sun Dec 22 20:15:15 2024 +0530
+
+    Update about.css
+
+[33mcommit c21987bc9e97a31372a1372cd1c4c6ffc04e6abd[m
+Author: Avantika Devrari <137681051+Avantika098@users.noreply.github.com>
+Date:   Sun Dec 22 20:12:47 2024 +0530
+
+    Update about.html
+
+[33mcommit e3d55ab7ff56c4f7bbd04d552622ebc275d60c23[m
+Merge: 27a292f 4aab9fd
+Author: Avantika Devrari <137681051+Avantika098@users.noreply.github.com>
+Date:   Sun Dec 22 20:09:53 2024 +0530
+
+    Merge branch 'AMSANJEEV28:main' into main
+
+[33mcommit fe88c1b1a48d611c1d091735ff1ef544b2648782[m
+Author: AKashAMode <akashamode36@gmail.com>
+Date:   Sun Dec 22 19:34:19 2024 +0530
+
+    added Js in hero sectionn
+
+[33mcommit e0eb38387d1f02f8315882be86a794193919a712[m
+Author: AKashAMode <akashamode36@gmail.com>
+Date:   Sun Dec 22 12:10:55 2024 +0530
+
+    added responsiveness in mission section
+
+[33mcommit 0f485df5157f151a4b5798dcaa0f95ac580d0a55[m
+Author: AKashAMode <akashamode36@gmail.com>
+Date:   Sun Dec 22 02:19:41 2024 +0530
+
+    MISSION and core values section styling changed
+
+[33mcommit ce9cc8c45a4586b5c083585d134255d17c229554[m
+Author: AKashAMode <akashamode36@gmail.com>
+Date:   Sun Dec 22 01:47:13 2024 +0530
+
+    MISSION and core values section styling changed
+
+[33mcommit 7f049c308a72c19d6e90e1ff88a9acf67d84d2f3[m
+Author: AKashAMode <akashamode36@gmail.com>
+Date:   Sat Dec 21 16:19:08 2024 +0530
+
+    commit changes
+
+[33mcommit d79a0162783aee8f1f1bca8f22058231c3bfb2af[m
+Merge: 6d3a1aa 4aab9fd
+Author: AKashAMode <akashamode36@gmail.com>
+Date:   Fri Dec 20 22:59:31 2024 +0530
+
+    Merge branch 'main' of https://github.com/AKashAMode/himvillageprahari
+
+[33mcommit 6d3a1aad42bceef9c91c97cdf94bbaf3a231e40c[m
+Author: AKashAMode <akashamode36@gmail.com>
+Date:   Fri Dec 20 22:58:40 2024 +0530
+
+    hero section styling
+
+[33mcommit 4aab9fd60224f8b828afbbc572aa857f727f88b3[m
+Merge: 287a516 628b41f
+Author: A M SANJEEV <81654437+AMSANJEEV28@users.noreply.github.com>
+Date:   Wed Dec 18 12:05:18 2024 +0530
+
+    Merge pull request #15 from SnehaKamathamu/updated-insta-link-in-footer-section
+    
+    Updated links
+
+[33mcommit 628b41f04327562b037934a8c209478ff95d3158[m
+Author: Sneha_Kamathamu <147402791+SnehaKamathamu@users.noreply.github.com>
+Date:   Wed Dec 18 10:04:17 2024 +0530
+
+    Updated links
+
+[33mcommit 287a516a2cecf9684b2dc437abb54b23980c89cb[m
+Author: A M SANJEEV <81654437+AMSANJEEV28@users.noreply.github.com>
+Date:   Wed Dec 18 01:02:41 2024 +0530
+
+    Update index.html
+
+[33mcommit 22840ddbe7f1a8314e427d259e958f8036df5830[m
+Merge: 3bb0a1c 989096b
+Author: A M SANJEEV <81654437+AMSANJEEV28@users.noreply.github.com>
+Date:   Wed Dec 18 00:57:38 2024 +0530
+
+    Merge pull request #14 from SnehaKamathamu/updated-insta-link-in-footer-section
+    
+    Updated insta link in footer section
+
+[33mcommit 989096b285f90b69dc7a44549f281234ed8c19ab[m
+Merge: 8e9eb70 3bb0a1c
+Author: A M SANJEEV <81654437+AMSANJEEV28@users.noreply.github.com>
+Date:   Wed Dec 18 00:55:58 2024 +0530
+
+    Merge branch 'main' into updated-insta-link-in-footer-section
+
+[33mcommit 3bb0a1ce1fba392a52a352da0c356a21e3ab29e8[m
+Merge: b4f7487 2d365a7
+Author: A M SANJEEV <81654437+AMSANJEEV28@users.noreply.github.com>
+Date:   Wed Dec 18 00:52:50 2024 +0530
+
+    Merge pull request #13 from AKashAMode/main
+    
+    styling changed
+
+[33mcommit 27a292f2c2a354fb1a06875a6e7885020699836a[m
+Author: Avantika Devrari <137681051+Avantika098@users.noreply.github.com>
+Date:   Tue Dec 17 12:50:25 2024 +0530
+
+    Update index.html
+
+[33mcommit df4ccea8ab6f3b10f56aec39517dadbc7271762d[m
+Author: Avantika Devrari <137681051+Avantika098@users.noreply.github.com>
+Date:   Tue Dec 17 12:45:20 2024 +0530
+
+    Update index.html
+
+[33mcommit b7cee7264a6c296f36416fcee1285757942d0c8e[m
+Author: Avantika Devrari <137681051+Avantika098@users.noreply.github.com>
+Date:   Tue Dec 17 12:39:47 2024 +0530
+
+    Update about.css
+
+[33mcommit 9d40f5293f1d84452188b8a55c2011ebc93e7747[m
+Author: Avantika Devrari <137681051+Avantika098@users.noreply.github.com>
+Date:   Tue Dec 17 12:33:54 2024 +0530
+
+    Update about.html
+
+[33mcommit 8e9eb70a3bb4ee415fe989d79abb282ae2f005aa[m
+Author: Sneha_Kamathamu <147402791+SnehaKamathamu@users.noreply.github.com>
+Date:   Mon Dec 16 21:52:48 2024 +0530
+
+    Added insta link
+
+[33mcommit 2d365a712d39b72278d1572c0764ed7af91cfa1a[m
+Author: AKashAMode <akashamode80@gmail.com>
+Date:   Mon Dec 16 20:10:28 2024 +0530
+
+    styling changed
+
+[33mcommit 5ed04617cfed177aec84db894781569d0a5f0d1f[m
+Author: Sneha_Kamathamu <147402791+SnehaKamathamu@users.noreply.github.com>
+Date:   Mon Dec 16 09:06:46 2024 +0530
+
+    Updated instagram link in the footer section
+
+[33mcommit b4f7487ae180fbdf69165ada99bbee3c1ff212ab[m
+Merge: 0fe33d1 30aac61
+Author: A M SANJEEV <81654437+AMSANJEEV28@users.noreply.github.com>
+Date:   Sun Dec 15 22:49:41 2024 +0530
+
+    Merge pull request #9 from Avantika098/main
+    
+    About page
+
+[33mcommit 30aac619eb6d426253f67f92c6874b98f7c03bbf[m
+Merge: 3c41a60 fa1a50f
+Author: Avantika Devrari <137681051+Avantika098@users.noreply.github.com>
+Date:   Sun Dec 15 22:42:53 2024 +0530
+
+    Merge pull request #1 from Avantika098/Avantika098-patch-1
+    
+    about page
+
+[33mcommit 0fe33d1561e02bbf0d459b7c969569ed3d57a4d9[m
+Merge: 3c41a60 5e74daf
+Author: A M SANJEEV <81654437+AMSANJEEV28@users.noreply.github.com>
+Date:   Sun Dec 15 22:39:38 2024 +0530
+
+    Merge pull request #8 from arjunchavhan024/main
+    
+    Social Media Link Updated
+
+[33mcommit fa1a50f2ae5c004cf3b0b72052bd02f8ee64dc5f[m
+Author: Avantika Devrari <137681051+Avantika098@users.noreply.github.com>
+Date:   Sun Dec 15 22:38:05 2024 +0530
+
+    about page
+
+[33mcommit 5e74daf93a32b16d857efdab0430be5b31ef637c[m
+Author: Arjun Chavhan <ac4718770@gmail.com>
+Date:   Sun Dec 15 22:31:41 2024 +0530
+
+    Edited
+
+[33mcommit 6fce3abfb373fcd503d3795e2c122405f2d66f7c[m
+Author: Arjun Chavhan <ac4718770@gmail.com>
+Date:   Sun Dec 15 22:23:06 2024 +0530
+
+    Updated
+
+[33mcommit 3c41a6070a7d7bd0b1f4bb930fd52769642e077b[m
+Merge: f4d3080 3586a56
+Author: A M SANJEEV <81654437+AMSANJEEV28@users.noreply.github.com>
+Date:   Sun Dec 15 22:20:58 2024 +0530
+
+    Merge pull request #7 from arjunchavh
