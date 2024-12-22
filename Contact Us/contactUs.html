@@ -2,10 +2,9 @@
 <html>
 <head>
 	<!-- *******  Link To CSS Style Sheet  ******* -->
-	<link rel="stylesheet" type="text/css" href="contactUs.css">
-	<link rel="icon" type="image/x-icon" href="../favicon_io/favicon.ico">
-
-
+	<link rel="stylesheet" href="contactUs.css">
+	<!-- Contact Us Icon -->
+	 <link rel="Icon" href="contact-us-icon.png">
 	<!-- *******  Font Awesome Icons Link  ******* -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
 
@@ -14,33 +13,42 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Contact Section</title>
+	<title>Contact Us</title>
+	<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "aHbuWIEhm7BEyz1CR",
+      });
+   })();
+</script>
+<script src="contactUs.js"></script>
 </head>
 <body>
-
-	<div class="nav-container">
-        <div class=" logo-section">
-          <div class="logo">
-            <a href="index.html"><img src="../HIM VILLAGE E.png" alt="HimVillageePrahari Logo"></a>
-            <p>HimVillageePrahari</p>
-            <p>
-          </div>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a class="active" href="../index.html">Home</a></li>
-                <li><a href="404.html">About</a></li>
-                <li><a href="404.html">Gallery</a></li>
-                <li><a href="../volunteer_signup.html">Volunteers</a></li>
-                <li><a href="#contactUs">Contact Us</a></li>
-            </ul>
-        </nav>
-        <i class="fa-solid fa-bars " onclick="toggleMenu()" ></i>
-    </div>
-
-
-
-	<div class="container">
+	<section class="top">
+		<header>
+			<div class="-nav-container">
+				<div class=" logo-section">
+				  <div class="logo">
+					<a href="../index.html"><img src="../HIM VILLAGE E.png" alt="HimVillageePrahari Logo"></a>
+					<p>HimVillageePrahari</p>
+					<p>
+				  </div>
+				</div>
+				<nav>
+					<ul class="nav-links">
+						<li><a href="#home">Home</a></li>
+						<li><a href="404.html">About</a></li>
+						<li><a href="404.html">Gallery</a></li>
+						<li><a href="404.html">Volunteers</a></li>
+						<li><a href="contactUs.html">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+	<div class="body-container">
 		<main class="row">
 			
 			<!--  *******   Left Section (Column) Starts   *******  -->
@@ -50,8 +58,8 @@
 				<!--  *******   Title Starts   *******  -->
 
 				<div class="contactTitle">
-					<h2>Get in Touch with Us</h2>
-					<p>We are always open to your thoughts, ideas, and feedback. If you have any 
+					<h2> Get in Touch with Us</h2>
+					<p> We are always open to your thoughts, ideas, and feedback. If you have any 
 						questions, require more information about our work, or are interested in volunteering, 
 						please don’t hesitate to contact us. We’re here to help and would love to hear from you.</p>
 				</div>
@@ -88,7 +96,7 @@
 						</div>
 						<div class="details">
 							<span>Location</span>
-							<span>HIM VILLAGE E-prahari <br> FOUNDATION is C/o Kamla Devi, <br> Ramnagar, Ajabpur, <br> Dehradun, Dehradun, <br> Uttarakhand, India, 248121.</span>
+							<span>HIM VILLAGE E-prahari FOUNDATION is C/o Kamla Devi, Ramnagar, Ajabpur, Dehradun, Dehradun, Uttarakhand, India, 248121.</span>
 						</div>
 					</div>
 
@@ -101,8 +109,10 @@
 				<div class="socialMedia">
 					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
 					<a href="#"><i class="fa-brands fa-twitter"></i></a>
-					<a href="https://www.instagram.com/himvillageprahari/?igsh=eHF2bmpqMmhtbmE3#"><i class="fa-brands fa-instagram"></i></a>
-					<a href="https://www.linkedin.com/company/him-village-eprahari/"><i class="fa-brands fa-linkedin-in"></i></a>
+					<a href="https://www.instagram.com/himvillageprahari?igsh=eHF2bmpqMmhtbmE3
+					"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/company/him-village-eprahari/
+					"><i class="fa-brands fa-linkedin-in"></i></a>
 				</div>
 
 				<!--  *******   Social Media Ends   *******  -->
@@ -118,9 +128,9 @@
 				<!--  *******   Form Starts   *******  -->
 
 				<form class="messageForm">
-					
+					<!-- <input type="hidden" name="access_key" value="d1aeaedb-e9a1-4826-81d7-90d9ab77ef9c"> -->
 					<div class="inputGroup halfWidth">
-						<input type="text" name="name" id="name" required>
+						<input type="text" name="name" id="name" required="required">
 						<label>Your Name</label>
 					</div>
 
@@ -130,17 +140,17 @@
 					</div>
 
 					<div class="inputGroup fullWidth">
-						<input type="text" name="subject" id="subject" required="required">
+						<input type="text" name="Subject" id="subject" required="required">
 						<label>Subject</label>
 					</div>
 
 					<div class="inputGroup fullWidth">
-						<textarea id="message" required="required"></textarea>
+						<textarea required="required" id="message"></textarea>
 						<label>Say Something</label>
 					</div>
 
 					<div class="inputGroup fullWidth">
-						<button>Send Message</button>
+						<button onclick="sendMail()">Send Message</button>
 					</div>
 
 				</form>
@@ -149,10 +159,8 @@
 			</section>
 
 			<!--  *******   Right Section (Column) Ends   *******  -->
-
 		</main>
 	</div>
-
 	<!-- Map -->
 	<div class="map-container">
 		<div class="mapBg"></div>
@@ -161,132 +169,17 @@
 		</div>
 	</div>
 
-<!-- Footer -->
-<div class="footerContainer">
 
-    <footer class="footer">
-      <div class="footerRow">
-        <div id="firstFooterCol" class="footercol">
-            <img class="logo" src="../HIM VILLAGE E.png" alt="">
-            <p class="aboutInFooter">We are dedicated to preserving the natural beauty of the Himalayas: Himachal, and Uttarakhand by empowering rural communities. Through education, waste management, and sustainable practices.</p>
-        </div>
-        <div id="office" class="footercol">
-            <h3 class="cardo-regular">OUR OFFICE<div class="underline"><span></span></div></h3>
-            <div class="footerLocation">
-              <i class="fa-solid fa-location-crosshairs"></i>
-              <p>Him Village E-prahari Foundation C/o Kamla Devi</p>
-  
-            </div>
-            <div class="footerLocation2">
-                <i  class="fa-solid fa-magnifying-glass"></i>
-                <p>Ramnagar,Ajabpur,Dehradun,Dehradun Uttarakhand PIN 248121,India </p>
-              </div>
-              <!-- <p>Uttarakhand PIN 248121,India</p> -->
-              <div class="emailHere">
-                <i class="fa-regular fa-envelope"></i>
-                <p class="email-id"> admin@himvillageprahari.org</p>
-            </div>
-            <div class="telephoneInfo">
-                <i class="fa-solid fa-phone"></i>
-                <h4>+91 8057646822</h4>
-            </div>
-        </div>
-        <div class="footercol">
-          <h3>OUR WORKS <div class="underline"><span></span></div></h3>
-          <ul >
-              <li><a href="">What we do</a></li>
-              <li><a href="">How we use data</a></li>
-              <li><a href="">Where we work</a></li>
-              <li><a href="">Stories from field</a></li>
-              <li><a href="">Blogs</a></li>
-              <li><a href="">Visit Gallery</a></li>
-              </ul>
-        </div>
-        <div id="footerScanAndDonate" class="footercol">
-          <h3>
-            SCAN AND DONATE
-           <div class="underline">
-            <span></span>
-           </div>
-          </h3 >
-         <img  src="../donation.jpg" alt="">
-        <!-- <div class="social-icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-  
-          </div>  -->
-        </div>
-      </div>
-      <hr>
-      <section>
-        <h3 id="joinN">JOIN OUR NEWSLETTER <div class="underline">
-          <span></span>
-         </div></h3>
-  
-        <section class="newsletterSection">
-          <div class="outerNewsletter">
-          <div class="blurBlack"></div>
-          <div class="contentNewsletter">
-            <h3>Subscribe and Stay Connected With Us</h3>
-            <p>Be the first to know about our moving stories, new projects and opportunities. Join our community of changemakers today!</p>
-  
-            <form action="">
-              <div class="textField">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" placeholder="Enter your name">
-  
-              </div>
-              <div class="emailField">
-                <i class="fa-solid fa-envelope"></i>
-                <input type="email" placeholder="Enter your email">
-              </div>
-              <button type="submit">Subscribe</button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </section>
-      <hr>
-      <div class="footerCopyrightSection">
-        
-        <p class="copyright">Copyright &copy;2024 <span>Him Village ePrahari</span>.All Right Reserved.</p>
-        <div class="social-icons">
-         <a target="_blank" href=""> <i class="fa-brands fa-facebook"></i></a>
-         <a target="_blank" href="https://www.linkedin.com/company/him-village-eprahari/"> <i class="fa-brands fa-linkedin"></i></a>
-          <a target="_blank" href="https://www.instagram.com/himvillageprahari/?igsh=eHF2bmpqMmhtbmE3#"><i class="fa-brands fa-instagram"></i></a>
-          <a  target="_blank" href=""><i class="fa-brands fa-whatsapp"></i></a>
-  
-        </div> 
-      </div>
-  </footer>
-  </div>
-
-
-
-	<script>
-    
-		let menuList = document.querySelector('.nav-links');
-		menuList.style.maxHeight = "0px";
-		
-		function toggleMenu() {
-			if (menuList.style.maxHeight == "0px") {
-				menuList.style.maxHeight = "300px";
-			} else {
-				menuList.style.maxHeight = "0px";
-			}
-		}
-		
-		// Close the menu when any link is clicked
-		let links = document.querySelectorAll('.nav-links a');
-		links.forEach(link => {
-			link.addEventListener('click', () => {
-				menuList.style.maxHeight = "0px"; // Close the menu
-			});
-		});
-		
-		
-		</script>
+	 <!-- Footer -->
+	 <footer class="footer">
+		<div class="social-media-icons">
+		  <a href="https://www.linkedin.com/company/him-village-eprahari/posts/?feedView=all" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+		  <a href="https://www.instagram.com/himvillageprahari?igsh=eHF2bmpqMmhtbmE3" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+		</div>
+		<div class="footer-bottom">
+		  <p>&copy; 2024 Him Village ePrahari. All rights reserved.</p>
+		</div>
+	  </footer>
+	   <script src="contactUs.js"></script>
 </body>
 </html>
