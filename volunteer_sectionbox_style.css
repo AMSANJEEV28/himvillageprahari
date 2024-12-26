@@ -1,0 +1,107 @@
+
+  /* General section styles */
+  .volunteer-section {
+      padding: 50px 0; /* Top and bottom padding */
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      font-size: 18px;
+  }
+  
+  /* Flex container */
+  .volunteer-flex-container {
+      display: flex;
+      flex-wrap: wrap; /* Ensures responsiveness */
+      align-items: center;
+      width: 100%; /* Full-width container */
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  
+  /* Text content */
+  .volunteer-text-content {
+      flex: 0 0 70%; /* Text takes up 60% of the width */
+      padding: 0 50px; /* 10% padding for the text */
+      text-align: left; /* Ensure text is left-aligned */
+  }
+  
+  .volunteer-text-content h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: rgb(45,106,77);
+  }
+  
+  .volunteer-text-content p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #000000;
+  }
+  
+  .volunteer-text-content ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      color: #000000;
+  }
+  
+  .volunteer-text-content li {
+      margin-bottom: 10px;
+  }
+  
+  /* Image content */
+  .volunteer-image-content {
+      flex: 0 0 30%; /* Image takes up 40% of the width */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: volunteerSlideIn 1.5s ease-in-out, volunteerScaleUp 1.5s ease-in-out;
+  }
+  
+  .volunteer-image-content img {
+      max-width: 100%; /* Make image responsive */
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Animations */
+  @keyframes volunteerSlideIn {
+      from {
+          transform: translateX(100%);
+          opacity: 0;
+      }
+      to {
+          transform: translateX(0);
+          opacity: 1;
+      }
+  }
+  
+  @keyframes volunteerScaleUp {
+      from {
+          transform: scale(0.9);
+      }
+      to {
+          transform: scale(1);
+      }
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+      .volunteer-flex-container {
+          flex-direction: column;
+          text-align: center;
+      }
+  
+      .volunteer-text-content {
+          flex: 0 0 100%;
+          padding: 0 5%; /* Reduce padding for smaller screens */
+      }
+  
+      .volunteer-image-content {
+          flex: 0 0 100%;
+          animation: none; /* Simplify animations on smaller screens */
+          margin-top: 20px; /* Add spacing between image and text */
+      }
+  }
+
