@@ -5,6 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -30,16 +31,18 @@
     </div>
     <nav>
         <ul class="nav-links">
-            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="404.html">Gallery</a></li>
-            <li><a href="volunteer_signup.html">Volunteers</a></li>
+            <li><a href="./Voluntter/volunteer_signup.html">Volunteers</a></li>
             <li><a href="./Contact Us/contactUs.html">Contact Us</a></li>
         </ul>
     </nav>
     <i class="fa-solid fa-bars " onclick="toggleMenu()" ></i>
   </div>
+  </div>
 
+  
   <div class="main-container">
 
     <div class="introduction">
@@ -64,6 +67,7 @@
     <div class="about-us">
       <div class="about-us-heading">About Us</div>
       <div class="about-us-text">
+        <input type="checkbox" id="check">
       <p>The Him Village EPrahari Foundation is a non-governmental organization dedicated to addressing the pressing environmental challenges faced by the Himalayan regions. Rooted in the core principles of sustainability, conservation, and community engagement, the foundation is committed to promoting zero waste and effective waste management practices to protect and preserve the fragile Himalayan ecosystem.</p> 
         The name of the organization encapsulates its mission and purpose: 
         <ul>
@@ -83,24 +87,16 @@
         <p>Him Village EPrahari Foundation also recognizes the role of responsible tourism in protecting the Himalayas. It actively engages with stakeholders in the tourism industry to promote eco-tourism practices that minimize environmental impact while supporting local livelihoods. The foundation envisions the Himalayan region as a global model for sustainable tourism, where visitors contribute to conservation efforts rather than exacerbating environmental problems.</p>  
         
         <p>With a vision to create self-reliant, environmentally aware communities, the foundation strives to leave a lasting impact. It believes that the protection of the Himalayas is not just a regional concern but a global responsibility, as these mountains are vital for maintaining ecological balance. Him Village EPrahari Foundation stands as a beacon of hope, working tirelessly to guard the environment and inspire positive change for future generations.</p></span>
-        <span class="read-more-btn">Read more...</span>
+       
+        <label for="check">Read More</label>
         </div>
-      
+
     </div>
     
     
     <div class="mission">
       <div class="mission-heading">
         Our Mission</div>
-      <!-- <div class="mission-text"><p>
-                <ul>
-                     <li>Promote sustainable living and eco-friendly practices in rural areas.</li>
-                    <li>Provide education and awareness about environmental conservation.</li>
-                    <li>Support rural communities in achieving self-reliance through skill development and
-                    innovation.</li>
-                    <li>Advocate for the preservation of local biodiversity and natural resources.</li> 
-                </ul> 
-            </h3> -->
       <div class="mission-cards">
 
         <div class="mission-card1" style="width: 18rem;">
@@ -131,10 +127,7 @@
             <p class="card-text">Advocate for the preservation of local biodiversity and natural resources.</p>
           </div>
         </div>
-        <!-- <div class="card1">hii</div>
-                <div class="card2">hii</div>
-                <div class="card3">hii</div>
-                <div class="card4">hii</div> -->
+       
       </div>
     </div>
 
@@ -232,17 +225,7 @@
         </div>
 
       </div>
-      <!-- <p>
-                <ul>
-                <li>o Eco-Conservation Projects: Tree plantations, waste management drives, and water
-                conservation campaigns.</li>
-                <li>o Skill Development Programs: Training locals in sustainable practices and providing
-                vocational education.</li>
-                <li>o Community Empowerment: Supporting women, children, and marginalized groups
-                through tailored initiatives.</li>
-                <li>o Awareness Campaigns: Organizing workshops, essay competitions, and educational
-                sessions about environmental issues</li></ul>
-            </h3> -->
+      
     </div>
 
     <div class="why-choose-us">
@@ -274,7 +257,7 @@
         <div class="counter2">
           <h5>Empowered</h5>
           <h5 class="counting2"></h5>
-          <h5>families through skill development programs.</h5>
+          <h5>families through skill<br> development programs.</h5>
         </div>
         <div class="counter3">
           <h5>Reduced plastic waste by</h5>
@@ -284,17 +267,10 @@
         <div class="counter4">
           <h5>Educated</h5>
           <h5 class="counting4"></h5>
-          <h5>children about sustainability and eco-friendly practices.</h5>
+          <h5>children about sustainability<br> and eco-friendly practices.</h5>
         </div>
       </div>
-      <!-- <p>
-                <ul>
-                <li>o Planted [Number] trees across rural areas.</li>
-                <li>o Empowered [Number] families through skill development programs.</li>
-                <li>o Reduced plastic waste by [Percentage] in partnered villages.</li>
-                <li>o Educated [Number] children about sustainability and eco-friendly practices.</li>
-                </ul>
-            </h3> -->
+    
     </div>
 
     <section class="section-team">
@@ -308,7 +284,7 @@
           <div class="team-cards">
             <div class="team-member">
               <div class="team-img">
-                <img loading="lazy" src="g4.jpeg" alt="Team Member 1">
+                <img loading="lazy" src="Sushant.jpeg" alt="Team Member 1">
               </div>
               <div class="team-info">
                 <h6>Mr. Sumit Singh</h6>
@@ -323,7 +299,7 @@
 
             <div class="team-member">
               <div class="team-img">
-                <img loading="lazy" src="Sushant.jpeg" alt="Team Member 2">
+                <img loading="lazy" src="g4.jpeg" alt="Team Member 2">
               </div>
               <div class="team-info">
                 <h6>Mr. Sushant Kumar</h6>
@@ -435,9 +411,7 @@
           </div>
         </div>
       </div>
-      <!-- <p>Working with Him Village E-Prahari has been a life-changing experience. The initiatives
-                are impactful and truly inspire hope for a better future." – [Testimonial from a
-                Volunteer/Beneficiary]</p> -->
+  
     </div>
 
  
@@ -459,7 +433,7 @@
     <footer class="footer">
       <div class="footerRow">
         <div id="firstFooterCol" class="footercol">
-            <img class="logo" src="HIM VILLAGE E image.png" alt="">
+            <img class="logo" src="HIM VILLAGE E.png" alt="">
             <p class="aboutInFooter">We are dedicated to preserving the natural beauty of the Himalayas: Himachal, and Uttarakhand by empowering rural communities. Through education, waste management, and sustainable practices.</p>
         </div>
         <div id="office" class="footercol">
@@ -554,6 +528,19 @@
       </div>
   </footer>
   </div>
+
+  <!-- Script for active class -->
+
+  <script>
+		const activePage = window.location.pathname;
+		const navLinks = document.querySelectorAll('nav a').forEach(link => {
+			if(link.href.includes(`${activePage}`)){
+				link.classList.add('active');
+				console.log(link);
+			}
+			
+		})
+	</script>
     
 <!--out impact script-->
   <script>

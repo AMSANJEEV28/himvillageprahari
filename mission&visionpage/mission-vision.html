@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mission and Vision</title>
+    <link rel="icon" type="image/x-icon" href="../favicon_io/favicon.ico">
     <link rel="stylesheet" href="../css-page/mission-vision.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -22,10 +23,10 @@
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="404.html">About</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
                 <li><a href="404.html">Gallery</a></li>
-                <li><a href="volunteer_signup.html">Volunteers</a></li>
+                <li><a href="../Voluntter/volunteer_signup.html">Volunteers</a></li>
                 <li><a href="./Contact Us/contactUs.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -221,7 +222,7 @@
       <footer class="footer">
         <div class="footerRow">
           <div id="firstFooterCol" class="footercol">
-              <img class="logo" src="../img/HIM VILLAGE E image.png" alt="">
+              <img class="logo" src="../HIM VILLAGE E image.png" alt="">
               <p class="aboutInFooter">We are dedicated to preserving the natural beauty of the Himalayas: Himachal, and Uttarakhand by empowering rural communities. Through education, waste management, and sustainable practices.</p>
           </div>
           <div id="office" class="footercol">
@@ -263,7 +264,11 @@
               <span></span>
              </div>
             </h3 >
+<<<<<<< HEAD
            <img  src="../img/" alt="">
+=======
+           <img  src="../donation.jpg" alt="">
+>>>>>>> origin/main
           <!-- <div class="social-icons">
               <i class="fa-brands fa-facebook"></i>
               <i class="fa-brands fa-linkedin"></i>
@@ -317,7 +322,18 @@
     </footer>
     </div>
       
+<!-- Script for active class -->
 
+<script>
+  const activePage = window.location.pathname;
+  const navLinks = document.querySelectorAll('nav a').forEach(link => {
+    if(link.href.includes(`${activePage}`)){
+      link.classList.add('active');
+      console.log(link);
+    }
+    
+  })
+</script>
 
 
 <script src="../javascript/mission-vision.js"></script>

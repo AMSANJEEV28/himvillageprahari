@@ -23,6 +23,10 @@ body{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
+<<<<<<< HEAD
+=======
+    height: 125px;
+>>>>>>> origin/main
     top: 0;
     z-index: 1000;
     border-bottom: 1px solid rgb(185, 180, 180);
@@ -727,7 +731,11 @@ footer .underline span{
     margin: auto;
     position: relative; /* Required for z-index to work */
     z-index: 1;
+<<<<<<< HEAD
     background-image: url("/footer/donation.jpg");
+=======
+    background-image: url("../donation.jpg");
+>>>>>>> origin/main
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
