@@ -293,6 +293,20 @@ color: rgb(13, 114, 13);
   text-align: center;
 }
 
+@media (max-width:768px){
+
+  .role {
+    min-width: 300px;
+    height: 160px;
+  }
+}
+
+@media (max-width:480px){
+  .role {
+    min-width: 90%;
+  }
+}
+
 
 
 /*----------------------------------------- OUR MISSION STYLE --------------------------------------------*/
@@ -632,6 +646,8 @@ cursor: pointer;
 background-color: #145a2f;
 } */
 
+
+
 /* General Styling */
 .section-team {
   width: 100vw;
@@ -716,6 +732,8 @@ background-color: #145a2f;
   margin: 0;
 }
 
+
+
 .our_volunteers_button {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   width: 70%;
@@ -754,7 +772,18 @@ background-color: #145a2f;
   right: 10px;
 }
 
-/* Media Queries for Responsiveness */
+@media (max-width: 1050px) {
+
+  .team-member {
+   margin: 5px 10px;
+  }
+
+  .section-team h2 {
+    font-size: 40px;
+    
+  }
+}
+
 @media (max-width: 1024px) {
   .team-member {
     flex: 0 0 45%;
@@ -776,13 +805,23 @@ background-color: #145a2f;
 }
 
 @media (max-width: 768px) {
+
+  .section-team h2 {
+    padding-left: 37px;
+    margin-bottom: 5px;
+  }
+
   .team-member {
-    flex: 0 0 90%;
-    margin: 5%;
+    flex: 0 0 46%;
+    margin: 2%;
   }
 
   .team-info p {
     font-size: 12px;
+  }
+
+  .team-img img {
+    height: 350px;
   }
 
   .carousel-container {
@@ -793,6 +832,21 @@ background-color: #145a2f;
     font-size: 18px;
     padding: 5px;
   }
+}
+
+@media (max-width: 480px){
+
+  .section-team h2 {
+    font-size: 2rem;
+    padding-left: 22px;
+  }
+
+  .team-member {
+    flex: 0 0 96%;
+    
+  }
+
+
 }
 
 
