@@ -342,6 +342,22 @@ section.left .socialMedia{
 	color: #2d6a4f;
 }
 
+@media(max-width: 1075px){
+  
+    .container .row{
+      margin-top: 40px;
+    }
+
+}
+
+@media (max-width:480px){
+.contactTitle{
+ padding-top: 50px;
+}
+
+}
+
+
 /* Code for the right section (column) */
 
 .row section.right .messageForm{
