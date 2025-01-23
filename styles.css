@@ -17,11 +17,11 @@ html {
 .top {
     width: 100vw; 
     height:100vh; 
-    /* background: url('man-7155142.jpg') no-repeat center center/cover; */
+    background: url('home.jpg') no-repeat center center/cover;
 
 }
 
-.background-video {
+/* .background-video {
     position: fixed;
     top: 0;
     left: 0;
@@ -29,7 +29,7 @@ html {
     height: 100%;
     object-fit: cover;
     z-index: -1; /* To keep it in the background */
-}
+} */
 
 
 
@@ -852,6 +852,11 @@ h2{
     width: 100vw;
     padding: 50px 0;
     overflow: hidden;
+
+    width: 100vw; 
+    height:100vh; 
+    /* background: url('mentor-bg.png') no-repeat center center/cover; */
+    background-color: #fff;
 }
 
 .background-video {
@@ -872,7 +877,7 @@ h2{
 }
 
 .section6 h2 {
-    color: #ffffff;
+    color: #2d6a4f;
     font-size: 42px;
     font-weight: bold;
     text-align: left;
@@ -885,7 +890,7 @@ h2{
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5;
-    color: #ffffff;
+    color: #434242;
     font-size: 18px;
     line-height: 1.6;
     text-align: justify;
