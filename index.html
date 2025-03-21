@@ -1,101 +1,78 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Website Under Maintenance</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f2f2f2;
-        }
-        .container {
-            text-align: center;
-            max-width: 600px;
-        }
-        h1 {
-            font-size: 2.5em;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2em;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        .spinner {
-            border: 4px solid rgba(0, 0, 0, 0.1);
-            border-left-color: #3498db;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: 20px auto;
-        }
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
-        }
-        .footer {
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #888;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>We'll be back soon!</h1>
-        <p>Our website is currently undergoing scheduled maintenance. We apologize for the inconvenience and appreciate your patience.</p>
-        <div class="spinner"></div>
-        
-        <p class="footer">&copy; 2025 Him Village E-Prahari Foundation</p>
-    </div>
-</body>
-</html> -->
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HimVillageePrahari</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HimVillageePrahari</title>
 
-    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
 
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-      <!-- FontAwesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
+  <!-- <section class="top">
+
+    <header>
+      <div class="container">
+        <div class=" logo-section">
+          <div class="logo">
+            <a href="index.html"><img src="HIM VILLAGE E.png" alt="HimVillageePrahari Logo"></a>
+            <p>HimVillageePrahari Foundation</p>
+            <p>
+          </div>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="gallery epahari/Gallery2.html">Gallery</a></li>
+            <li><a href="./Voluntter/volunteer_signup.html">Volunteers</a></li>
+            <li><a href="./Contact Us/contactUs.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="main-body">
+      <h1 id="main-body-heading">Him Village E-Prahari Foundation</h1>
+      <p class="main-body-p"> You can guard, so let's protect together
+      <p>
+        <br><br><br>
+      <p class="main-body-des">We are dedicated to preserving the natural beauty and ecological balance of the Himalayas
+        in Uttarakhand by empowering rural communities. Through education, waste management, and sustainable practices,
+        we stand as guardians of our environment. Join us in our mission to protect, nurture, and sustain the villages
+        and forests of these regions for future generations.</p>
+
+      <a href="about.html"><button class="main-body-btn">About Us</button></a>
+    </section>
+
+  </section> -->
+
+
+
   <section class="top">
-    
-     <header>
+    <header>
         <div class="container">
-            <div class=" logo-section">
-              <div class="logo">
-                <a href="index.html"><img src="HIM VILLAGE E.png" alt="HimVillageePrahari Logo"></a>
-                <p>HimVillageePrahari</p>
-                <p>
-              </div>
+            <div class="logo-section">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="HIM VILLAGE E.png" alt="HimVillageePrahari Logo">
+                    </a>
+                    <p>HimVillageePrahari Foundation</p>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button class="menu-toggle" id="menu-btn">☰</button>
             </div>
             <nav>
-                <ul class="nav-links">
+                <ul class="nav-links" id="nav-menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="./about.html">About</a></li>
                     <li><a href="gallery epahari/Gallery2.html">Gallery</a></li>
@@ -104,27 +81,43 @@
                 </ul>
             </nav>
         </div>
-      </header>
+    </header>
 
     <section class="main-body">
-      <h1 id="main-body-heading">Him Village E-Prahari</h1>
-      <p class="main-body-p"> You can guard, so let's protect together <p>
-      <br><br><br>
-      <p class="main-body-des">We are dedicated to preserving the natural beauty and ecological balance of the Himalayas in  Uttarakhand by empowering rural communities. Through education, waste management, and sustainable practices, we stand as guardians of our environment. Join us in our mission to protect, nurture, and sustain the villages and forests of these regions for future generations.</p>
-
-      <a href="about.html"><button class="main-body-btn">About Us</button></a>
+        <h1 id="main-body-heading">Him Village E-Prahari Foundation</h1>
+        <p class="main-body-p">You can guard, so let's protect together</p>
+        <p class="main-body-des">
+            We are dedicated to preserving the natural beauty and ecological balance of the Himalayas
+            in Uttarakhand by empowering rural communities. Through education, waste management, and sustainable practices,
+            we stand as guardians of our environment. Join us in our mission to protect, nurture, and sustain the villages
+            and forests of these regions for future generations.
+        </p>
+        <a href="about.html"><button class="main-body-btn">About Us</button></a>
     </section>
+</section>
 
-  </section>
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuBtn = document.getElementById("menu-btn");
+        const navMenu = document.getElementById("nav-menu");
+
+        menuBtn.addEventListener("click", function () {
+            navMenu.classList.toggle("active");
+        });
+    });
+
+
+</script>
 
   <section class="section2">
-    <div class="cards"> 
+    <div class="cards">
       <div class="card1">
-        <div class="card1-img"><img loading="lazy" src="donation.jpg"></div>
+        <div class="card1-img"><img loading="lazy" src="donate.jpg"></div>
         <div class="txt-card1">
           <h6>Donation</h6>
-            <p>Your gift today protects nature and empowers communities.</p>
-            <button class="card-btn">Donate Now</button>
+          <p>Donate gloves, supplies & prizes for our NGO.</p>
+          <button class="card-btn">Donate Now</button>
         </div>
       </div>
 
@@ -132,356 +125,368 @@
         <div class="card1-img"><img loading="lazy" src="fundraising.jpg"></div>
         <div class="txt-card1">
           <h6>Fundraising</h6>
-            <p>Help us preserve the Himalayas-every effort counts!</p>
-            <button class="card-btn">Donate Now</button>
+          <p>Support projects, volunteers & community initiatives. </p>
+          <button class="card-btn">Donate Now</button>
         </div>
       </div>
     </div>
   </section>
 
   <section class="section3">
-      <h2>Our Mission</h2>
-      <div class="sec3txt-img">
-          <div class="sec3text">
-              <p>At Him Village ePrahari, our mission is deeply rooted in the preservation of the Himalayas, an irreplaceable ecosystem that sustains countless lives. We are dedicated to protecting this vital environment by addressing the pressing challenges of waste management, climate change, and environmental degradation. Our initiatives focus on creating zero-waste villages, implementing effective waste management models, and promoting sustainable practices that can be adopted by communities throughout the region. We believe that every village and individual has the potential to be a guardian of the environment, and our mission is to empower them to take action. Through education, we aim to instill a sense of responsibility in the next generation, ensuring that they are equipped with the knowledge and resources needed to protect their surroundings.</p>
-              <br>
-              <p>Beyond environmental protection, our mission extends to the empowerment of local communities, particularly those in rural areas where resources are scarce. We strive to improve the standard of education, provide essential learning tools, and offer career counseling to children, helping them build a brighter future. Our efforts also include supporting rag pickers' families by providing educational opportunities and developing earning models for environmental volunteers. By fostering a sense of stewardship and community-driven change, Him Village ePrahari is committed to creating a sustainable and resilient future for the Himalayas and its people. Together, we can safeguard the natural beauty and cultural heritage of this region, ensuring that it remains a lifeline for generations to come.</p>
-          </div>
-          <div class="sec3img">
-              <img loading="lazy" src="cap.jpg" alt="Himachali Cap Image">
-          </div>
+    <h2>Our Mission</h2>
+    <div class="sec3txt-img">
+      <div class="sec3text">
+        <p>At Him Village ePrahari Foundation, our mission is deeply rooted in the preservation of the Himalayas, an irreplaceable
+          ecosystem that sustains countless lives. We are dedicated to protecting this vital environment by addressing
+          the pressing challenges of waste management, climate change, and environmental degradation. Our initiatives
+          focus on creating zero-waste villages, implementing effective waste management models, and promoting
+          sustainable practices that can be adopted by communities throughout the region. We believe that every village
+          and individual has the potential to be a guardian of the environment, and our mission is to empower them to
+          take action. Through education, we aim to instill a sense of responsibility in the next generation, ensuring
+          that they are equipped with the knowledge and resources needed to protect their surroundings.</p>
+        <br>
+        <p>Beyond environmental protection, our mission extends to the empowerment of local communities, particularly
+          those in rural areas where resources are scarce. We strive to improve the standard of education, provide
+          essential learning tools, and offer career counseling to children, helping them build a brighter future. Our
+          efforts also include supporting rag pickers' families by providing educational opportunities and developing
+          earning models for environmental volunteers. By fostering a sense of stewardship and community-driven change,
+          Him Village ePrahari Foundation is committed to creating a sustainable and resilient future for the Himalayas and its
+          people. Together, we can safeguard the natural beauty and cultural heritage of this region, ensuring that it
+          remains a lifeline for generations to come.</p>
       </div>
+      <div class="sec3img">
+        <img loading="lazy" src="TEAM BANNER.jpeg" alt="TEAM Image">
+      </div>
+    </div>
   </section>
 
   <section class="section4">
     <div class="statistics">
-        <div class="stat">
-          <span class="material-symbols-outlined">
+      <div class="stat">
+        <span class="material-symbols-outlined">
           pets
-          </span>            
-          <h2>1200</h2>
-            <p>Donation</p>
-        </div>
-        <div class="stat">
-            <span class="material-symbols-outlined">
-            sentiment_satisfied
-            </span>
-            <h2>2000</h2>
-            <p>Volunteers</p>
-        </div>
-        <div class="stat">
-            <span class="material-symbols-outlined">
-            eco
-            </span>
-            <h2>4000</h2>
-            <p>Rescued</p>
-        </div>
-        <div class="stat">
-          <span class="material-symbols-outlined">
+        </span>
+        <h2>1200</h2>
+        <p>Donation</p>
+      </div>
+      <div class="stat">
+        <span class="material-symbols-outlined">
+          sentiment_satisfied
+        </span>
+        <h2>2000</h2>
+        <p>Volunteers</p>
+      </div>
+      <div class="stat">
+        <span class="material-symbols-outlined">
+          eco
+        </span>
+        <h2>4000</h2>
+        <p>Rescued</p>
+      </div>
+      <div class="stat">
+        <span class="material-symbols-outlined">
           public
-          </span>
-            <h2>30+</h2>
-            <p>Countries</p>
-        </div>
+        </span>
+        <h2>30+</h2>
+        <p>Countries</p>
+      </div>
     </div>
   </section>
 
   <section class="section5">
-    <h2> Our Services</h2>
-    <P id="service-pr">Our services are designed to address the pressing environmental and social challenges facing the Himalayas. From waste management to education, we are committed to creating a sustainable future for the region and its people.</P>
+    <h2>Our Services</h2>  
+    <p id="service-pr">We are dedicated to fostering environmental sustainability in the Himalayas through waste management, eco-education, and community-driven initiatives. Our services empower individuals to adopt sustainable practices and contribute to a greener future.</p>  
+    
 
 
     <section class="unique-section">
-        <!-- First Row: Rectangular card on the left, square cards on the right -->
-        <div class="unique-card-container">
-            <div class="unique-rect-card" style="background-image: url('12.jpg');"><div class="cardtxt-sq"><h3>Make a Donation</h3><p>Support our initiatives with a donation to help protect the Himalayas and uplift local communities.</p></div></div>
-            <div class="unique-square-cards">
-                <div class="unique-square-card" style="background-image: url('2.jpg');"><div class="cardtxt-rec"><h3>Become a Volunteer</h3><p>Join us in making a tangible impact through on-ground activities and educational outreach.</p></div></div>
-                <div class="unique-square-card" style="background-image: url('3.jpg');"><div class="cardtxt-rec"><h3>Sponsor a Child</h3><p>Give a child the opportunity for a better future by providing access to quality education.</p></div></div>
-            </div>
-            <div class="unique-square-cards">
-                <div class="unique-square-card" style="background-image: url('4.jpg');"><div class="cardtxt-rec"><h3>Human Right Advocacy</h3><p>We advocate for the rights and dignity of Himalayan communities.</p></div></div>
-                <div class="unique-square-card" style="background-image: url('5.jpg');"><div class="cardtxt-rec"><h3>Environmental Education</h3><p>Raise awareness and educate communities on sustainable practices to protect the environment.</p></div></div>
-            </div>
-        </div>
 
-        <!-- Second Row: Rectangular card on the right, square cards on the left -->
-        <div class="unique-card-container">
-            <div class="unique-square-cards">
-                <div class="unique-square-card" style="background-image: url('6.jpg');"><div class="cardtxt-rec"><h3>Community Development</h3><p>Collaborate with us to improve infrastructure, access to clean water, and promote sustainable living.</p></div></div>
-                <div class="unique-square-card" style="background-image: url('7.jpg');"><div class="cardtxt-rec"><h3>Cleanliness Drive</h3><p>Participate in our efforts to keep the Himalayas pristine through regular waste collection and segregation.</p></div></div>
-            </div>
-            <div class="unique-square-cards">
-                <div class="unique-square-card" style="background-image: url('8.jpg');"><div class="cardtxt-rec"><h3>Waste Management Solutions</h3><p>We offer tailored waste management solutions to create zero-waste villages.</p></div></div>
-                <div class="unique-square-card" style="background-image: url('9.jpg');"><div class="cardtxt-rec"><h3>Climate Change Mitigations</h3><p>Help us combat climate change through reforestation, renewable energy, and community education.</p></div></div>
-            </div>
-            <div class="unique-rect-card" style="background-image: url('10.jpg');"><div class="cardtxt-sq"><h3>Emergency Relief</h3><p>Provide immediate aid to communities affected by natural disasters in the Himalayas.</p></div></div>
+      <!-- First Row: Rectangular card on the left, square cards on the right -->
+      <div class="unique-card-container">
+        <div class="unique-rect-card" style="background-image: url('gallery/events\ \(11\).jpeg');">
+          <div class="cardtxt-sq">
+            <h3>Zero Waste Awareness</h3>
+            <p>Educating communities on sustainable waste management and eco-friendly practices.</p>
+          </div>
         </div>
+        <div class="unique-square-cards">
+          <div class="unique-square-card" style="background-image: url('gallery/events\ \(23\).jpeg');">
+            <div class="cardtxt-rec">
+              <h3>Waste to Wonder</h3>
+              <p>Transforming waste into creative and useful products to promote sustainability.</p>
+            </div>
+          </div>
+          <div class="unique-square-card" style="background-image: url('gallery/events\ \(5\).jpeg');">
+            <div class="cardtxt-rec">
+              <h3>Eco-Friendly Campaigns</h3>
+              <p>Organizing clean-up drives and environmental initiatives to protect nature.</p>
+            </div>
+          </div>
+        </div>
+        <div class="unique-square-cards">
+          <div class="unique-square-card" style="background-image: url('gallery/events\ \(2\).jpeg');">
+            <div class="cardtxt-rec">
+              <h3>Sustainable Living Education</h3>
+              <p>Teaching eco-conscious practices in schools and local communities.</p>
+            </div>
+          </div>
+          <div class="unique-square-card" style="background-image: url('gallery/events\ \(22\).jpeg');">
+            <div class="cardtxt-rec">
+              <h3>Recycling & Upcycling Programs</h3>
+              <p>Encouraging reuse of materials to reduce waste and promote a circular economy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Row: Rectangular card on the right, square cards on the left -->
+      <div class="unique-card-container">
+        <div class="unique-square-cards">
+          <div class="unique-square-card" style="background-image: url('gallery/events\ \(6\).jpeg');">
+            <div class="cardtxt-rec">
+              <h3>Community Engagement & Volunteering</h3>
+              <p>Empowering people to take action for a cleaner and greener environment.</p>
+            </div>
+          </div>
+          <div class="unique-square-card" style="background-image: url('gallery/events\ \(4\).jpeg');">
+            <div class="cardtxt-rec">
+              <h3>Workshops & Skill Development</h3>
+              <p>Providing hands-on training in sustainable crafts and environmental innovation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="unique-square-cards">
+          <div class="unique-square-card" style="background-image: url('gallery/events\ \(19\).jpeg');">
+            <div class="cardtxt-rec">
+              <h3>Donation & Resource Distribution</h3>
+              <p>Providing essential materials to support environmental and community initiatives.</p>
+            </div>
+          </div>
+          <div class="unique-square-card" style="background-image: url('gallery/events\ \(16\).jpeg');">
+            <div class="cardtxt-rec">
+              <h3>Student Leadership & Recognition</h3>
+              <p>Encouraging young changemakers to lead environmental projects and initiatives.</p>
+            </div>
+          </div>
+        </div>
+        <div class="unique-rect-card" style="background-image: url('gallery/events\ \(3\).jpeg');">
+          <div class="cardtxt-sq">
+            <h3>Eco-Tech Integration</h3>
+            <p>Leveraging technology to drive innovative and sustainable environmental solutions.</p>
+          </div>
+        </div>
+      </div>
+
+      
     </section>
 
 
 
   </section>
-<!-- 
-  <section class="section6">
-    <div class="content">
-      <h2> Our Mentors</h2>
-      <P>Our mentors are the guiding force behind our initiatives, providing invaluable expertise and support to help us achieve our mission of protecting the Himalayas and empowering local communities.</P>
-      <div class="mentor-cards">
-        <div class="mentors">
-          <div class="mentor-img"><img loading="lazy" src="gautam.jpeg"></div>
-          <div class="mentor-txt">
-            <h6>Mr. Gautam Khattar</h6>
-            <p>Mr. Gautam Khattar is a renowned social media influencer and the Founder of Stantan Mahasang. He inspires and motivates people through his unique storytelling and impactful content. His organization focuses on raising awareness about religious literature and spiritual growth, making him a significant figure in societal and spiritual enlightenment.</p>
-          </div>
-          <div class="mentor-social">
-            <a href="https://www.facebook.com/gautamkhattar2?mibextid=ZbWKwL" class="facebook"><i class="fab fa-facebook"></i></a>
-            <a href="https://x.com/GautamKhattar?t=Ts09sOhg62KtUlyVm-AWDw&s=09" class="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/khattar.gautam/profilecard/?igsh=Z2t0ODdqdWRoYXU0" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>   
-            <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>   
-          </div>
-        </div>
-        <div class="mentors">
-          <div class="mentor-img"><img loading="lazy" src="Padmabati.jpeg"></div>
-          <div class="mentor-txt">
-            <h6>Ms Padmabati Narzary</h6>
-            <p>Social Work graduate and Livelihood Advocate from the Bodo Tribe, Bijni, Assam. Post-graduate in Social Work (Livelihood and Social Entrepreneurship) from TISS-Guwahati. Passionate about sustainable social business, contributing to livelihood, health, and nutrition initiatives along the Indo-Bhutan border, and committed to making a positive impact.</p>
-          </div>
-          <div class="mentor-social">
-            <a href="https://www.facebook.com/profile.php?id=100094436576594&mibextid=ZbWKwL" class="facebook"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/padmabati12?igsh=MTNxYnZqMm5jZHJyZw%3D%3D" class="instagram"><i class="fab fa-instagram"></i></a>   
-            <a href="https://www.linkedin.com/in/padmabati-narzary-268728192/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>   
-          </div>
-        </div>
-        <div class="mentors">
-          <div class="mentor-img"><img loading="lazy" src="moni.jpeg"></div>
-          <div class="mentor-txt">
-            <h6>Miss Moni kumari</h6>
-            <p>Agronomist from Bihar with 3+ years’ experience in agriculture and rural development, working on sustainable projects in Uttarakhand. Skilled in project management, field research, and community engagement. Committed to improving farming practices, livelihoods, and sustainable development through education and grassroots leadership.</p>
-          </div>
-          <div class="mentor-social">
-            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/m.bharti70/profilecard/?igsh=MWFubG0zMWp4dWhveA%3D%3D" class="instagram"><i class="fab fa-instagram"></i></a>   
-            <a href="https://www.linkedin.com/in/moni-kumari174/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>   
-          </div>
-        </div>
-        <div class="mentors">
-          <div class="mentor-img"><img loading="lazy" src="Mentor_Vinay.jpeg"></div>
-          <div class="mentor-txt">
-            <h6>Mr Vinay Singh</h6>
-            <p>Vinay Singh, with over 15 years of experience in IT consulting and education, is a Senior Cloud Manager in Chicago. He holds a Master's from the USA and a Ph.D. in Computers from UPES, India. Vinay has authored 31 research papers, holds two patents, and published the book *Version Control*.</p>
-          </div>
-          <div class="mentor-social">
-            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>   
-            <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>   
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> 
--->
 
-
-  <section class="section-team">
+  <section class="section-team mentor">
     <h2>Our Mentors</h2>
-    <P>Our mentors are the guiding force behind our initiatives, providing invaluable expertise and support to help us achieve our mission of protecting the Himalayas and empowering local communities.</P>
+    <P>Our mentors are the guiding force behind our initiatives, providing invaluable expertise and support to help us
+      achieve our mission of protecting the Himalayas and empowering local communities.</P>
     <div class="carousel-container">
-        <button class="arrow left" onclick="scrollTeamLeft()">&#10094;</button>
-        <div class="team-cards-wrapper">
-          <div class="team-cards">
+      <button class="arrow left" onclick="scrollTeamLeft()">&#10094;</button>
+      <div class="team-cards-wrapper">
+        <div class="team-cards">
 
 
-            <div class="team-member">
-              <div class="team-img">
-                <img loading="lazy" src="KS Pic.JPG" alt="Team Member 4">
-              </div>
-              <div class="team-info">
-                <h6>Mr. Kumar Subham</h6>
-                <p>Kumar Subham is a policy enthusiast by heart and a social entrepreneur by work. He holds a Bachelors in Computer Science from IIT Delhi and serves as an advisor and was the founding director for Sewa Fellowship at Sewa International and part of the working committee at Chanakya University.</p>
-              </div>
-            </div> 
-
-            <div class="team-member">
-              <div class="team-img">
-                <img loading="lazy" src="gautam.jpeg" alt="Team Member 1">
-              </div>
-              <div class="team-info">
-                <h6>Mr. Gautam Khattar</h6>
-                <p>Mr. Gautam Khattar is a renowned social media influencer and the Founder of Stantan Mahasang. He inspires and motivates people through his unique storytelling and impactful content. His organization focuses on raising awareness about religious literature and spiritual growth, making him a significant figure in societal and spiritual enlightenment.</p>
-              </div>
+          <div class="team-member">
+            <div class="team-img">
+              <img loading="lazy" src="KS Pic.JPG" alt="Team Member 4">
             </div>
-        
-            <div class="team-member">
-              <div class="team-img">
-                <img loading="lazy" src="Padmabati.jpeg" alt="Team Member 2">
-              </div>
-              <div class="team-info">
-                <h6>Ms Padmabati Narzary</h6>
-                <p>Social Work graduate and Livelihood Advocate from the Bodo Tribe, Bijni, Assam. Post-graduate in Social Work (Livelihood and Social Entrepreneurship) from TISS-Guwahati. Passionate about sustainable social business, contributing to livelihood, health, and nutrition initiatives along the Indo-Bhutan border, and committed to making a positive impact.</p>
-              </div>
+            <div class="team-info">
+              <h6>Mr. Kumar Subham</h6>
+              <p>Kumar Subham is a policy enthusiast by heart and a social entrepreneur by work. He holds a Bachelors in
+                Computer Science from IIT Delhi and serves as an advisor and was the founding director for Sewa
+                Fellowship at Sewa International and part of the working committee at Chanakya University.</p>
             </div>
-        
-            <div class="team-member">
-              <div class="team-img">
-                <img loading="lazy" src="moni.jpeg" alt="Team Member 3">
-              </div>
-              <div class="team-info">
-                <h6>Miss Moni kumari</h6>
-                <p>Agronomist from Bihar with 3+ years’ experience in agriculture and rural development, working on sustainable projects in Uttarakhand. Skilled in project management, field research, and community engagement. Committed to improving farming practices, livelihoods, and sustainable development through education and grassroots leadership.</p>
-              </div>
-            </div>
-        
-            <div class="team-member">
-              <div class="team-img">
-                <img loading="lazy" src="Mentor_Vinay.jpeg" alt="Team Member 4">
-              </div>
-              <div class="team-info">
-                <h6>Mr Vinay Singh</h6>
-                <p>Vinay Singh, with over 15 years of experience in IT consulting and education, is a Senior Cloud Manager in Chicago. He holds a Master's from the USA and a Ph.D. in Computers from UPES, India. Vinay has authored 31 research papers, holds two patents, and published the book *Version Control*.</p>
-            </div>
-            </div>
-      
-           
           </div>
-        </div>
-        <button class="arrow right" onclick="scrollTeamRight()">&#10095;</button>
-    </div>
-</section>
 
+          <div class="team-member">
+            <div class="team-img">
+              <img loading="lazy" src="gautam.jpeg" alt="Team Member 1">
+            </div>
+            <div class="team-info">
+              <h6>Mr. Gautam Khattar</h6>
+              <p>Mr. Gautam Khattar is a renowned social media influencer and the Founder of Stantan Mahasang. He
+                inspires and motivates people through his unique storytelling and impactful content. His organization
+                focuses on raising awareness about religious literature and spiritual growth, making him a significant
+                figure in societal and spiritual enlightenment.</p>
+            </div>
+          </div>
 
-<!-- 
-  <section class="section-team">
-    <h2>Our Team</h2>
-    <p>Meet the dedicated individuals behind HimVillageePrahari, who work tirelessly to protect the Himalayas and empower local communities.</p>
-  
-    <div class="team-cards">
-      <div class="team-member">
-        <div class="team-img">
-          <img loading="lazy" src="g4.jpg" alt="Team Member 1">
-        </div>
-        <div class="team-info">
-          <h6>Mr. Sumit Singh</h6>
-          <p><strong>Founder & CEO</strong></p>
-          <p>Meet Mr. Sumit Singh from Rudraprayag, Uttarakhand—a passionate advocate for social change and environmental 
-            conservation. His journey includes impactful work with the UN Development Programme, focusing on youth 
-            empowerment and sustainability.
-            
-            As a fellow with Sewa International Bharat (2023-2025), Sumit has led significant projects, including 
-            'Plastic Waste Management' in Madhya Pradesh, aimed at enhancing the livelihoods of rag-pickers 
-            through the innovative 'Waste to Wealth' concept. He also founded “Him Village ePrahari” in Haridwar,
-            a registered non-profit dedicated to sustainable waste management and building zero-waste villages.</p>
-        </div>
-      </div>
-  
-      <div class="team-member">
-        <div class="team-img">
-          <img loading="lazy" src="Sushant.jpeg" alt="Team Member 2">
-        </div>
-        <div class="team-info">
-          <h6>Mr. Sushant Singh</h6>
-          <p><strong>Co-Founder & Social Work Professional </strong></p>
-          <p>Sushant Kumar  is a dedicated social worker and youth advocate with a passion for empowering young people and creating sustainable communities. With over 5,000 youth mentored through STEP-AHEAD INDIA, Sushant has played a pivotal role in shaping futures through education and career guidance.  
-            
-            As a Gandhi Fellow (2022-2024), Sushant collaborated with the Government of Jharkhand on critical initiatives such as FLN, Samriddhi, Physical Literacy, Digital Literacy, and Svay Pana, working with over 300 students across 4 schools to connect them with higher education and career opportunities.
-            
-            Currently, as Co-Founder of Him Village Eprahari Foundation, Sushant leads efforts to build sustainable.</p>
-        </div>
-      </div>
-  
-      <div class="team-member">
-        <div class="team-img">
-          <img loading="lazy" src="team3.jpg" alt="Team Member 3">
-        </div>
-        <div class="team-info">
-          <h6>Mr. Vashist Kumar Pandey</h6>
-          <p><strong>Community Engagement Coordinator</strong></p>
-          <p>Vashist Kumar Pandey, a dedicated advocate for social transformation, leverages his academic background in History and Journalism to foster positive change. As Him Village ePrahari's Social Impact & Community Engagement Coordinator, Vashist leads grassroots initiatives that empower local communities, particularly focusing on youth-driven projects that address sustainability and societal growth. His leadership inspires action and encourages active participation in building a better future for the region.</p>
-        </div>
-      </div>
-  
-      <div class="team-member">
-        <div class="team-img">
-          <img loading="lazy" src="Sanjeev.jpg" alt="Team Member 4">
-        </div>
-        <div class="team-info">
-          <h6>Mr. A M Sanjeev</h6>
-          <p><strong>Education Coordinator and Technical Head</strong></p>
-          <p>Mr. A M Sanjeev is a passionate advocate for sustainable development and community empowerment. Serving as both the Education Coordinator and Technical Head, he leads educational initiatives while managing the NGO’s website, email communications, and event coordination. Sanjeev’s role is central to fostering skill development, promoting cleanliness, zero waste efforts. His leadership in both technical and community-driven projects ensures the NGO's mission of sustainable growth and environmental awareness is effectively carried out.</p>
-        </div>
-      </div>
+          <div class="team-member">
+            <div class="team-img">
+              <img loading="lazy" src="Padmabati.jpeg" alt="Team Member 2">
+            </div>
+            <div class="team-info">
+              <h6>Ms Padmabati Narzary</h6>
+              <p>Social Work graduate and Livelihood Advocate from the Bodo Tribe, Bijni, Assam. Post-graduate in Social
+                Work (Livelihood and Social Entrepreneurship) from TISS-Guwahati. Passionate about sustainable social
+                business, contributing to livelihood, health, and nutrition initiatives along the Indo-Bhutan border,
+                and committed to making a positive impact.</p>
+            </div>
+          </div>
 
-      <div class="team-member">
-        <div class="team-img">
-          <img loading="lazy" src="Sanjeev.jpg" alt="Team Member 4">
-        </div>
-        <div class="team-info">
-          <h6>Mr. A M Sanjeev</h6>
-          <p><strong>Education Coordinator and Technical Head</strong></p>
-          <p>Mr. A M Sanjeev is a passionate advocate for sustainable development and community empowerment. Serving as both the Education Coordinator and Technical Head, he leads educational initiatives while managing the NGO’s website, email communications, and event coordination. Sanjeev’s role is central to fostering skill development, promoting cleanliness, zero waste efforts. His leadership in both technical and community-driven projects ensures the NGO's mission of sustainable growth and environmental awareness is effectively carried out.</p>
-        </div>
-      </div>      <div class="team-member">
-        <div class="team-img">
-          <img loading="lazy" src="Sanjeev.jpg" alt="Team Member 4">
-        </div>
-        <div class="team-info">
-          <h6>Mr. A M Sanjeev</h6>
-          <p><strong>Education Coordinator and Technical Head</strong></p>
-          <p>Mr. A M Sanjeev is a passionate advocate for sustainable development and community empowerment. Serving as both the Education Coordinator and Technical Head, he leads educational initiatives while managing the NGO’s website, email communications, and event coordination. Sanjeev’s role is central to fostering skill development, promoting cleanliness, zero waste efforts. His leadership in both technical and community-driven projects ensures the NGO's mission of sustainable growth and environmental awareness is effectively carried out.</p>
+          <div class="team-member">
+            <div class="team-img">
+              <img loading="lazy" src="moni.jpeg" alt="Team Member 3">
+            </div>
+            <div class="team-info">
+              <h6>Miss Moni kumari</h6>
+              <p>Agronomist from Bihar with 3+ years’ experience in agriculture and rural development, working on
+                sustainable projects in Uttarakhand. Skilled in project management, field research, and community
+                engagement. Committed to improving farming practices, livelihoods, and sustainable development through
+                education and grassroots leadership.</p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-img">
+              <img loading="lazy" src="Mentor_Vinay.jpeg" alt="Team Member 4">
+            </div>
+            <div class="team-info">
+              <h6>Mr Vinay Singh</h6>
+              <p>Vinay Singh, with over 15 years of experience in IT consulting and education, is a Senior Cloud Manager
+                in Chicago. He holds a Master's from the USA and a Ph.D. in Computers from UPES, India. Vinay has
+                authored 31 research papers, holds two patents, and published the book Version Control.</p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-img">
+              <img loading="lazy" src="nares.jpg" alt="Team Member 4">
+            </div>
+            <div class="team-info">
+              <h6>Mr Naresh Sijapati</h6>
+              <p>Naresh Sijapati is a dedicated social entrepreneur and the founder/CEO of Online Saathi & Panah Foundation, a transformative social enterprise focused on empowering informal workers across India. With a profound grassroots understanding of the challenges faced by this sector, Naresh has spearheaded an innovative model that has positively impacted over 36000+ Informal workers 1000+ Saathis(NitiMitras) Networks across 15 states.</p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-img">
+              <img loading="lazy" src="ajay.jpg" alt="Team Member 4">
+            </div>
+            <div class="team-info">
+              <h6>Mr. Ajay</h6>
+              <p></p>
+            </div>
+          </div>
+
         </div>
       </div>
-      
+      <button class="arrow right" onclick="scrollTeamRight()">&#10095;</button>
     </div>
   </section>
--->
 
-   
-<section class="section-team">
+  <section class="section-team">
     <h2>Our Team</h2>
-    <p>Meet the dedicated individuals behind HimVillageePrahari, who work tirelessly to protect the Himalayas and empower local communities.</p>
+    <p>Meet the dedicated individuals behind Him Village ePrahari Foundation, who work tirelessly to protect the Himalayas and
+      empower local communities.</p>
 
     <div class="carousel-container">
+      <button class="arrow left" onclick="scrollTeamLeft()">&#10094;</button>
+      <div class="team-cards-wrapper">
+        <div class="team-cards">
+          <div class="team-member">
+            <div class="team-img">
+
+              <img loading="lazy" src="Sushant.jpeg" alt="Team Member 1">
+
+            </div>
+            <div class="team-info">
+              <h6>Mr. Sumit Singh</h6>
+              <p><strong>Founder & CEO</strong></p>
+              <p>Mr. Sumit Singh from Rudraprayag, Uttarakhand, is a passionate advocate for social change and
+                environmental conservation. His work with the UN Development Programme focuses on youth empowerment and
+                sustainability. As a Sewa International Bharat fellow (2023-2025), he led 'Plastic Waste Management' in
+                Madhya Pradesh. Sumit also founded “Him Village ePrahari Foundation,” a non-profit in Haridwar dedicated to
+                sustainable waste management and building zero-waste villages.</p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-img">
+              <img loading="lazy" src="g4.jpeg" alt="Team Member 2">
+            </div>
+            <div class="team-info">
+              <h6>Mr. Sushant Kumar</h6>
+              <p><strong>Co-Founder & Social Work Professional </strong></p>
+              <p>Sushant Kumar is a dedicated social worker and youth advocate, empowering over 5,000 young people
+                through STEP-AHEAD INDIA. As a Gandhi Fellow (2022-2024), he collaborated with the Jharkhand government
+                on key initiatives like FLN, Physical Literacy, and Digital Literacy, impacting 300+ students across
+                four schools. Currently, as Co-Founder of Him Village Eprahari Foundation, Sushant leads sustainable
+                development efforts in rural communities.</p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-img">
+              <img loading="lazy" src="Sanjeev.jpg" alt="Team Member 4">
+            </div>
+            <div class="team-info">
+              <h6>Mr. A M Sanjeev</h6>
+              <p><strong>Education Coordinator and Technical Head</strong></p>
+              <p>Mr. A M Sanjeev is Education Coordinator and Technical Head at Him Village ePrahari Foundation, he leads educational initiatives and manages the NGO’s website, communications, and event coordination. Sanjeev plays a key role in promoting
+                cleanliness, zero waste efforts, and skill development. His leadership ensures the NGO's mission of
+                sustainable growth and environmental awareness is effectively implemented.</p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-img">
+              <img loading="lazy" src="prakash.jpeg" alt="Team Member 4">
+            </div>
+            <div class="team-info">
+              <h6>Mr. Prakash Gopal Singh</h6>
+              <p><strong>Public Relations Advisor</strong></p>
+              <p>Prakash Gopal Singh holds a Diploma in Mass Communication, Social Media, and Public Relations from IMMT
+                Institute, Dehradun. He currently serves as the Bureau Chief for Hastakshep Media Pvt Ltd, where he
+                manages media relations and oversees editorial content. With over 9 years of experience in media and
+                public relations, Prakash has worked in both print and social media, representing and promoting
+                reputable brands</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="arrow right" onclick="scrollTeamRight()">&#10095;</button>
+    </div>
+  </section>
+
+
+
+
+  <section class="section8">
+    <div id="volunteer-ready">
+      <img loading="lazy"
+        src="Human Hand Tree for Culture Diversity Concept Stock Vector - Illustration of love, hands_ 119811352.jpg"
+        alt="Image 1">
+    </div>
+    <div id="volunteer-text-box">
+      <h3>Are You A Volunteer Ready?</h3>
+      <p>Join us in our mission to protect the Himalayas and empower local communities. Together, we can make a
+        difference.</p>
+      <button class="volunteer-btn">Join Us</button>
+    </div>
+  </section>
+
+
+
+
+  <!-- <section class="section9 section-team">
+    <h2 id="our-valun-heading">Our Volunteers</h2>
+    <p id="our-valun-pr">Our volunteers are the heart and soul of our organization, dedicating their time, skills, and
+      passion to protect the Himalayas and uplift local communities. Meet some of the incredible individuals who are
+      making a difference through their commitment and hard work.</p>
+  
+      <div class="carousel-container">
         <button class="arrow left" onclick="scrollTeamLeft()">&#10094;</button>
         <div class="team-cards-wrapper">
           <div class="team-cards">
-            <div class="team-member">
-              <div class="team-img">
-
-                <img loading="lazy" src="Sushant.jpeg" alt="Team Member 1">
-
-              </div>
-              <div class="team-info">
-                <h6>Mr. Sumit Singh</h6>
-                <p><strong>Founder & CEO</strong></p>
-                <p>Mr. Sumit Singh from Rudraprayag, Uttarakhand, is a passionate advocate for social change and environmental conservation. His work with the UN Development Programme focuses on youth empowerment and sustainability. As a Sewa International Bharat fellow (2023-2025), he led 'Plastic Waste Management' in Madhya Pradesh. Sumit also founded “Him Village ePrahari,” a non-profit in Haridwar dedicated to sustainable waste management and building zero-waste villages.</p>
-              </div>
-            </div>
-        
-            <div class="team-member">
-              <div class="team-img">
-                <img loading="lazy" src="g4.jpeg" alt="Team Member 2">
-              </div>
-              <div class="team-info">
-                <h6>Mr. Sushant Kumar</h6>
-                <p><strong>Co-Founder & Social Work Professional </strong></p>
-                <p>Sushant Kumar is a dedicated social worker and youth advocate, empowering over 5,000 young people through STEP-AHEAD INDIA. As a Gandhi Fellow (2022-2024), he collaborated with the Jharkhand government on key initiatives like FLN, Physical Literacy, and Digital Literacy, impacting 300+ students across four schools. Currently, as Co-Founder of Him Village Eprahari Foundation, Sushant leads sustainable development efforts in rural communities.</p>
-              </div>
-            </div>
-        
-            <div class="team-member">
-              <div class="team-img">
-                <img loading="lazy" src="vasisth.jpg" alt="Team Member 3">
-              </div>
-              <div class="team-info">
-                <h6>Mr. Vashist Kumar Pandey</h6>
-                <p><strong>Community Engagement Coordinator</strong></p>
-                <p>Vashist Kumar Pandey, an advocate for social transformation, uses his academic background in History and Journalism to drive positive change. As the Social Impact & Community Engagement Coordinator at Him Village ePrahari, he leads grassroots initiatives that empower local communities. His focus is on youth-driven projects promoting sustainability and societal growth, inspiring action and encouraging participation to build a better future for the region.</p>
-              </div>
-            </div>
-        
             <div class="team-member">
               <div class="team-img">
                 <img loading="lazy" src="Sanjeev.jpg" alt="Team Member 4">
@@ -489,10 +494,14 @@
               <div class="team-info">
                 <h6>Mr. A M Sanjeev</h6>
                 <p><strong>Education Coordinator and Technical Head</strong></p>
-                <p>Mr. A M Sanjeev is a passionate advocate for sustainable development and community empowerment. As Education Coordinator and Technical Head at Him Village ePrahari, he leads educational initiatives and manages the NGO’s website, communications, and event coordination. Sanjeev plays a key role in promoting cleanliness, zero waste efforts, and skill development. His leadership ensures the NGO's mission of sustainable growth and environmental awareness is effectively implemented.</p>
+                <p>Mr. A M Sanjeev is a passionate advocate for sustainable development and community empowerment. As
+                  Education Coordinator and Technical Head at Him Village ePrahari, he leads educational initiatives and
+                  manages the NGO’s website, communications, and event coordination. Sanjeev plays a key role in promoting
+                  cleanliness, zero waste efforts, and skill development. His leadership ensures the NGO's mission of
+                  sustainable growth and environmental awareness is effectively implemented.</p>
               </div>
             </div>
-      
+  
             <div class="team-member">
               <div class="team-img">
                 <img loading="lazy" src="prakash.jpeg" alt="Team Member 4">
@@ -500,267 +509,327 @@
               <div class="team-info">
                 <h6>Mr. Prakash Gopal Singh</h6>
                 <p><strong>Public Relations Advisor</strong></p>
-                <p>Prakash Gopal Singh holds a Diploma in Mass Communication, Social Media, and Public Relations from IMMT Institute, Dehradun. He currently serves as the Bureau Chief for Hastakshep Media Pvt Ltd, where he manages media relations and oversees editorial content. With over 9 years of experience in media and public relations, Prakash has worked in both print and social media, representing and promoting reputable brands</p>
+                <p>Prakash Gopal Singh holds a Diploma in Mass Communication, Social Media, and Public Relations from IMMT
+                  Institute, Dehradun. He currently serves as the Bureau Chief for Hastakshep Media Pvt Ltd, where he
+                  manages media relations and oversees editorial content. With over 9 years of experience in media and
+                  public relations, Prakash has worked in both print and social media, representing and promoting
+                  reputable brands</p>
               </div>
-            </div>            
+            </div>
           </div>
         </div>
         <button class="arrow right" onclick="scrollTeamRight()">&#10095;</button>
-    </div>
-</section>
+      </div>
 
-<script>
-let scrollAmount = 0;
+  </section> -->
 
-function scrollTeamRight() {
-    const cards = document.querySelector('.team-cards');
-    const cardWidth = document.querySelector('.team-member').offsetWidth;
-    const visibleAreaWidth = document.querySelector('.team-cards-wrapper').offsetWidth;
-    const totalScrollWidth = cards.scrollWidth;
+  <section class="section-team volunteers">
+    <h2 id="our-valun-heading" style="margin: 5px 0;" >Our Volunteers</h2>
+    <p id="our-valun-pr">Our volunteers are the heart and soul of our organization, dedicating their time, skills, and
+      passion to protect the Himalayas and uplift local communities. Meet some of the incredible individuals who are
+      making a difference through their commitment and hard work.</p>
 
-    // Only scroll if there's more content to scroll to
-    if (scrollAmount + visibleAreaWidth < totalScrollWidth) {
-        scrollAmount += cardWidth + 20; // 20 is the gap between cards
-        cards.style.transform = `translateX(-${scrollAmount}px)`;
-    }
-}
+    <div class="carousel-container">
+      <button class="arrow left" onclick="scrollTeamLeft()">&#10094;</button>
+      <div class="team-cards-wrapper">
+        <div class="team-cards">
 
-function scrollTeamLeft() {
-    const cards = document.querySelector('.team-cards');
-    const cardWidth = document.querySelector('.team-member').offsetWidth;
+            <div class="team-member">
+              <div class="team-img">
+  
+                <img loading="lazy" src="Atual 1.jpg" alt="Team Member 1">
+  
+              </div>
+              <div class="team-info">
+                <h6>Mr. Atul Kumar</h6>
+                <p>Atul Kumar, from Bareilly, Uttar Pradesh, now resides in Haridwar, Uttarakhand. He graduated in Psychology
+                  from Gurukul Kangri University in 2021 and completed his master’s in 2023. Currently pursuing a diploma in
+                  Guidance and Counseling at Jamia Millia Islamia University, Atul is passionate about helping others and
+                  understanding human behavior.</p>
+              </div>
+            </div>
+  
+            <div class="team-member">
+              <div class="team-img">
+                <img loading="lazy" src="Jasveer.jpeg" alt="Team Member 2">
+              </div>
+              <div class="team-info">
+                <h6>Mr. Jasveer Singh</h6>
+                <p>Jasveer Singh, from Sirmour district in Himachal Pradesh, holds a post-graduate degree in Clinical
+                  Psychology and is pursuing a diploma in Guidance and Counseling. With a strong interest in counseling, she
+                  aspires to make a meaningful impact in mental health and guidance counseling, helping individuals navigate
+                  their challenges.</p>
+              </div>
+            </div>
+  
+            <div class="team-member">
+              <div class="team-img">
+                <img loading="lazy" src="vasistha.jpg" alt="Team Member 3">
+              </div>
+              <div class="team-info">
+                <h6>Mr. Vashist Kumar Pandey</h6>
+                <p>Vashist Kumar Pandey, an advocate for social transformation, uses his academic background in History
+                  and Journalism to drive positive change. As the Social Impact & Community Engagement Coordinator at Him
+                  Village ePrahari Foundation, he leads grassroots initiatives that empower local communities. His focus is on
+                  youth-driven projects promoting sustainability and societal growth, inspiring action and encouraging
+                  participation to build a better future for the region.</p>
+              </div>
+            </div>
+  
 
-    // Log the current scroll amount
-    console.log(`Current scroll amount before scrolling left: ${scrollAmount}`);
 
-    // Ensure scrollAmount doesn't go below zero
-    if (scrollAmount > 0) {
-        scrollAmount -= cardWidth + 20; // 20 is the gap between cards
-        // Prevent scrollAmount from going negative
-        if (scrollAmount < 0) {
-            scrollAmount = 0;
-        }
-        cards.style.transform = `translateX(-${scrollAmount}px)`;
-    }
-}
-</script>
 
-    
-  <section class="section8">
-    <div id="volunteer-ready">    
-      <img loading="lazy" src="Human Hand Tree for Culture Diversity Concept Stock Vector - Illustration of love, hands_ 119811352.jpg" alt="Image 1">
-    </div>
-    <div id="volunteer-text-box">
-      <h3>Are You A Volunteer Ready?</h3>
-      <p>Join us in our mission to protect the Himalayas and empower local communities. Together, we can make a difference.</p>
-      <button class="volunteer-btn">Join Us</button>
+          <div class="team-member">
+            <div class="team-img">
+              <img loading="lazy" src="aditya.jpg" alt="Team Member 4">
+            </div>
+            <div class="team-info">
+              <h6>Mr. Aditya</h6>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-img">
+              <img loading="lazy" src="paras.jpg" alt="Team Member 4">
+            </div>
+            <div class="team-info">
+              <h6>Mr. Paras</h6>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-img">
+              <img loading="lazy" src="aman.jpg" alt="Team Member 4">
+            </div>
+            <div class="team-info">
+              <h6>Mr. Aman Rawat</h6>
+              <p></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="arrow right" onclick="scrollTeamRight()">&#10095;</button>
     </div>
   </section>
 
-  <!-- <section class="section9">
-    <h2>Our Volunteers</h2>
-    <p>Our volunteers are the heart and soul of our organization, dedicating their time, skills, and passion to protect the Himalayas and uplift local communities. Meet some of the incredible individuals who are making a difference through their commitment and hard work.</p>
-    <div class="team-cards">
-        <div class="team-member">
-            <div class="team-img">
-                <img loading="lazy" src="Atul.jpeg" alt="">
-            </div>
-            <div class="team-info">
-                <h6>Mr. Atul Kumar</h6>
-                <p>Atul Kumar, originally from Bareilly, Uttar Pradesh, and currently living in Haridwar, Uttarakhand, completed his graduation in Psychology in 2021 from Gurukul Kangri University. He later completed his master’s in the same field in 2023 and is now pursuing a diploma in Guidance and Counseling from Jamia Millia Islamia University. His passion for helping others is driven by his interest in understanding human behavior and his strong decision-making and problem-solving skills.</p>
-            </div>
-        </div>
-        <div class="team-member">
-            <div class="team-img">
-                <img loading="lazy" src="Jasveer.jpeg" alt="">
-            </div>
-            <div class="team-info">
-                <h6>Mr. Jasveer Singh</h6>
-                <p>Jasveer Singh hails from Himachal Pradesh’s Sirmour district. She holds a post-graduate degree in Clinical Psychology and is currently pursuing a post-graduate diploma in Guidance and Counseling. With a keen interest in counseling, she aims to make a meaningful impact in the field of mental health and guidance counseling.</p>
-            </div>
-        </div>
-    </div>
-</section> -->
 
-
-<section class="section9">
-  <h2 id="our-valun-heading">Our Volunteers</h2>
-  <p id="our-valun-pr">Our volunteers are the heart and soul of our organization, dedicating their time, skills, and passion to protect the Himalayas and uplift local communities. Meet some of the incredible individuals who are making a difference through their commitment and hard work.</p>
-  <div class="volunteer-cards">
-      <div class="volunteer-member">
-          <div class="volunteer-img">
-              <img loading="lazy" src="Atual 1.jpg" alt="">
-          </div>
-          <div class="volunteer-info">
-              <h6>Mr. Atul Kumar</h6>
-              <p>Atul Kumar, from Bareilly, Uttar Pradesh, now resides in Haridwar, Uttarakhand. He graduated in Psychology from Gurukul Kangri University in 2021 and completed his master’s in 2023. Currently pursuing a diploma in Guidance and Counseling at Jamia Millia Islamia University, Atul is passionate about helping others and understanding human behavior.</p>
-          </div>
-      </div>
-      <div class="volunteer-member">
-          <div class="volunteer-img">
-              <img loading="lazy" src="Jasveer.jpeg" alt="">
-          </div>
-          <div class="volunteer-info">
-              <h6>Mr. Jasveer Singh</h6>
-              <p>Jasveer Singh, from Sirmour district in Himachal Pradesh, holds a post-graduate degree in Clinical Psychology and is pursuing a diploma in Guidance and Counseling. With a strong interest in counseling, she aspires to make a meaningful impact in mental health and guidance counseling, helping individuals navigate their challenges.</p>
-          </div>
-      </div>
-      <!-- Add more volunteers as needed -->
-  </div>
-</section>
-
-
-<section class="section10">
+  <section class="section10">
     <h3>Contact Us</h3>
-    <p id="contact-us-para">Get in touch with us to learn more about our initiatives, volunteer opportunities, and how you can support our mission.</p>
-    
-    <div class="contact-info">
-        <div class="address">
-            <h3>Our Address</h3>
-            <p>HIM VILLAGE E-prahari FOUNDATION is C/o Kamla Devi, Ramnagar, Ajabpur, Dehradun, Dehradun, Uttarakhand, India, 248121.</p>
-        </div>
-        <div class="map">
-            <h3>Find Us Here</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.948853215907!2d78.17468371513244!3d29.945691581915454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092915619b64e7%3A0x4d9e4b2e7fa99d1c!2sHaridwar%2C%20Uttarakhand%2C%20India!5e0!3m2!1sen!2sus!4v1635403298141!5m2!1sen!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </div>
-    
-    <div class="contact-form">
-        <form action="submit.php" method="POST">
-            <div class="form-group form-group-half" style="margin-right: 25px;">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>  
-            </div>
-            <div class="form-group form-group-half">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group form-group-half" style="width: 100%;">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <br>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Submit</button>
-        </form>
-    </div>
-</section>
-<div class="footerContainer">
+    <p id="contact-us-para">Get in touch with us to learn more about our initiatives, volunteer opportunities, and how
+      you can support our mission.</p>
 
-  <footer class="footer">
-    <div class="footerRow">
-      <div id="firstFooterCol" class="footercol">
-          <img class="logo" src="HIM VILLAGE E.png" alt="">
-          <p class="aboutInFooter">We are dedicated to preserving the natural beauty of the Himalayas in Uttarakhand by empowering rural communities. Through education, waste management, and sustainable practices.</p>
+    <div class="contact-info">
+      <div class="address">
+        <h3>Our Address</h3>
+        <p>HIM VILLAGE E-PRAHARI FOUNDATION is C/o Kamla Devi, Ramnagar, Ajabpur, Dehradun, Dehradun, Uttarakhand,
+          India, 248121.</p>
       </div>
-      <div id="office" class="footercol">
-          <h3 class="cardo-regular">OUR OFFICE<div class="underline"><span></span></div></h3>
+      <div class="map">
+        <h3>Find Us Here</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.948853215907!2d78.17468371513244!3d29.945691581915454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092915619b64e7%3A0x4d9e4b2e7fa99d1c!2sHaridwar%2C%20Uttarakhand%2C%20India!5e0!3m2!1sen!2sus!4v1635403298141!5m2!1sen!2sus"
+          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <form action="submit.php" method="POST">
+        <div class="form-group form-group-half" style="margin-right: 25px;">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group form-group-half">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group form-group-half" style="width: 100%;">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <br>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </section>
+  <div class="footerContainer">
+
+    <footer class="footer">
+      <div class="footerRow">
+        <div id="firstFooterCol" class="footercol">
+          <img class="logo" src="HIM VILLAGE E.png" alt="">
+          <p class="aboutInFooter">We are dedicated to preserving the natural beauty of the Himalayas in Uttarakhand by
+            empowering rural communities. Through education, waste management, and sustainable practices.</p>
+        </div>
+        <div id="office" class="footercol">
+          <h3 class="cardo-regular">OUR OFFICE<div class="underline"><span></span></div>
+          </h3>
           <div class="footerLocation">
             <i class="fa-solid fa-location-crosshairs"></i>
-            <p>Him Village E-prahari Foundation C/o Kamla Devi</p>
+            <p>Him Village ePrahari Foundation C/o Kamla Devi</p>
 
           </div>
           <div class="footerLocation2">
-              <i  class="fa-solid fa-magnifying-glass"></i>
-              <p>Ramnagar,Ajabpur,Dehradun,Dehradun Uttarakhand PIN 248121,India </p>
-            </div>
-            <!-- <p>Uttarakhand PIN 248121,India</p> -->
-            <div class="emailHere">
-              <i class="fa-regular fa-envelope"></i>
-              <p class="email-id"> admin@himvillageprahari.org</p>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <p>Ramnagar,Ajabpur,Dehradun,Dehradun Uttarakhand PIN 248121,India </p>
+          </div>
+          <!-- <p>Uttarakhand PIN 248121,India</p> -->
+          <div class="emailHere">
+            <i class="fa-regular fa-envelope"></i>
+            <p class="email-id"> admin@himvillageprahari.org</p>
           </div>
           <div class="telephoneInfo">
-              <i class="fa-solid fa-phone"></i>
-              <h4>+91 8057646822</h4>
+            <i class="fa-solid fa-phone"></i>
+            <h4>+91 8057646822</h4>
           </div>
-      </div>
-      <div class="footercol">
-        <h3>OUR WORKS <div class="underline"><span></span></div></h3>
-        <ul >
+        </div>
+        <div class="footercol">
+          <h3>OUR WORKS <div class="underline"><span></span></div>
+          </h3>
+          <ul>
             <li><a href="">What we do</a></li>
             <li><a href="">How we use data</a></li>
             <li><a href="">Where we work</a></li>
             <li><a href="">Stories from field</a></li>
             <li><a href="blog.html">Blogs</a></li>
             <li><a href="">Visit Gallery</a></li>
-            </ul>
-      </div>
-      <div id="footerScanAndDonate" class="footercol">
-        <h3>
-          SCAN AND DONATE
-         <div class="underline">
-          <span></span>
-         </div>
-        </h3 >
-       <img  src="donation.jpg" alt="">
-      <!-- <div class="social-icons">
+          </ul>
+        </div>
+        <div id="footerScanAndDonate" class="footercol">
+          <h3>
+            SCAN AND DONATE
+            <div class="underline">
+              <span></span>
+            </div>
+          </h3>
+          <img src="QRC.jpeg" alt="">
+          <!-- <div class="social-icons">
           <i class="fa-brands fa-facebook"></i>
           <i class="fa-brands fa-linkedin"></i>
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-whatsapp"></i>
 
         </div>  -->
-      </div>
-    </div>
-    <hr>
-    <section>
-      <h3 id="joinN">JOIN OUR NEWSLETTER <div class="underline">
-        <span></span>
-       </div></h3>
-
-      <section class="newsletterSection">
-        <div class="outerNewsletter">
-        <div class="blurBlack"></div>
-        <div class="contentNewsletter">
-          <h3>Subscribe and Stay Connected With Us</h3>
-          <p>Be the first to know about our moving stories, new projects and opportunities. Join our community of changemakers today!</p>
-
-          <form action="">
-            <div class="textField">
-              <i class="fa-solid fa-user"></i>
-              <input type="text" placeholder="Enter your name">
-
-            </div>
-            <div class="emailField">
-              <i class="fa-solid fa-envelope"></i>
-              <input type="email" placeholder="Enter your email">
-            </div>
-            <button type="submit">Subscribe</button>
-          </form>
         </div>
       </div>
-    </section>
-  </section>
-    <hr>
-    <div class="footerCopyrightSection">
-      
-      <p class="copyright">Copyright &copy;2024 <span>Him Village ePrahari</span>.All Right Reserved.</p>
-      <div class="social-icons">
-       <a target="_blank" href=""> <i class="fa-brands fa-facebook"></i></a>
-       <a target="_blank" href="https://www.linkedin.com/company/him-village-eprahari/"> <i class="fa-brands fa-linkedin"></i></a>
-        <a target="_blank" href="https://www.instagram.com/himvillageprahari/?igsh=eHF2bmpqMmhtbmE3#"><i class="fa-brands fa-instagram"></i></a>
-        <a  target="_blank" href=""><i class="fa-brands fa-whatsapp"></i></a>
+      <hr>
+      <section>
+        <h3 id="joinN">JOIN OUR NEWSLETTER <div class="underline">
+            <span></span>
+          </div>
+        </h3>
 
-      </div> 
-    </div>
-</footer>
-</div>
+        <section class="newsletterSection">
+          <div class="outerNewsletter">
+            <div class="blurBlack"></div>
+            <div class="contentNewsletter">
+              <h3>Subscribe and Stay Connected With Us</h3>
+              <p>Be the first to know about our moving stories, new projects and opportunities. Join our community of
+                changemakers today!</p>
 
-<!-- Footer -->
-<!-- <footer class="footer">
-  <div class="social-media-icons">
-    <a href="https://www.linkedin.com/company/him-village-eprahari/posts/?feedView=all" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://www.instagram.com/yourprofile" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+              <form action="">
+                <div class="textField">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" placeholder="Enter your name">
+
+                </div>
+                <div class="emailField">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" placeholder="Enter your email">
+                </div>
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </section>
+      <hr>
+      <div class="footerCopyrightSection">
+
+        <p class="copyright">Copyright &copy;2025 <span>Him Village ePrahari Foundation</span>.All Right Reserved.</p>
+        <div class="social-icons">
+          <a target="_blank" href="https://www.facebook.com/people/Him-village-Eprahari/61565435241173/#"> <i class="fa-brands fa-facebook"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/company/him-village-eprahari/"> <i
+              class="fa-brands fa-linkedin"></i></a>
+          <a target="_blank" href="https://www.instagram.com/himvillageprahari/?igsh=eHF2bmpqMmhtbmE3#"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a target="_blank" href="https://chat.whatsapp.com/EHG47zccgll2fhEsA9Q9yH"><i class="fa-brands fa-whatsapp"></i></a>
+
+        </div>
+      </div>
+    </footer>
   </div>
-  <div class="footer-bottom">
-    <p>&copy; 2024 Him Village ePrahari. All rights reserved.</p>
-    <p>Designed and developed by <a href="https://www.linkedin.com/in/a-m-sanjeev/" target="_blank">A M Sanjeev</a></p>
-  </div>
-</footer> -->
+
+
+  <script>
+    // let scrollAmount = 0;
+
+    // function scrollTeamRight() {
+    //   const cards = document.querySelector('.team-cards');
+    //   const cardWidth = document.querySelector('.team-member').offsetWidth;
+    //   const visibleAreaWidth = document.querySelector('.team-cards-wrapper').offsetWidth;
+    //   const totalScrollWidth = cards.scrollWidth;
+
+    //   // Only scroll if there's more content to scroll to
+    //   if (scrollAmount + visibleAreaWidth < totalScrollWidth) {
+    //     scrollAmount += cardWidth + 20; // 20 is the gap between cards
+    //     cards.style.transform = `translateX(-${scrollAmount}px)`;
+    //   }
+    // }
+
+    // function scrollTeamLeft() {
+    //   const cards = document.querySelector('.team-cards');
+    //   const cardWidth = document.querySelector('.team-member').offsetWidth;
+
+    //   // Log the current scroll amount
+    //   console.log(`Current scroll amount before scrolling left: ${scrollAmount}`);
+
+    //   // Ensure scrollAmount doesn't go below zero
+    //   if (scrollAmount > 0) {
+    //     scrollAmount -= cardWidth + 20; // 20 is the gap between cards
+    //     // Prevent scrollAmount from going negative
+    //     if (scrollAmount < 0) {
+    //       scrollAmount = 0;
+    //     }
+    //     cards.style.transform = `translateX(-${scrollAmount}px)`;
+    //   }
+    // }
+
+
+
+    document.querySelectorAll(".carousel-container").forEach((container) => {
+    let scrollAmount = 0;
+    const cards = container.querySelector(".team-cards");
+    const cardWidth = container.querySelector(".team-member").offsetWidth;
+    const visibleAreaWidth = container.querySelector(".team-cards-wrapper").offsetWidth;
+    const totalScrollWidth = cards.scrollWidth;
+
+    container.querySelector(".arrow.right").addEventListener("click", () => {
+      if (scrollAmount + visibleAreaWidth < totalScrollWidth) {
+        scrollAmount += cardWidth + 20; // 20 is the gap between cards
+        cards.style.transform = `translateX(-${scrollAmount}px)`;
+      }
+    });
+
+    container.querySelector(".arrow.left").addEventListener("click", () => {
+      if (scrollAmount > 0) {
+        scrollAmount -= cardWidth + 20; // 20 is the gap between cards
+        if (scrollAmount < 0) {
+          scrollAmount = 0;
+        }
+        cards.style.transform = `translateX(-${scrollAmount}px)`;
+      }
+    });
+  });
 
   </script>
-
+  
 </body>
+
 </html>

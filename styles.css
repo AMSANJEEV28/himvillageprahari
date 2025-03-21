@@ -17,7 +17,7 @@ html {
 .top {
     width: 100vw; 
     height:100vh; 
-    background: url('bg\ \(3\).png') no-repeat center center/cover;
+    background: url('mainbg.jpg') no-repeat center center/cover;
 
 }
 
@@ -267,21 +267,22 @@ nav {
 
 
 
-
-.section2{
-    width:100vw;
-    height:auto;
+/* General Styles */
+.section2 {
+    width: 100vw;
+    height: auto;
 }
 
-.cards{
+.cards {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 300px;
+    background-color: rgb(218, 218, 218);
 }
 
-.card1, .card2{
+.card1, .card2 {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -291,13 +292,13 @@ nav {
 }
 
 .card1 img, .card2 img {
-    width: 100%; /* Cover the full width of card1-img */
-    height: 100%; /* Cover the full height of card1-img */
-    object-fit: contain; /* Maintain aspect ratio */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
-  
+
 .txt-card1 {
-    flex-grow: 1; /* Take up the remaining space */
+    flex-grow: 1;
     height: 100%;
     background-color: #dadada;
     font-size: 45px;
@@ -310,140 +311,63 @@ nav {
 }
 
 .txt-card1 p {
-    font-size:medium;
-    width:300px;
+    font-size: medium;
+    width: 300px;
     text-align: justify;
-    margin:15px;
+    margin: 15px;
 }
 
-.card-btn{
+.card-btn {
     background-color: #008e66;
-    padding:10px 20px;
+    padding: 10px 20px;
     transition: background-color 0.3s;
-    border:none;
+    border: none;
     cursor: pointer;
     color: #cdcdcd;
     margin: 10px;
     font-size: 15px;
 }
 
-.card-btn:hover{
+.card-btn:hover {
     background-color: #005f45;
 }
 
-h1{
-    color: #ffffff;
-    font-size: 65px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    margin:10px;
-}
-
-h2{
-    color: #ffffff;
-    font-size: 45px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    margin:10px;
-}
-
-
-
-@media (max-width: 1075px) {
-
-    .txt-card1 {
-        font-size:41px;
-        width: 55%;
-    }
-
-    .txt-card1 p {
-        padding: 0px 10px;
-    }
-
-}
-
-
-@media (min-width: 481px) and (max-width: 768px) {
- 
-    .txt-card1 {
-        font-size:41px;
-        width: 55%;
-    }
-
-    .txt-card1 p {
-        font-size:medium;
-        width:200px;
-    }
-
-}
-
-
-
-
-@media (max-width: 480px) {
-    .section2 {
-        width: 100%;
-        padding: 10px;
-    }
-
+/* Responsive Styles */
+@media (max-width: 768px) {
     .cards {
-        flex-direction: column; 
-        height: auto; 
+        flex-direction: column; /* Stack cards vertically */
+        height: auto; /* Allow height to adjust */
+        padding: 20px 0; /* Add padding for spacing */
     }
 
     .card1, .card2 {
-        flex-direction: row; 
-        width: 100%; 
-        margin: 10px 0; 
-        height: auto; 
-    }
-
-    .card1-img, .txt-card1 {
-        width: 50%; 
-        height: auto; 
+        width: 100%; /* Full width for cards */
+        margin: 10px 0; /* Add margin between cards */
+        height: auto; /* Allow height to adjust */
     }
 
     .card1 img, .card2 img {
-        width: 100%; 
-        height: 100%; 
-        object-fit: cover; 
+        width:150px;
+        height: 200px; /* Set a fixed height for images */
+        object-fit: cover; /* Ensure images cover the container */
     }
 
     .txt-card1 {
-        padding: 10px;
-        font-size: 16px; 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .txt-card1 h6 {
-        font-size: 18px;
-        margin-bottom: 10px; 
+        font-size: 30px; /* Reduce font size */
+        padding: 10px; /* Add padding for spacing */
     }
 
     .txt-card1 p {
-        font-size: 14px; 
-        text-align: justify; 
-        margin: 10px 0; 
+        font-size: small; /* Reduce paragraph font size */
+        width: 80%; /* Adjust width for better readability */
+        margin: 10px auto; /* Center-align text */
     }
 
     .card-btn {
-        font-size: 14px;
-        padding: 8px 12px;
-        margin: 1px auto;
-        margin-top: 10px;
-        align-self: flex-start;
+        font-size: 14px; /* Reduce button font size */
+        padding: 8px 16px; /* Adjust button padding */
     }
 }
-
-
-
-
 
 
 .section3 {
@@ -516,6 +440,9 @@ h2{
 }
 
 @media (max-width: 768px)  {
+    .section3{
+        padding: 20px;
+    }
     .sec3img img {
         width: 95%;
         height: 340px;
@@ -532,7 +459,10 @@ h2{
         font-size: 16px;
      }
 
-    
+     .section3{
+        padding: 20px;
+    }
+
     .sec3img img {
         width: 95%;
         height: 230px;
@@ -585,11 +515,7 @@ h2{
     color: #ffffff;
     font-size: 50px;
 }
-
-
-
-
-
+/* General Styles */
 .section5 {
     width: 100vw;
     padding: 50px;
@@ -606,15 +532,15 @@ h2{
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     text-align: left;
-    align-self: flex-start; /* Aligns the h2 to the left */
-    margin-left: 24px; /* Optional: Removes default margin */
+    align-self: flex-start;
+    margin-left: 24px;
 }
 
 .section5 p {
     color: #434242;
     font-size: 18px;
     line-height: 1.6;
-    text-align: justify; 
+    text-align: justify;
     margin: 10px auto;
     width: 95%;
 }
@@ -649,7 +575,6 @@ h2{
     justify-content: center;
     text-align: center;
     margin: 0 5px;
-
 }
 
 .unique-rect-card:hover {
@@ -658,7 +583,6 @@ h2{
 
 .unique-square-card:hover {
     box-shadow: 0 5px 10px rgba(0, 97, 16, 0.9);
-
 }
 
 /* Container for the square cards */
@@ -688,13 +612,13 @@ h2{
     margin-bottom: 5px;
 }
 
-.cardtxt-sq{
+.cardtxt-sq {
     font-size: 20px;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.8);
     max-width: 90%;
     max-height: 85%;
-    padding:10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -702,13 +626,13 @@ h2{
     text-align: center;
 }
 
-.cardtxt-rec{
+.cardtxt-rec {
     font-size: 20px;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.8);
     max-width: 90%;
     max-height: 85%;
-    padding:10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -716,54 +640,55 @@ h2{
     text-align: center;
 }
 
-.cardtxt-rec:hover, .cardtxt-sq:hover{
+.cardtxt-rec:hover, .cardtxt-sq:hover {
     background-color: rgba(236, 255, 204, 0.9);
 }
 
-.cardtxt-rec h3, .cardtxt-sq h3{
+.cardtxt-rec h3, .cardtxt-sq h3 {
     color: #00412e;
     font-size: 20px;
     text-decoration: none;
     font-weight: bold;
-    margin:5px;
+    margin: 5px;
 }
 
-.cardtxt-rec p, .cardtxt-sq p{
+.cardtxt-rec p, .cardtxt-sq p {
     color: #000000;
     font-size: 15px;
     text-decoration: none;
     max-width: 95%;
-    margin:5px;
+    margin: 5px;
 }
 
-
-
+/* Responsive Styles */
 @media (max-width: 1075px) {
-   
-    .section5 h2 {
-       margin-bottom: 0px;
-       margin-left: 0px;
-    }  
-   
+    .section5 {
+        padding: 20px;
+    }
 
-    .cardtxt-sq{
+    .section5 h2 {
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .cardtxt-sq {
         font-size: 18px;
         padding: 10px;
     }
 
-    .cardtxt-rec{
+    .cardtxt-rec {
         font-size: 18px;
         padding: 15px 0px;
     }
 
-    #service-pr{
+    #service-pr {
         margin-right: 140px;
         margin-top: 4px;
         margin-bottom: 4px;
         width: 90%;
     }
 
-    .cardtxt-rec h3, .cardtxt-sq h3{
+    .cardtxt-rec h3, .cardtxt-sq h3 {
         color: #00412e;
         font-size: 17px;
         padding: 2px;
@@ -777,75 +702,95 @@ h2{
         align-items: center;
         justify-content: center;
     }
-    
 }
 
+@media (max-width: 768px) {
+    .unique-card-container {
+        flex-direction: column; /* Stack cards vertically */
+    }
 
+    .unique-rect-card,
+    .unique-square-cards {
+        width: 100%; /* Full width for cards */
+        margin: 10px 0; /* Add margin between cards */
+    }
+
+    .unique-rect-card {
+        height: 200px; /* Adjust height for rectangular card */
+    }
+
+    .unique-square-cards {
+        flex-direction: row; /* Keep square cards in a row */
+        flex-wrap: wrap; /* Allow wrapping */
+        height: auto; /* Adjust height automatically */
+    }
+
+    .unique-square-card {
+        width: 48%; /* Two cards per row */
+        height: 150px; /* Adjust height for square cards */
+        margin: 5px; /* Add margin between square cards */
+    }
+}
 
 @media (max-width: 480px) {
     .section5 {
-        padding: 20px; 
+        padding: 30px;
     }
 
     .section5 h2 {
         font-size: 28px;
         margin-bottom: 20px;
-        text-align: left; 
+        text-align: left;
     }
 
     .section5 p {
         font-size: 16px;
         width: 90%;
-        padding-left: 29px;
+        padding-left: 35px;
     }
 
     .unique-section {
-        padding: 20px; 
+        padding: 20px;
     }
 
     .unique-card-container {
-        flex-direction: column; 
-        align-items: center;
+        flex-direction: column; /* Stack cards vertically */
     }
 
     .unique-rect-card,
     .unique-square-cards {
-        width: 90%;
-        margin: 10px 0; 
+        width: 100%; /* Full width for cards */
+        margin: 10px 0; /* Add margin between cards */
     }
 
     .unique-rect-card {
-        height: 200px; 
+        height: 200px; /* Adjust height for rectangular card */
     }
 
     .unique-square-cards {
-        flex-direction: row; 
-        flex-wrap: wrap; 
-        height: auto; 
+        flex-direction: column; /* Stack square cards vertically */
+        height: auto; /* Adjust height automatically */
     }
 
     .unique-square-card {
-        width: 45%; 
-        height: 150px;
-        margin: 5px; 
+        width: 100%; /* Full width for square cards */
+        height: 150px; /* Adjust height for square cards */
+        margin: 5px 0; /* Add margin between square cards */
     }
 
     .cardtxt-rec, .cardtxt-sq {
-        font-size: 14px; 
-        padding: 8px; 
+        font-size: 14px; /* Reduce font size for smaller screens */
+        padding: 8px; /* Adjust padding */
     }
 
     .cardtxt-rec h3, .cardtxt-sq h3 {
-        font-size: 16px; 
+        font-size: 16px; /* Reduce heading font size */
     }
 
     .cardtxt-rec p, .cardtxt-sq p {
-        font-size: 12px; 
+        font-size: 12px; /* Reduce paragraph font size */
     }
 }
-
-
-
 
 
 .section6 {
@@ -1290,7 +1235,7 @@ h2{
 .section9 {
     width: 100vw;
     padding: 50px;
-    background-color: #ffffff;
+    background-color: #ffffff !important;
 }
 
 .section9 h2 {
@@ -1887,125 +1832,6 @@ footer .underline span{
 }
 
 
-
-/* footer code ends  */
-
-
-
-/* 
->>>>>>> e8ee744e97a406cb60a95617417c1c04a88f9fa5
-.footer {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
-}
-
-.social-media-icons {
-    margin-bottom: 10px;
-}
-
-.social-icon {
-    color: #ffffff;
-    margin: 0 10px;
-    font-size: 20px;
-    transition: color 0.3s;
-}
-
-.footer-bottom p {
-    margin: 5px 0;
-}
-
-.footer-bottom a {
-    color: #0077b5; /* LinkedIn Color */
-    /* text-decoration: none; */
-    /* transition: color 0.3s;
-}
-
-.footer-bottom a:hover {
-    color: #005582;
-} */ 
-
-/* 
-.section-team {
-    padding: 60px 20px;
-    background-color: #f5f5f5;
-  }
-  
-  .section-team h2 {
-    color: #2d6a4f;
-    font-size: 42px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    padding-left: 50px;
-  }
-  
-  .section-team p {
-    color: #434242;
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: justify;
-    margin-bottom: 20px;
-    width: 90%; 
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .team-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2%;
-  }
-  
-  .team-member {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 22%;
-    text-align: center;
-    transition: transform 0.3s;
-  }
-  
-  .team-img img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    min-height: 280px;
-    min-width: 100%;
-  }
-  
-  .team-info {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-    min-height: 400px;  }
-  
-  .team-info h6 {
-    color: #2d6a4f;
-    font-size: 18px;
-    margin: 10px 0 5px;
-    font-weight: bold;
-  }
-  
-  .team-info p {
-    color: #777;
-    font-size: 14px;
-    margin: 0;
-  }
-  
-  @media (max-width: 768px) {
-    .team-member {
-      width: 90%;
-    }
-  } */
-  
-
 .section-team {
     width:100vw;
     padding: 60px 20px;
@@ -2321,6 +2147,12 @@ footer .underline span{
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
+
+
+
 
 #our-valun-heading{
    margin-left: 40px;
@@ -2972,5 +2804,163 @@ footer .underline span{
         text-align: center;
         margin: 0 auto;
         width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    font-size: 35px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    right: -50%
+}
+
+@media screen and (max-width: 768px) {
+
+    .logo img{
+        width: 50px;
+        height: auto;
+        position: absolute;
+        left: 0;
+    }
+
+    .logo p{
+        display: none;
+    }
+
+    .nav-links {
+        display: none; /* Initially hidden */
+        flex-direction: column;
+        background: rgba(10, 41, 0, 0.5); /* Dark background */
+        width: max-content;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        padding: 30px 15px;
+        z-index: 1000;
+        text-align: right;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show when active */
+    }
+
+    .nav-links a {
+        font-size: 15px; /* Larger text */
+        color: #fff;
+        display: block;
+        padding: 5px 50px;
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu button */
+        position: absolute;
+        top:0;
+        left: 300px;
+    }
+
+    .main-body{
+        padding-top: 100px;
+    }
+
+    .main-body h1{
+        font-size: x-large;
+        margin:0;
+    }
+
+    .main-body a button{
+        margin-top: 50px;;
+    }
+}
+
+
+
+/* 🔹 Responsive Design */
+
+/* ✅ Medium screens (tablets) */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        flex-direction: row;
+    }
+
+    .card-img {
+        width: 35%;
+    }
+
+    .txt-card {
+        width: 65%;
+        font-size: 16px;
+    }
+}
+
+/* ✅ Small screens (mobile) */
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .card-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .txt-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .txt-card h6 {
+        font-size: 18px;
+    }
+
+    .txt-card p {
+        font-size: 14px;
+    }
+
+    .card-btn {
+        font-size: 14px;
+        padding: 10px;
     }
 }
