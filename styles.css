@@ -1341,7 +1341,38 @@ nav {
     }
 
     .volunteer-card {
-        height: 150px;
+        height: 250px;
+    }
+
+        
+    .volunteer-details {
+        margin:0;
+    }
+
+    .volunteer-details .name-vol strong {
+        font-size: x-small !important;
+        margin: -60px 0 -30px 0 !important;    
+        padding: 0 0 20px 0 !important;
+    }
+
+    .name-vol{
+        margin: 0;
+        padding: 0;
+    }
+
+    .volunteer-details p{
+        font-size: xx-small !important;
+        text-align: justify;
+        color:#272727;
+        position:fixed;
+        padding: 10px 5px;
+        margin: 0;
+
+    }
+
+    .name-vol .team-position{
+        font-size: 2px !important;
+        margin: -20px 0 30px 0;
     }
 }
 
@@ -1350,11 +1381,42 @@ nav {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         padding: 20px ;
-        justify-content: center;    
+        justify-content: center;
     }
 
     .volunteer-card {
-        height: 150px;
+        height: 250px;
+    }
+
+        
+    .volunteer-details {
+        margin:0;
+    }
+
+    .volunteer-details .name-vol strong {
+        font-size: x-small !important;
+        margin: -60px 0 -30px 0 !important;    
+        padding: 0 0 20px 0 !important;
+}
+
+    .name-vol{
+        margin: 0;
+        padding: 0;
+    }
+
+    .volunteer-details p{
+        font-size: xx-small !important;
+        text-align: justify;
+        color:#272727;
+        position:fixed;
+        padding: 10px 5px;
+        margin: 0;
+
+    }
+
+    .name-vol .team-position{
+        font-size: 2px !important;
+        margin: -20px 0 30px 0;
     }
 }
 
