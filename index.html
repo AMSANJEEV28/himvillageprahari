@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>HimVillageePrahari</title>
 
   <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
@@ -58,7 +59,7 @@
 
 
 
-  <section class="top">
+<section class="top">
     <header>
         <div class="container">
             <div class="logo-section">
@@ -96,19 +97,6 @@
     </section>
 </section>
 
-<script>
-
-    document.addEventListener("DOMContentLoaded", function () {
-        const menuBtn = document.getElementById("menu-btn");
-        const navMenu = document.getElementById("nav-menu");
-
-        menuBtn.addEventListener("click", function () {
-            navMenu.classList.toggle("active");
-        });
-    });
-
-
-</script>
 
   <section class="section2">
     <div class="cards">
@@ -1028,6 +1016,41 @@
 
   </script>
   
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        console.log("DOM fully loaded and parsed ✅");
+
+        const menuBtn = document.getElementById("menu-btn");
+        const navMenu = document.getElementById("nav-menu");
+
+        if (!menuBtn) {
+            console.log("❌ Menu button not found!");
+        } else {
+            console.log("✅ Menu button found");
+        }
+
+        if (!navMenu) {
+            console.log("❌ Nav menu not found!");
+        } else {
+            console.log("✅ Nav menu found");
+        }
+
+        menuBtn.addEventListener("click", function () {
+            console.log("🍔 Menu button clicked");
+            navMenu.classList.toggle("active");
+
+            if (navMenu.classList.contains("active")) {
+                console.log("✅ Menu is now ACTIVE (visible)");
+            } else {
+                console.log("⛔ Menu is now INACTIVE (hidden)");
+            }
+        });
+    });
+</script>
+
+
+
 </body>
 
 </html>
