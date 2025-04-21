@@ -5,6 +5,12 @@
     font-family: 'Oxygen', sans-serif;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
 body {
     background-color: #000000;
     color: #333;
@@ -3038,8 +3044,10 @@ footer .underline span{
 
 @media screen and (max-width: 768px) {
 
-    html, body {
-        width: 100vw;
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevents horizontal scroll */
     }
 
     .logo img{
@@ -3058,7 +3066,7 @@ footer .underline span{
         display: block; /* Show menu button */
         position: absolute;
         top:0;
-        left: 350px;
+        left: 250px;
     }
 
     /* .nav-links {
@@ -3073,17 +3081,19 @@ footer .underline span{
         z-index: 1000;
         text-align: right;
     } */
+
     .nav-links {
         display: none;
         flex-direction: column;
         background: rgba(41, 41, 41, 0.9); /* More visible background */
         position: absolute;
         top: 60px; /* Adjusted */
-        right: 50px; /* Adjusted */
+        right: 20%; /* Adjusted */
         padding: 10px 20px;
-        z-index: 1000;
-        width: 200px; /* Ensures it doesn’t shrink too much */
+        z-index: 9000000;
+        width: auto; /* Ensures it doesn’t shrink too much */
     }
+    
     .nav-links.active {
         display: flex; /* Show when active */
     }
