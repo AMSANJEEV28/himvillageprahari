@@ -140,11 +140,11 @@ nav {
 }
 
 /*nav bar is hidden in 480 width*/
- @media (max-width: 480px) {
+ /* @media (max-width: 480px) {
     nav {
         display: none;
     }
-} 
+}  */
 
 
 
@@ -3044,12 +3044,6 @@ footer .underline span{
 
 @media screen and (max-width: 768px) {
 
-    body, html {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; /* Prevents horizontal scroll */
-    }
-
     .logo img{
         width: 50px;
         height: auto;
@@ -3066,7 +3060,7 @@ footer .underline span{
         display: block; /* Show menu button */
         position: absolute;
         top:0;
-        left: 250px;
+        left: 80vw;
     }
 
     /* .nav-links {
@@ -3085,11 +3079,11 @@ footer .underline span{
     .nav-links {
         display: none;
         flex-direction: column;
-        background: rgba(41, 41, 41, 0.9); /* More visible background */
+        background: rgba(255, 255, 255, 0.7); /* More visible background */
         position: absolute;
         top: 60px; /* Adjusted */
-        right: 20%; /* Adjusted */
-        padding: 10px 20px;
+        left: 60vw;
+        padding: 10px 50px;
         z-index: 9000000;
         width: auto; /* Ensures it doesn’t shrink too much */
     }
@@ -3099,8 +3093,8 @@ footer .underline span{
     }
 
     .nav-links a {
-        font-size: 15px; /* Larger text */
-        color: #fff;
+        font-size: large; /* Larger text */
+        color: #3f3f3f;
         display: block;
         padding: 5px 20px;
     }
