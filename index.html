@@ -76,7 +76,7 @@
             </div>
             <nav>
                 <ul class="nav-links" id="nav-menu">
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="./about.html">About</a></li>
                     <li><a href="gallery epahari/Gallery2.html">Gallery</a></li>
                     <li><a href="./Voluntter/volunteer_signup.html">Volunteers</a></li>
@@ -1065,7 +1065,7 @@
 
 
 
-<script>
+<!-- <script>
   const activePage = window.location.pathname;
   const navLinks = document.querySelectorAll('nav a').forEach(link => {
     if(link.href.includes(`${activePage}`)){
@@ -1074,7 +1074,21 @@
     }
     
   })
+</script> -->
+
+<script>
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  const navLinks = document.querySelectorAll('nav a');
+
+  navLinks.forEach(link => {
+    const linkPage = link.getAttribute("href").split("/").pop();
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
 </script>
+
+
 
 
   <!--nav script-->
