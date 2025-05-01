@@ -2494,11 +2494,6 @@ footer .underline span{
 
 
 @media (max-width: 480px) {
-    .nav-links {
-        display: block; /* Show mobile navigation */
-        text-align: left; /* Align text to left */
-        padding: 10px 0; /* Add padding */
-    }
 
     .nav-links li {
         margin-left: 0; 
