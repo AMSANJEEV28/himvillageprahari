@@ -3173,7 +3173,7 @@ footer .underline span{
     justify-content: space-between;
     margin: 0 auto;
     padding: 30px;
-    position: fixed;
+    position: sticky;
     width: 100% !important;
     height: 120px;
     max-width: inherit;
@@ -3273,9 +3273,7 @@ nav {
         font-size: x-large;
         color: rgb(255, 255, 255);
     }
-    .container{
-        position: fixed;
-    }
+
     .nav-links {
         position: absolute;
         width: 100vw;
