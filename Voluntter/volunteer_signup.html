@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Become a Volunteer – Join Us in Making a Difference</title>
     <link rel="stylesheet" href="volunteer_signup.css">
-    <link rel="stylesheet" href="volunteer_form.css">
-    <link rel="stylesheet" href="volunteer_sectionbox_style.css">
-    <link rel="stylesheet" href="volunteer_carousel.css">
+    <link rel="stylesheet" href="../about.css">
+
     <link rel="icon" type="image/x-icon" href="../favicon_io/favicon.ico">
      <!-- AOS JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -21,518 +20,423 @@
     <script src="https://kit.fontawesome.com/f2707958ee.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
 </head>
 <body>
 
 <!-- ------------------------------------------- NAV BAR CODE ---------------------------------------------- -->
    
 <body>
-    <div class="container">
-        <div class=" logo-section">
-          <div class="logo">
-            <a href="index.html"><img src="../HIM VILLAGE E.png" alt="HimVillageePrahari Logo"></a>
-            <p>HimVillageePrahari</p>
-            <p>
-          </div>
-        </div>
-        <nav>
-          <ul class="nav-links">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../about.html">About</a></li>
-              <li><a href="../gallery epahari/Gallery2.html">Gallery</a></li>
-              <li><a href="volunteer_signup.html">Volunteers</a></li>
-              <li><a href="../Contact Us/contactUs.html">Contact Us</a></li>
-          </ul>
-      </nav>
-        <i class="fa-solid fa-bars " onclick="toggleMenu()" ></i>
-    </div>
-    
-</body>
 
-
-<script>    
-let menuList = document.querySelector('.nav-links');
-menuList.style.maxHeight = "0px";
-
-function toggleMenu() {
-    if (menuList.style.maxHeight == "0px") {
-        menuList.style.maxHeight = "300px";
-    } else {
-        menuList.style.maxHeight = "0px";
-    }
-}
-
-// Close the menu when any link is clicked
-let links = document.querySelectorAll('.nav-links a');
-links.forEach(link => {
-    link.addEventListener('click', () => {
-        menuList.style.maxHeight = "0px"; // Close the menu
-    });
-});
-</script>
-</head>
-
-
-<!-- ------------------------------------------- CAROUSEL CODE ---------------------------------------------- -->
-
-
-<body>
-<div class="carousel_container">
-<div class="mySlides">
-  <img src="volunteer2.jpg" alt="Main Image">
-  <div class="slide-text">Be the Change –<br> Volunteer for a Greener Future!</div>
-  <div class="description-text">Your efforts can create a lasting impact on our environment and communities. Join us in the
-    fight for a cleaner, more sustainable world. Sign up today and start making a difference!</div>
-    <button class="navigate-btn" onclick="scrollToForm()">Sign Up Now</button>
-</div>
-
-<div class="mySlides">
-  <img src="volunteer4.jpg" alt="Pamir Mountains">
-  <div class="slide-text">Be the Change –<br> Volunteer for a Greener Future!</div>
-  <div class="description-text">Your efforts can create a lasting impact on our environment and communities. Join us in the
-    fight for a cleaner, more sustainable world. Sign up today and start making a difference!</div>
-  <button class="navigate-btn" onclick="scrollToForm()">Sign Up Now</button>
-</div>
-
-<div class="mySlides">
-  <img src="volunteer3.jpg" alt="Uttarakhand Heaven">
-  <div class="slide-text">Be the Change –<br> Volunteer for a Greener Future!</div>
-  <div class="description-text">Your efforts can create a lasting impact on our environment and communities. Join us in the
-    fight for a cleaner, more sustainable world. Sign up today and start making a difference!</div>
-    <button class="navigate-btn" onclick="scrollToForm()">Sign Up Now</button>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-</div>
-
-<script>
-      let slideIndex = 0;
-      let autoSlideInterval;
-      const slides = document.getElementsByClassName("mySlides");
-      function scrollToForm() {
-  document.querySelector('.form').scrollIntoView({ behavior: 'smooth' });
-}
-
-      // Function to show slides
-      function showSlide(index) {
-        if (index >= slides.length) {
-            slideIndex = 0; // Wrap to the first slide
-        } else if (index < 0) {
-            slideIndex = slides.length - 1; // Wrap to the last slide
-        } else {
-            slideIndex = index;
-        }
-
-        // Hide all slides
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-
-        // Show the current slide
-        slides[slideIndex].style.display = "block";
-
-        // Restart automatic sliding
-        clearTimeout(autoSlideInterval);
-        startAutoSlide();
-      }
-
-      // Navigate between slides
-      function plusSlides(step) {
-        showSlide(slideIndex + step);
-      }
-
-      // Start automatic sliding
-      function startAutoSlide() {
-        autoSlideInterval = setTimeout(() => {
-            plusSlides(1);
-        }, 3000); // Slide every 3 seconds
-      }
-
-      // Initialize the carousel
-      showSlide(slideIndex);
-      startAutoSlide();
-
-
-      function navigateToForm() {
-          document.getElementById("z").scrollIntoView({ behavior: "smooth" });
-      }
-</script>
-<!-- -------------------------------WHY VOLUNTEER WITH HIM VILLAGE---------------------------------------------  -->
-
-
-    <section class="volunteer-section">
-      <div class="volunteer-flex-container">
-          <!-- Text content -->
-          <div class="volunteer-text-content">
-              <h3>Why Volunteer with Him Village ePrahari?</h3>
-              <p>At Him Village ePrahari, we believe in the power of community to solve global challenges. Our volunteers are the backbone of our mission to combat pollution, promote sustainable living, and preserve the environment for future generations. Whether you’re passionate about nature, education, or social change, there’s a role for you. Together, we can create a lasting impact!</p>
-              <ul>
-                  <li>Contribute to community-based environmental initiatives.</li>
-                  <li>Work on local and national projects to tackle pollution.</li>
-                  <li>Gain hands-on experience in project management and sustainability efforts.</li>
-                  <li>Network with like-minded individuals who share your passion for change.</li>
-                  <li>Receive a Certificate of Volunteering and recommendation letters for exceptional work.</li>
-              </ul>
-          </div>
   
-          <!-- Image content -->
-          <div class="volunteer-image-content">
-              <img src="volunteer8.jpg" alt="Volunteers working together">
-          </div>
+  <div class="container">
+    <div class=" logo-section">
+      <div class="logo"  style="margin-top:-50px; margin-right:-100px !important;">
+        <a href="index.html"><img src="HIM VILLAGE E.png" alt="HimVillageePrahari Logo"></a>
+        <p>HimVillageePrahari</p>
+        <p>
       </div>
-  </section>
-  
-  
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index-main.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../gallery epahari/Gallery2.html">Gallery</a></li>
+        <li><a href="../Voluntter/volunteer_signup.html">Volunteers</a></li>
+        <li><a href="../Contact Us/contactUs.html">Contact Us</a></li>
+      </ul>
+    </nav>
 
-<!-- ----------------------------------------JOB ROLES WE OFFER---------------------------------------------------     -->
-  <section class="what-we-need">
-    <h2>What We Need</h2>
-    <div class="roles"> 
-            
-             <div class="role">
-                <div class="image"></div>
-                <h3>Field Volunteers</h3>
-                <p>Engage with local communities and work on-ground for impactful projects.</p>
-            </div>
-        
-            <div class="role">
-                <h3>Content Creators</h3>
-                <p>Design compelling content to spread awareness and engage audiences.</p>
-            </div>
-           
-            <div class="role">
-                <h3>Event Coordinators</h3>
-                <p>Organize and manage events to bring communities together for change.</p>
-            </div>
-           
-            <div class="role" >
-                <h3>Social Media Managers</h3>
-                <p>Enhance our presence online and share our journey with the world.</p>
-            </div>
+    <i class="fa-solid fa-bars " onclick="toggleMenu()"></i>
+  </div>
+    
 
-            <div class="role" >
-                <h3>Researchers</h3>
-                <p>Conduct studies and gather insights to guide our initiatives effectively.</p>
-            </div>
 
-            <div class="role" >
-                <h3>Researchers</h3>
-                <p>Conduct studies and gather insights to guide our initiatives effectively.</p>
-            </div>
-      </div>    
-    </section>
+  <script>    
+  let menuList = document.querySelector('.nav-links');
+  menuList.style.maxHeight = "0px";
 
-<!-- -------------------------------------HOW VOLUNTEERS CAN HELP------------------------------------------ -->
+  function toggleMenu() {
+      if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "300px";
+      } else {
+          menuList.style.maxHeight = "0px";
+      }
+  }
+
+  // Close the menu when any link is clicked
+  let links = document.querySelectorAll('.nav-links a');
+  links.forEach(link => {
+      link.addEventListener('click', () => {
+          menuList.style.maxHeight = "0px"; // Close the menu
+      });
+  });
+  </script>
+
+  <!-- ------------------------------------------- CAROUSEL CODE ---------------------------------------------- -->
+  <div class="carousel-container">
+    <div class="my-slide active">
+      <img src="volunteer2.jpg" alt="Volunteer 1">
+      <div class="slide-content">
+        <h1>Be the Change – Volunteer for a Greener Future!</h1>
+        <p>Your efforts can create a lasting impact on our environment and communities. Join us in the fight for a cleaner, more sustainable world. Sign up today and start making a difference!</p>
+        <button class="navigate-btn" onclick="scrollToForm()">Sign Up Now</button>
+      </div>
+    </div>
+  </div>
 
   <section class="volunteer-section">
-  <div class="volunteer-flex-container">
-      <!-- Text content -->
+    <div class="volunteer-flex-container">
+      
+      <!-- Text Content -->
       <div class="volunteer-text-content">
-        <h3>How You Can Help?</h3>
-        <p>Volunteers play an integral part in every project we undertake. Some of your tasks may
-            include:</p>
-          <ul>
-            <li>Participate in environmental campaigns.</li>
-            <li>Organize and execute tree planting and cleanup events.</li>
-            <li>Help in organizing educational workshops and webinars.</li>
-            <li>Support in administrative tasks, content creation, and fundraising activities.</li>
-            <li>Share your innovative ideas to improve our environmental initiatives.</li>
+        <h3>Why Volunteer with Him Village ePrahari?</h3>
+        <p>
+          At Him Village ePrahari, we believe in the power of community to solve global challenges. Our volunteers are the backbone of our mission to combat pollution, promote sustainable living, and preserve the environment for future generations. Whether you’re passionate about nature, education, or social change, there’s a role for you. Together, we can create a lasting impact!
+        </p>
+        <ul>
+          <li>Contribute to community-based environmental initiatives.</li>
+          <li>Work on local and national projects to tackle pollution.</li>
+          <li>Gain hands-on experience in project management and sustainability efforts.</li>
+          <li>Network with like-minded individuals who share your passion for change.</li>
+          <li>Receive a Certificate of Volunteering and recommendation letters for exceptional work.</li>
         </ul>
       </div>
 
-      <!-- Image content -->
+      <!-- Image Content -->
       <div class="volunteer-image-content">
-          <img src="volunteer5.jpg" alt="Volunteers working together">
+        <img src="volunteer8.jpg" alt="Volunteers working together">
       </div>
-  </div>
-</section>
+    </div>
+  </section>
+      
+  <!-- ---------------------------- JOB ROLES WE OFFER ---------------------------- -->
+  <section class="what-we-need">
+    <h2>What We Need</h2>
+    <div class="roles"> 
+      <div class="role">
+        <i class="fas fa-hands-helping"></i>
+        <h3>Field Volunteers</h3>
+        <p>Engage with local communities and work on-ground for impactful projects.</p>
+      </div>
 
+      <div class="role">
+        <i class="fas fa-pen-nib"></i>
+        <h3>Content Creators</h3>
+        <p>Design compelling content to spread awareness and engage audiences.</p>
+      </div>
 
-<!-- ------------------------------------SIGNUP FORM CODE--------------------------------------------------- -->
-    
+      <div class="role">
+        <i class="fas fa-calendar-check"></i>
+        <h3>Event Coordinators</h3>
+        <p>Organize and manage events to bring communities together for change.</p>
+      </div>
 
-    <section class="form" id="signup">
-      <!-- <h3 id="signup_heading">How You Can Help?</h3> -->
-        <div class="form-container">
-            <h1>Sign Up Now – Become a Volunteer!</h1>
-            <form>
-                <!-- Full Name and Age -->
-                <div class="form-row">
-                    <div class="form-field">
-                        <label for="fullName">Full Name</label>
-                        <input type="text" id="fullName" placeholder="Please provide your full name">
-                    </div>
-                    <div class="form-field">
-                        <label for="age">Age</label>
-                        <input type="number" id="age" placeholder="Please indicate your age">
-                    </div>
-                </div>
-    
-                <!-- Email Address and Phone Number -->
-                <div class="form-row">
-                    <div class="form-field">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" placeholder="Enter a valid email address">
-                    </div>
-                    <div class="form-field">
-                        <label for="phone">Phone Number</label>
-                        <input type="text" id="phone" placeholder="Enter your contact number">
-                    </div>
-                </div>
-    
-                <!-- Preferred Volunteer Role and Availability -->
-                <div class="form-row">
-                    <div class="form-field">
-                        <label for="role">Preferred Volunteer Role</label>
-                        <select id="role">
-                            <option>Select the role you're most interested in</option>
-                            <option>Field Volunteers</option>
-                            <option>Content Creators</option>
-                            <option>Event Coordinators</option>
-                            <option>Social Media Managers</option>
-                            <option>Researchers</option>
-                        </select>
-                    </div>
-                    <div class="form-field">
-                        <label for="availability">Availability</label>
-                        <select id="availability">
-                            <option>How many hours per week can you dedicate?</option>
-                            <option>5-10 Hours</option>
-                            <option>10-20 Hours</option>
-                            <option>20+ Hours</option>
-                        </select>
-                    </div>
-                </div>
-                
-                <!-- CV and Location  -->
-                <div class="form-row">
-                    <div class="form-field">
-                        <label for="cv">Upload CV (Optional)</label>
-                        <input type="file" id="cv">
-                    </div>
-                    <div class="form-field">
-                        <label for="location">Location</label>
-                        <input type="text" id="location" placeholder="Where are you based?">        
-                    </div>
-                </div>
-    
-                <!-- Remaining Fields -->
-               
-                <label for="motivation">Why Do You Want to Volunteer with Us?</label>
-                <textarea id="motivation" placeholder="Share your motivation to join..."></textarea>
-    
-                <label for="skills">Skills/Experience</label>
-                <textarea id="skills" placeholder="Do you have any relevant skills or previous experience?"></textarea>
-    
-    
-                <button type="submit">Submit Your Application</button>
-            </form>
+      <div class="role">
+        <i class="fas fa-share-alt"></i>
+        <h3>Social Media Managers</h3>
+        <p>Enhance our presence online and share our journey with the world.</p>
+      </div>
+
+      <div class="role">
+        <i class="fas fa-search"></i>
+        <h3>Researchers</h3>
+        <p>Conduct studies and gather insights to guide our initiatives effectively.</p>
+      </div>
+
+      <div class="role">
+        <i class="fas fa-chart-line"></i>
+        <h3>Data Analysts</h3>
+        <p>Analyze impact data and provide insights to improve project efficiency and reach.</p>
+      </div>
+    </div>    
+  </section>
+
+  <!-- -------------------------------------HOW VOLUNTEERS CAN HELP------------------------------------------ -->
+  <section class="volunteer-section">
+    <div class="volunteer-flex-container">
+        <!-- Text content -->
+        <div class="volunteer-text-content">
+          <h3>How You Can Help?</h3>
+          <p>Volunteers play an integral part in every project we undertake. Some of your tasks may
+              include:</p>
+            <ul>
+              <li>Participate in environmental campaigns.</li>
+              <li>Organize and execute tree planting and cleanup events.</li>
+              <li>Help in organizing educational workshops and webinars.</li>
+              <li>Support in administrative tasks, content creation, and fundraising activities.</li>
+              <li>Share your innovative ideas to improve our environmental initiatives.</li>
+          </ul>
         </div>
+
+        <!-- Image content -->
+        <div class="volunteer-image-content">
+            <img src="volunteer5.jpg" alt="Volunteers working together">
+        </div>
+    </div>
+  </section>
+
+
+  <!-- ------------------------- VOLUNTEER SIGNUP FORM ------------------------- -->
+  <section class="form" id="signup">
+    <div class="form-container">
+      <h2><i class="fas fa-hands-helping"></i> Join Us as a Volunteer</h2>
+      <form>
+        <!-- Full Name & Age -->
+        <div class="form-row">
+          <div class="form-field">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Your full name" required>
+          </div>
+          <div class="form-field">
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Your age" required>
+          </div>
+        </div>
+
+        <!-- Email & Phone -->
+        <div class="form-row">
+          <div class="form-field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-field">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" placeholder="+91-XXXXXXXXXX" required>
+          </div>
+        </div>
+
+        <!-- Role & Availability -->
+        <div class="form-row">
+          <div class="form-field">
+            <label for="role">Preferred Role</label>
+            <select id="role" required>
+              <option disabled selected>Select your role</option>
+              <option>Field Volunteer</option>
+              <option>Content Creator</option>
+              <option>Event Coordinator</option>
+              <option>Social Media Manager</option>
+              <option>Researcher</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="availability">Availability</label>
+            <select id="availability" required>
+              <option disabled selected>Select hours/week</option>
+              <option>5-10 Hours</option>
+              <option>10-20 Hours</option>
+              <option>20+ Hours</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Location & CV -->
+        <div class="form-row">
+          <div class="form-field">
+            <label for="location">Location</label>
+            <input type="text" id="location" placeholder="Your city / region">
+          </div>
+          <div class="form-field">
+            <label for="cv">Upload CV (Optional)</label>
+            <input type="file" id="cv">
+          </div>
+        </div>
+
+        <!-- Motivation & Skills -->
+        <div class="form-full">
+          <label for="motivation">Why do you want to volunteer with us?</label><br><br>
+          <textarea id="motivation" rows="3" placeholder="Share your motivation..."></textarea>
+        </div>
+
+        <div class="form-full">
+          <label for="skills">Skills or Experience</label><br><br>
+          <textarea id="skills" rows="3" placeholder="List any relevant skills or experience..."></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div class="form-full">
+          <button type="submit"><i class="fas fa-paper-plane"></i> Submit Application</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+    <!-- --------------------------------OUR VOLUNTEERS SECTION------------------------------------------------- -->
+    <section class="section-team volunteers">
+      <h2 id="our-valun-heading" >Our Volunteers</h2>
+      <p id="our-valun-pr">Our volunteers are the heart and soul of our organization, dedicating their time, skills, and
+        passion to protect the Himalayas and uplift local communities. Meet some of the incredible individuals who are
+        making a difference through their commitment and hard work.</p>
+  
+      <div class="grid-container">
+          <div class="volunteer-card">
+              <img src="../Atual 1.jpg" alt="Atul Kumar">
+              <div class="volunteer-details"><div class="name-vol"><strong>Mr. Atul Kumar</strong></div><p>Atul Kumar, from Bareilly, Uttar Pradesh, now resides in Haridwar, Uttarakhand. He graduated in Psychology from Gurukul Kangri University in 2021 and completed his master’s in 2023. Currently pursuing a diploma in Guidance and Counseling at Jamia Millia Islamia University, Atul is passionate about helping others and
+                understanding human behavior.</p></div>
+          </div>
+          
+          <div class="volunteer-card">
+              <img src="../Jasveer.jpeg" alt="Jasveer Singh">
+              <div class="volunteer-details"><div class="name-vol"><strong>Mr. Jasveer Singh</strong></div><p>Jasveer Singh, from Sirmour district in Himachal Pradesh, holds a post-graduate degree in Clinical Psychology and is pursuing a diploma in Guidance and Counseling. With a strong interest in counseling, he
+                aspires to make a meaningful impact in mental health and guidance counseling, helping individuals navigate
+                their challenges.</p></div>
+          </div>
+          
+          <div class="volunteer-card">
+              <img src="../vasistha.jpg" alt="Vashist Kumar Pandey">
+              <div class="volunteer-details"><div class="name-vol"><strong>Mr. Vashist Kumar Pandey</strong></div><p>Vashist Kumar Pandey, an advocate for social transformation, uses his academic background in History and Journalism to drive positive change. As the Social Impact & Community Engagement Coordinator at Him
+                Village ePrahari Foundation, he leads grassroots initiatives that empower local communities. His focus is on
+                youth-driven projects promoting sustainability and societal growth, inspiring action and encouraging
+                participation to build a better future for the region.</p></div>
+          </div>
+          
+          <div class="volunteer-card">
+              <img src="../aditya.jpg" alt="Aditya Pyakurel">
+              <div class="volunteer-details"><div class="name-vol"><strong>Mr. Aditya Pyakurel</strong></div><p>Aditya Pyakurel, a social worker and environmental advocate, leads initiatives in sustainable development, rural livelihoods, and climate education. Passionate about youth empowerment, he equips students with skills to combat unemployment and foster innovation. As a cyber awareness activist, he promotes digital literacy, ensuring informed and resilient communities. His vision is a self-reliant society, driven by education, sustainability, and technology.</p></div>
+          </div>
+          
+          <div class="volunteer-card">
+              <img src="../paras.jpg" alt="Paras Tyagi">
+              <div class="volunteer-details"><div class="name-vol"><strong>Mr. Paras Tyagi</strong></div><p>Paras Tyagi, a yoga practitioner from Uttarakhand, is pursuing an M.A. in Yogic Science with a deep passion for holistic well-being and environmental conservation. He advocates for sustainable living, promoting physical, mental, and spiritual balance through yoga. Committed to child development and community empowerment, he inspires individuals to lead harmonious and mindful lives, fostering a healthier planet for future generations.</p></div>
+          </div>
+          
+          <div class="volunteer-card">
+              <img src="../aman.jpg" alt="Aman Rawat">
+              <div class="volunteer-details"><div class="name-vol"><strong>Mr. Aman Rawat</strong></div><p>Aman Rawat, a resident of Ganga Bhogpur, is a passionate nature enthusiast, cleanliness advocate, and YouTube vlogger. Dedicated to environmental conservation, he actively promotes eco-friendly practices and community cleanliness drives. Through his vlogs, he raises awareness about nature, sustainability, and local environmental issues, inspiring others to adopt a greener lifestyle. His commitment to preserving the beauty of Ganga Bhogpur reflects his vision of a cleaner and healthier future.</p></div>
+          </div>
+          
+          <div class="volunteer-card">
+              <img src="../ritesh.jpeg" alt="Ritesh Pandey">
+              <div class="volunteer-details"><div class="name-vol"><strong>Mr. Ritesh Pandey</strong></div><p>Ritesh Pandey, an M.Tech scholar in Computer Science and Engineering, explores AI-powered trade analytics to drive economic growth. Passionate about cleanliness, education, and social upliftment, he actively works on initiatives that foster technology-driven development. Committed to policy optimization and innovation, he envisions a self-reliant and progressive India, inspiring change through research and community engagement.</p></div>
+          </div>
+      </div>
+  
+  
+      
+  
     </section>
 
 
-<!-- --------------------------------OUR VOLUNTEERS SECTION------------------------------------------------- -->
-
-
-
-<section class="section-team">
-  <h2>Our Volunteers</h2>
-  <p>Meet the dedicated individuals behind HimVillageePrahari, who work tirelessly to protect the Himalayas and empower local communities.</p>
-
-  <div class="carousel-container">
-    <button class="arrow left" onclick="scrollTeamLeft()">&#10094;</button>
-    <div class="team-cards-wrapper">
-      <div class="team-cards">
-        <div class="team-member">
-          <div class="team-img">
-            <img loading="lazy" src="../Jasveer.jpeg" alt="Team Member 2">
+    <!-- ----------------------------------------FOOTER SECTION---------------------------------------------------- -->
+    <div class="footerContainer">
+    
+      <footer class="footer">
+        <div class="footerRow">
+          <div id="firstFooterCol" class="footercol">
+            <img class="logo" src="HIM VILLAGE E.png" alt="">
+            <p class="aboutInFooter">We are dedicated to preserving the natural beauty of the Himalayas in Uttarakhand by
+              empowering rural communities. Through education, waste management, and sustainable practices.</p>
           </div>
-          <div class="team-info">
-            <h6>Mr. Jasveer Singh</h6>
-            <p>Jasveer Singh, from Sirmour district in Himachal Pradesh, holds a postgraduate degree in Clinical Psychology and is pursuing a diploma in Guidance and Counseling. With a strong interest in counseling, she aspires to make a meaningful impact in mental health and guidance counseling, helping individuals navigate their challenges.</p>
-          </div>
-        </div>
-
-        <div class="team-member">
-          <div class="team-img">
-            <img loading="lazy" src="../Atul.jpeg" alt="Team Member 1">
-          </div>
-          <div class="team-info">
-            <h6>Mr. Atul Kumar</h6>
-            <p>Atul Kumar, from Bareilly, Uttar Pradesh, now resides in Haridwar, Uttarakhand. He graduated in Psychology from Gurukul Kangri University in 2021 and completed his master's in 2023. Currently pursuing a diploma in Guidance and Counseling at Jamia Millia Islamia University, Atul is passionate about helping others and understanding human behavior.</p>
-          </div>
-        </div>
-
-        <div class="team-member">
-          <div class="team-img">
-            <img loading="lazy" src="signup now.png" alt="Team Member 3" style="height:395px;">
-          </div>
-          <div class="team-info">
-            <h6>Become a Volunteer</h6>
-            <p>Join us in our mission to protect the Himalayas and empower local communities. Together, we can make a difference. Volunteer for a greater cause at Him Village ePrahari!</p>
-            <button class="our_volunteers_button" onclick="scrollToForm()">Volunteer Now!!</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="arrow right" onclick="scrollTeamRight()">&#10095;</button>
-  </div>
-</section>
-
-<script>
-  let scrollAmount = 0;
-  function navigateToForm() {
-          document.getElementById("z").scrollIntoView({ behavior: "smooth" });
-      }
-  
-  function scrollTeamRight() {
-      const cards = document.querySelector('.team-cards');
-      const cardWidth = document.querySelector('.team-member').offsetWidth;
-      const visibleAreaWidth = document.querySelector('.team-cards-wrapper').offsetWidth;
-      const totalScrollWidth = cards.scrollWidth;
-  
-  
-      if (scrollAmount + visibleAreaWidth < totalScrollWidth) {
-          scrollAmount += cardWidth + 20;
-          cards.style.transform = `translateX(-${scrollAmount}px)`;
-      }
-  }
-  
-  function scrollTeamLeft() {
-      const cards = document.querySelector('.team-cards');
-      const cardWidth = document.querySelector('.team-member').offsetWidth;
-  
-  
-      console.log(`Current scroll amount before scrolling left: ${scrollAmount}`);
-  
-  
-      if (scrollAmount > 0) {
-          scrollAmount -= cardWidth + 20;
-          if (scrollAmount < 0) {
-              scrollAmount = 0;
-          }
-          cards.style.transform = `translateX(-${scrollAmount}px)`;
-      }
-  }
-  </script>
-
-
-
-<!-- ----------------------------------------FOOTER SECTION---------------------------------------------------- -->
-<!-- Footer -->
-<div class="footerContainer">
-
-    <footer class="footer">
-      <div class="footerRow">
-        <div id="firstFooterCol" class="footercol">
-            <img class="logo" src="../HIM VILLAGE E.png" alt="">
-            <p class="aboutInFooter">We are dedicated to preserving the natural beauty of the Himalayas in Uttarakhand by empowering rural communities. Through education, waste management, and sustainable practices.</p>
-        </div>
-        <div id="office" class="footercol">
-            <h3 class="cardo-regular">OUR OFFICE<div class="underline"><span></span></div></h3>
+          <div id="office" class="footercol">
+            <h3 class="cardo-regular">OUR OFFICE<div class="underline"><span></span></div>
+            </h3>
             <div class="footerLocation">
               <i class="fa-solid fa-location-crosshairs"></i>
-              <p>Him Village E-prahari Foundation C/o Kamla Devi</p>
+              <p>Him Village ePrahari Foundation C/o Kamla Devi</p>
   
             </div>
             <div class="footerLocation2">
-                <i  class="fa-solid fa-magnifying-glass"></i>
-                <p>Ramnagar,Ajabpur,Dehradun,Dehradun Uttarakhand PIN 248121,India </p>
-              </div>
-              <!-- <p>Uttarakhand PIN 248121,India</p> -->
-              <div class="emailHere">
-                <i class="fa-regular fa-envelope"></i>
-                <p class="email-id"> admin@himvillageprahari.org</p>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <p>Ramnagar,Ajabpur,Dehradun,Dehradun Uttarakhand PIN 248121,India </p>
+            </div>
+            <!-- <p>Uttarakhand PIN 248121,India</p> -->
+            <div class="emailHere">
+              <i class="fa-regular fa-envelope"></i>
+              <p class="email-id"> admin@himvillageprahari.org</p>
             </div>
             <div class="telephoneInfo">
-                <i class="fa-solid fa-phone"></i>
-                <h4>+91 8057646822</h4>
+              <i class="fa-solid fa-phone"></i>
+              <p>+91 8057646822</p>
             </div>
-        </div>
-        <div class="footercol">
-          <h3>OUR WORKS <div class="underline"><span></span></div></h3>
-          <ul >
+          </div>
+          <div class="footercol">
+            <h3>OUR WORKS <div class="underline"><span></span></div>
+            </h3>
+            <ul>
               <li><a href="">What we do</a></li>
               <li><a href="">How we use data</a></li>
               <li><a href="">Where we work</a></li>
               <li><a href="">Stories from field</a></li>
-              <li><a href="">Blogs</a></li>
+              <li><a href="blog.html">Blogs</a></li>
               <li><a href="">Visit Gallery</a></li>
-              </ul>
-        </div>
-        <div id="footerScanAndDonate" class="footercol">
-          <h3>
-            SCAN AND DONATE
-           <div class="underline">
-            <span></span>
-           </div>
-          </h3 >
-         <img  src="../donation.jpg" alt="">
-        <!-- <div class="social-icons">
+            </ul>
+          </div>
+          <div id="footerScanAndDonate" class="footercol">
+            <h3>
+              SCAN AND DONATE
+              <div class="underline">
+                <span></span>
+              </div>
+            </h3>
+            <img src="QRC.jpeg" alt="">
+            <!-- <div class="social-icons">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-linkedin"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-whatsapp"></i>
   
           </div>  -->
-        </div>
-      </div>
-      <hr>
-      <section>
-        <h3 id="joinN">JOIN OUR NEWSLETTER <div class="underline">
-          <span></span>
-         </div></h3>
-  
-        <section class="newsletterSection">
-          <div class="outerNewsletter">
-          <div class="blurBlack"></div>
-          <div class="contentNewsletter">
-            <h3>Subscribe and Stay Connected With Us</h3>
-            <p>Be the first to know about our moving stories, new projects and opportunities. Join our community of changemakers today!</p>
-  
-            <form action="">
-              <div class="textField">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" placeholder="Enter your name">
-  
-              </div>
-              <div class="emailField">
-                <i class="fa-solid fa-envelope"></i>
-                <input type="email" placeholder="Enter your email">
-              </div>
-              <button type="submit" aria-label="Subscribe to Newsletter">Subscribe</button>
-            </form>
           </div>
         </div>
-      </section>
-    </section>
-      <hr>
-      <div class="footerCopyrightSection">
-        
-        <p class="copyright">Copyright &copy;2024 <span>Him Village ePrahari</span>.All Right Reserved.</p>
-        <div class="social-icons">
-         <a target="_blank" href=""> <i class="fa-brands fa-facebook"></i></a>
-         <a target="_blank" href="https://www.linkedin.com/company/him-village-eprahari/"> <i class="fa-brands fa-linkedin"></i></a>
-          <a target="_blank" href="https://www.instagram.com/himvillageprahari/?igsh=eHF2bmpqMmhtbmE3#"><i class="fa-brands fa-instagram"></i></a>
-          <a  target="_blank" href=""><i class="fa-brands fa-whatsapp"></i></a>
+        <hr>
+        <section>
+          <h3 id="joinN">JOIN OUR NEWSLETTER <div class="underline">
+              <span></span>
+            </div>
+          </h3>
   
-        </div> 
-      </div>
-  </footer>
-  </div>
+          <section class="newsletterSection">
+            <div class="outerNewsletter">
+              <div class="blurBlack"></div>
+              <div class="contentNewsletter">
+                <h3>Subscribe and Stay Connected With Us</h3>
+                <p>Be the first to know about our moving stories, new projects and opportunities. Join our community of
+                  changemakers today!</p>
+  
+                <form action="">
+                  <div class="textField">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Enter your name">
+  
+                  </div>
+                  <div class="emailField">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email">
+                  </div>
+                  <button type="submit">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </section>
+        </section>
+        <hr>
+        <div class="footerCopyrightSection">
+  
+          <p class="copyright">Copyright &copy;2025 <span>Him Village ePrahari Foundation</span>.All Right Reserved.</p>
+          <div class="social-icons">
+            <a target="_blank" href="https://www.facebook.com/people/Him-village-Eprahari/61565435241173/#"> <i class="fa-brands fa-facebook"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/company/him-village-eprahari/"> <i
+                class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://www.instagram.com/himvillageprahari/?igsh=eHF2bmpqMmhtbmE3#"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://chat.whatsapp.com/EHG47zccgll2fhEsA9Q9yH"><i class="fa-brands fa-whatsapp"></i></a>
+  
+          </div>
+        </div>
+      </footer>
+    </div>
 
-
-<!-- Active Class Script -->
-  <script>
-		const activePage = window.location.pathname;
-		const navLinks = document.querySelectorAll('nav a').forEach(link => {
-			if(link.href.includes(`${activePage}`)){
-				link.classList.add('active');
-				console.log(link);
-			}
-			
-		})
-	</script>
+    <!-- Active Class Script -->
+    <script>
+      const activePage = window.location.pathname;
+      const navLinks = document.querySelectorAll('nav a').forEach(link => {
+        if(link.href.includes(`${activePage}`)){
+          link.classList.add('active');
+          console.log(link);
+        }
+        
+      })
+    </script>
 </body>
 </html>

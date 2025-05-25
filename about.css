@@ -21,10 +21,10 @@ body{
 
 .container {
     display: flex;
-    
-    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: auto;
     background: linear-gradient(to right, #ccc8c8fa, #ddd9d9);
     padding: 5px 2rem;
     border-radius: 2px;
@@ -42,7 +42,9 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
 }
 
 .logo {

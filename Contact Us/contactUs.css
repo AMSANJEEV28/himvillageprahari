@@ -494,6 +494,10 @@ textarea::-webkit-scrollbar-thumb{
     .map{
         padding-bottom: 20px;
     }
+
+    .map-container{
+        width:95%;
+margin-left: 15px;}
 }
 
 
