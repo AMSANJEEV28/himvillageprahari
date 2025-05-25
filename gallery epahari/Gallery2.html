@@ -49,7 +49,145 @@
 
 
 
+    <section class="gallery-section">
+      <h2>Our Gallery</h2>
+      <p>Take a glimpse into our mission—empowering Himalayan communities, driving sustainability, and protecting nature.</p>
+  
+      <div class="filter-buttons">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="cleanliness">Cleanliness Drives</button>
+        <button data-filter="awareness">Awareness Events</button>
+        <button data-filter="workshops">Workshops</button>
+        <button data-filter="team">Team & Volunteers</button>
+        <button data-filter="nature">Nature & Himalayas</button>
+      </div>
+  
+      <div class="gallery-grid">
+        <!-- Cleanliness Drives -->
+        <div class="gallery-item" data-category="cleanliness">
+          <img src="image/All cleanliness drive/1.jpg" loading="lazy" alt="Cleanliness Drive">
+        </div>
+        <div class="gallery-item" data-category="cleanliness">
+          <img src="image/All cleanliness drive/2.jpg" loading="lazy" alt="Cleanliness Activity">
+        </div>
+        <div class="gallery-item" data-category="cleanliness">
+          <img src="image/All cleanliness drive/3.jpg" loading="lazy" alt="Cleanliness Activity">
+        </div>
+        <div class="gallery-item" data-category="cleanliness">
+          <img src="image/All cleanliness drive/4.jpg" loading="lazy" alt="Cleanliness Activity">
+        </div>
+        <div class="gallery-item" data-category="cleanliness">
+          <img src="image/All cleanliness drive/5.jpg" loading="lazy" alt="Cleanliness Activity">
+        </div>
+        <div class="gallery-item" data-category="cleanliness">
+          <img src="image/All cleanliness drive/6.jpg" loading="lazy" alt="Cleanliness Activity">
+        </div>
+  
+        <!-- Awareness Events -->
+        <div class="gallery-item" data-category="awareness">
+          <img src="image/painting competition/1.jpg" loading="lazy" alt="Awareness Event">
+        </div>
+        <div class="gallery-item" data-category="awareness">
+          <img src="image/painting competition/2.jpg" loading="lazy" alt="Awareness Event">
+        </div>
+        <div class="gallery-item" data-category="awareness">
+          <img src="image/painting competition/3.jpg" loading="lazy" alt="Awareness Event">
+        </div>
+        <div class="gallery-item" data-category="awareness">
+          <img src="image/painting competition/4.jpg" loading="lazy" alt="Awareness Event">
+        </div>
+        <div class="gallery-item" data-category="awareness">
+          <img src="image/painting competition/5.jpg" loading="lazy" alt="Awareness Event">
+        </div>
+        <div class="gallery-item" data-category="awareness">
+          <img src="image/painting competition/6.jpg" loading="lazy" alt="Awareness Event">
+        </div>
 
+
+        <!-- Workshops -->
+        <div class="gallery-item" data-category="workshops">
+          <img src="image/seva viste/1.jpg" loading="lazy" alt="Workshop Training">
+        </div>
+        <div class="gallery-item" data-category="workshops">
+          <img src="image/seva viste/2.jpg" loading="lazy" alt="Workshop Training">
+        </div>
+        <div class="gallery-item" data-category="workshops">
+          <img src="image/seva viste/3.jpg" loading="lazy" alt="Workshop Training">
+        </div>
+        <div class="gallery-item" data-category="workshops">
+          <img src="image/seva viste/4.jpg" loading="lazy" alt="Workshop Training">
+        </div>
+        <div class="gallery-item" data-category="workshops">
+          <img src="image/seva viste/5.jpg" loading="lazy" alt="Workshop Training">
+        </div>
+        <div class="gallery-item" data-category="workshops">
+          <img src="image/seva viste/6.jpg" loading="lazy" alt="Workshop Training">
+        </div>
+
+        <!-- Team & Volunteers -->
+        <div class="gallery-item" data-category="team">
+          <img src="image/Waste collection/1.jpg" loading="lazy" alt="Team and Volunteers">
+        </div>
+        <div class="gallery-item" data-category="team">
+          <img src="image/Waste collection/2.jpg" loading="lazy" alt="Team and Volunteers">
+        </div>
+        <div class="gallery-item" data-category="team">
+          <img src="image/Waste collection/3.jpg" loading="lazy" alt="Team and Volunteers">
+        </div>
+        <div class="gallery-item" data-category="team">
+          <img src="image/Waste collection/4.jpg" loading="lazy" alt="Team and Volunteers">
+        </div>
+        <div class="gallery-item" data-category="team">
+          <img src="image/Waste collection/5.jpg" loading="lazy" alt="Team and Volunteers">
+        </div>
+        <div class="gallery-item" data-category="team">
+          <img src="image/Waste collection/6.jpg" loading="lazy" alt="Team and Volunteers">
+        </div>
+  
+        <!-- Nature & Himalayas -->
+        <div class="gallery-item" data-category="team">
+          <img src="image/Waste collection/7.jpg" loading="lazy" alt="Team and Volunteers">
+        </div>
+        <div class="gallery-item" data-category="team">
+          <img src="image/Waste collection/8.jpg" loading="lazy" alt="Team and Volunteers">
+        </div>
+        <div class="gallery-item" data-category="team">
+          <img src="image/Waste collection/9.jpg" loading="lazy" alt="Team and Volunteers">
+        </div>
+        <div class="gallery-item" data-category="team">
+          <img src="image/Waste collection/10.jpg" loading="lazy" alt="Team and Volunteers">
+        </div>
+        <div class="gallery-item" data-category="team">
+          <img src="image/Waste collection/11.jpg" loading="lazy" alt="Team and Volunteers">
+        </div>
+        <div class="gallery-item" data-category="team">
+          <img src="image/Waste collection/12.jpg" loading="lazy" alt="Team and Volunteers">
+        </div>
+      </div>
+    </section>
+  
+    <script>
+      const filterButtons = document.querySelectorAll('.filter-buttons button');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+  
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+  
+          const category = button.getAttribute('data-filter');
+  
+          galleryItems.forEach(item => {
+            const itemCategory = item.getAttribute('data-category');
+            if (category === 'all' || itemCategory === category) {
+              item.classList.remove('hidden');
+            } else {
+              item.classList.add('hidden');
+            }
+          });
+        });
+      });
+    </script>
 
 
 

@@ -229,6 +229,134 @@ color: rgb(13, 114, 13);
 
 
 
+    .gallery-section {
+      max-width: 1200px;
+      margin: 150px auto 0 auto;
+      padding: 0 16px;
+    }
+
+    .gallery-section h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #2b761f;
+      text-transform: uppercase;
+    }
+
+    .gallery-section p {
+      text-align: center;
+      font-size: 16px;
+      color: #666;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+
+    .filter-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+
+    .filter-buttons button {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 8px 16px;
+      border-radius: 25px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .filter-buttons button.active,
+    .filter-buttons button:hover {
+      background-color: #2b761f;
+      color: white;
+      border-color: #2b761f;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+/* 
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+      object-fit:fill;
+
+    }
+
+    .gallery-item img {
+      width: 100%;
+      display: block;
+      transition: transform 0.4s ease;
+      object-fit: fill;
+
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    } */
+
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    
+    .gallery-item {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 3; /* Maintains aspect ratio */
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    
+    .gallery-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Force image to cover container */
+      transition: transform 0.3s ease;
+    }
+    
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery-item.hidden {
+      display: none;
+    }
+
+    @media screen and (max-width: 480px) {
+      .filter-buttons {
+        gap: 8px;
+      }
+
+      .filter-buttons button {
+        font-size: 12px;
+        padding: 6px 12px;
+      }
+
+      .gallery-section h2 {
+        font-size: 24px;
+      }
+
+      .gallery-section p {
+        font-size: 14px;
+      }
+    }
 
 
 

@@ -255,10 +255,10 @@ color: rgb(13, 114, 13);
   .who-text h1 {
     font-size: 2.8rem;
     font-weight: 600;
-    color: #1a1a1a;
     margin-bottom: 20px;
     border-left: 6px solid #2f684e;
     padding-left: 20px;
+    color: #131111;
   }
   
   .who-text p {
@@ -287,23 +287,33 @@ color: rgb(13, 114, 13);
     .who-container {
       flex-direction: column-reverse;
       text-align: center;
+      padding: 20px;
     }
   
     .who-text {
       padding: 0;
+      margin-top: -200px;
+
     }
   
     .who-text h1 {
-      font-size: 2rem;
+      font-size: 1.6rem;
       border-left: none;
       border-bottom: 3px solid #2f684e;
       padding-left: 0;
       padding-bottom: 10px;
+      text-align: left;
+
     }
   
     .who-text p {
       padding-left: 0;
       font-size: 1rem;
+      text-align: justify;
+    }
+
+    .who-image{
+      max-width:90%;
     }
   }
   
@@ -319,12 +329,12 @@ color: rgb(13, 114, 13);
   }
   
   .about-us-heading {
-        font-size: 2.8rem;
-        font-weight: 600;
-        color: #1a1a1a;
-        margin-bottom: 20px;
-        border-left: 6px solid #2f684e;
-        padding-left: 20px;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    border-left: 6px solid #2f684e;
+    padding-left: 20px;
     
   }
   
@@ -344,6 +354,8 @@ color: rgb(13, 114, 13);
     font-size: 24px;
     color: #2d6a4f;
     margin-bottom: 15px;
+    font-weight: 600;
+
   }
   
   .about-us-text .highlight {
@@ -391,6 +403,55 @@ color: rgb(13, 114, 13);
   }
   
 
+    /* RESPONSIVE STACKING */
+    @media (max-width: 768px) {
+      .about-us {
+        text-align: center;
+        padding: 20px;
+        margin-top: -200px;
+      }
+    
+      .about-us-text section {
+        padding: 0;
+  
+      }
+
+      .about-us h2 {
+        font-size: 1.6rem;
+        border-left: none;
+        border-bottom: 3px solid #2f684e;
+        padding-left: 0;
+        padding-bottom: 10px;
+        text-align: left;
+  
+      }
+    
+      .about-us-text h3 {
+        font-size: 1.6rem;
+        border-left: none;
+        border-bottom: 3px solid #2f684e;
+        padding-left: 0;
+        padding-bottom: 10px;
+        text-align: left;
+  
+      }
+    
+      .about-us-text section p, .icon-list{
+        padding-left: 0;
+        font-size: 1rem;
+        text-align: justify;
+      }
+
+      blockquote{
+        text-align: left;
+      }
+
+
+    }
+
+
+
+
 
 
 /* FontAwesome Icons Styling */
@@ -431,13 +492,15 @@ color: rgb(13, 114, 13);
 
   }
   
-  .mission-heading {
+  .mission-heading h2 {
     font-size: 2.8rem;
-    font-weight: 600;
+    font-weight: 600 ;
     color: #1a1a1a;
     margin: 0 0 20px 80px;
     border-left: 6px solid #2f684e;
     padding-left: 20px;
+
+    
   }
   
   .mission-cards {
@@ -523,6 +586,37 @@ color: rgb(13, 114, 13);
     .our-vision {
       padding: 30px 5%;
     }
+
+
+    .mission, .our-vision , .story-section, .why-choose-us,  .our-impact, .before-footer{
+      padding: 20px;
+    }
+  
+    .mission-heading, .our-vision-text, .story-content, .why-choose-us-content, .how-you-can-help{
+      padding: 0;
+      margin: 0;
+      border: none;
+      padding-bottom: 10px;
+      text-align: left !important;
+
+    }
+
+    .mission-heading h2,  .our-vision-text h2, .story-content h2, .why-choose-us-content h2, .our-impact h2 , .how-you-can-help h2 {
+      font-size: 1.6rem !important;
+      border-left: none;
+      border-bottom: 3px solid #2f684e;
+      padding:10px 0;
+      text-align: left !important;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .our-vision p, .story-content p, .why-choose-us-content ul li, .how-you-can-help p{
+      padding-left: 0;
+      font-size: 1rem;
+      text-align: justify;
+    }
+  
   }
       
 
