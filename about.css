@@ -19,7 +19,7 @@ body{
 /* Navbar styling */
 
 
-.container {
+.container, .container-header {
     display: flex;
     text-align: center;
     justify-content: center;

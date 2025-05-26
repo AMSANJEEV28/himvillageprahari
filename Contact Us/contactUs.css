@@ -215,7 +215,7 @@ color: rgb(13, 114, 13);
     /* navbar styling end */
 
 	/* Main Contact page */
-.container{
+.container-contact{
 	width: 100%;
 	min-height: 100vh;
 	display: flex;
@@ -224,7 +224,7 @@ color: rgb(13, 114, 13);
 	padding: 30px 8%;
 	margin-top: 10%;
 }
-.container .row{
+.container-contact .row{
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
@@ -326,7 +326,7 @@ section.left .socialMedia{
 	transition: 0.4s;
 }
 .socialMedia a i{
-	color: #333;
+	color: #ffffff;
 	font-size: 18px;
 	line-height: 35px;
 	border: 1px solid transparent;
@@ -344,7 +344,7 @@ section.left .socialMedia{
 
 @media(max-width: 1075px){
   
-    .container .row{
+    .container-contact .row{
       margin-top: 40px;
     }
 
@@ -359,6 +359,13 @@ section.left .socialMedia{
 
 
 /* Code for the right section (column) */
+
+input, textarea{
+        border-radius: 5px;
+        border: none !important;
+        padding:5px !important;
+
+}
 
 .row section.right .messageForm{
 	display: flex;
@@ -407,9 +414,10 @@ textarea::-webkit-scrollbar-thumb{
 	left: 0;
 	bottom: 4px;
 	color: #333;
-	font-size: 18px;
+	font-size: 16px;
 	transition: 0.4s;
 	pointer-events: none;
+    padding:5px ;
 }
 .inputGroup:nth-child(4) label{
 	top: 2px;
@@ -419,12 +427,13 @@ textarea::-webkit-scrollbar-thumb{
 {
 	transform: translateY(-30px);
 	font-size: 16px;
+    
 }
 .inputGroup button{
 	padding: 8px 16px;
 	font-size: 18px;
 	background-color: #2d6a4f;
-	color: #333;
+	color: #ffffff;
 	border: 1px solid transparent;
 	border-radius: 25px;
 	outline: none;
@@ -444,7 +453,7 @@ textarea::-webkit-scrollbar-thumb{
 	}
 }
 @media(max-width: 900px){
-	.container .row{
+	.container-contact .row{
 		flex-wrap: wrap;
 	}
 	.row section.left, .row section.right{
