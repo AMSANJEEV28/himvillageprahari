@@ -3416,6 +3416,15 @@ nav {
   margin-bottom: 1rem;
 }
 
+.sunday-popup-content a {
+    color:#004d40;
+}
+
+.sunday-popup-content a:hover {
+    color:#002a23;
+    font-weight: bold;
+}
+
 .popup-close {
   position: absolute;
   top: 10px;
@@ -3428,4 +3437,26 @@ nav {
 
 .popup-close:hover {
   color: #004d40;
+}
+
+@media (max-width: 600px) {
+  .sunday-popup-content {
+    width: 90%;           /* Take most of the viewport width */
+    padding: 15px 20px;   /* Reduce padding for smaller screen */
+    font-size: 0.95rem;   /* Slightly smaller font */
+  }
+
+  .sunday-popup-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .sunday-popup-content p {
+    font-size: 0.95rem;
+  }
+
+  .popup-close {
+    top: 8px;
+    right: 12px;
+    font-size: 1.3rem;
+  }
 }
