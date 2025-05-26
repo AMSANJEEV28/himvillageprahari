@@ -3309,3 +3309,123 @@ nav {
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- Sunday Volunteering Scroller ----------- */
+.sundayVolunteering {
+  height: 60px;
+  width: 100%;
+  overflow: hidden;
+  background: #c6c6c6;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.sundayVolunteering-track {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scrollText 25s linear infinite;
+}
+
+.sundayVolunteering-track:hover {
+  animation-play-state: paused;
+}
+
+.sundayVolunteering-track p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #00692f;
+  margin: 0;
+  padding-right: 100%;
+}
+
+.sundayVolunteering-track a.volunteer-link {
+  color: #00796b;
+  text-decoration: underline;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.sundayVolunteering-track a.volunteer-link:hover {
+  color: #004d40;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+/* -------- Sunday Volunteering Popup -------- */
+.sunday-popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 105, 47, 0.4);
+  backdrop-filter: blur(3px);
+  justify-content: center;
+  align-items: center;
+}
+
+.sunday-popup-content {
+  background-color: #fefefe;
+  padding: 20px 30px;
+  border: 2px solid #00796b;
+  border-radius: 12px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  color: #004d40;
+}
+
+.sunday-popup-content h3 {
+  margin-top: 0;
+  color: #00692f;
+}
+
+.sunday-popup-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00796b;
+  cursor: pointer;
+}
+
+.popup-close:hover {
+  color: #004d40;
+}

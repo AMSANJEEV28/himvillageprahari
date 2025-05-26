@@ -2093,6 +2093,7 @@ nav {
   
   textarea {
     resize: vertical;
+    width:100%;
   }
   
   button {
@@ -2106,6 +2107,7 @@ nav {
     border-radius: 12px;
     cursor: pointer;
     transition: background 0.3s ease;
+    margin: 0 auto !important;
   }
   
   button i {
@@ -2127,3 +2129,124 @@ nav {
     }
   }
   
+
+
+.testi-section {
+  padding: 4rem 9%;
+  background-color: #f8f9fa;
+}
+
+.testi-title {
+  font-size: 2.4rem;
+  color: #2c3e50;
+  border-left: 5px solid #00b894;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.testi-description {
+  max-width: 900px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.testi-carousel {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.testi-track {
+  display: flex;
+  transition: transform 0.6s ease;
+  width: fit-content;
+}
+
+.testi-card {
+  flex: 0 0 auto;
+  width: 400px;
+  height: 400px;
+  box-sizing: border-box;
+  padding: 1.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testi-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.testi-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #00b894;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.testi-nav:hover {
+  background-color: #019875;
+}
+
+.testi-prev {
+  left: 10px;
+}
+
+.testi-next {
+  right: 10px;
+
+}
+
+/* Responsive fallback */
+@media (max-width: 768px) {
+  .testi-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .testi-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 576px) {
+  .testi-title {
+    font-size: 1.8rem;
+  }
+
+  .testi-description {
+    font-size: 0.95rem;
+  }
+
+  .testi-nav {
+    padding: 0.5rem 0.8rem;
+    font-size: 1.2rem;
+  }
+}
+
+
+

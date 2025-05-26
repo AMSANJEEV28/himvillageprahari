@@ -125,6 +125,102 @@
     </div>
   </section>
 
+  <section class="sundayVolunteering">
+    <div class="sundayVolunteering-track">
+      <p id="sunday-message">
+        <!-- Message will be injected via JavaScript -->
+      </p>
+    </div>
+  </section>
+
+  <script>
+    function getNextSundayAt10AM() {
+      const now = new Date();
+      const day = now.getDay(); // 0 = Sunday, 6 = Saturday
+      const hours = now.getHours();
+
+      let daysUntilSunday = (7 - day) % 7;
+      if (day === 0 && hours >= 10) {
+        // It's Sunday and past 10 AM — schedule for next Sunday
+        daysUntilSunday = 7;
+      } else if (day !== 0) {
+        // Upcoming Sunday
+        daysUntilSunday = 7 - day;
+      }
+
+      const nextSunday = new Date();
+      nextSunday.setDate(now.getDate() + daysUntilSunday);
+      nextSunday.setHours(10, 0, 0, 0); // Set to 10 AM
+
+      return nextSunday.toDateString(); // Format: "Sun May 30 2025"
+    }
+
+    const sundayDate = getNextSundayAt10AM();
+    const messageEl = document.getElementById("sunday-message");
+
+    messageEl.innerHTML = `Join us this Sunday (${sundayDate}) at 10 AM for an impactful experience—door-to-door waste collection, community engagement, a refreshing nature walk, and exploring the serene beauty of Ganga Bhogpur. 
+      <a target="_blank" href="https://chat.whatsapp.com/EHG47zccgll2fhEsA9Q9yH" class="volunteer-link">Click here to be a part of it!</a>`;
+  </script>
+
+
+<!-- Sunday Volunteering Popup -->
+<div id="sundayPopup" class="sunday-popup">
+  <div class="sunday-popup-content">
+    <span id="popupClose" class="popup-close">&times;</span>
+    <h3>🌿 Sunday Volunteering Call!</h3>
+    <p id="sundayPopupMessage"></p>
+    <a href="#volunteer" class="volunteer-link">Click here to join us!</a>
+  </div>
+</div>
+
+
+<script>
+  function getNextSundayAt10AM() {
+    const now = new Date();
+    const day = now.getDay();
+    const hours = now.getHours();
+
+    let daysUntilSunday = (7 - day) % 7;
+    if (day === 0 && hours >= 10) {
+      daysUntilSunday = 7;
+    } else if (day !== 0) {
+      daysUntilSunday = 7 - day;
+    }
+
+    const nextSunday = new Date();
+    nextSunday.setDate(now.getDate() + daysUntilSunday);
+    nextSunday.setHours(10, 0, 0, 0);
+
+    const options = { weekday: 'long', month: 'long', day: 'numeric' };
+    return nextSunday.toLocaleDateString(undefined, options); // e.g., Sunday, June 2
+  }
+
+  const dateString = getNextSundayAt10AM();
+  const bannerMessage = `Join us this Sunday (${dateString}) at 10 AM for an impactful experience—door-to-door waste collection, community engagement, a refreshing nature walk, and exploring the serene beauty of Ganga Bhogpur.`;
+
+  // Update banner message
+  document.getElementById("sunday-message").innerHTML =
+    bannerMessage + ' <a href="#volunteer" class="volunteer-link">Click here to be a part of it!</a>';
+
+  // Update popup message
+  document.getElementById("sundayPopupMessage").innerText = bannerMessage;
+
+  // Show popup only once per session
+  window.addEventListener("load", () => {
+    if (!sessionStorage.getItem("sundayPopupShown")) {
+      document.getElementById("sundayPopup").style.display = "flex";
+      sessionStorage.setItem("sundayPopupShown", "true");
+    }
+  });
+
+  // Close popup
+  document.getElementById("popupClose").addEventListener("click", () => {
+    document.getElementById("sundayPopup").style.display = "none";
+  });
+</script>
+
+
+
   <section class="section3">
     <h2>Our Mission</h2>
     <div class="sec3txt-img">

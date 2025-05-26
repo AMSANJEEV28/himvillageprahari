@@ -256,7 +256,7 @@
 
         <!-- Submit -->
         <div class="form-full">
-          <button type="submit"><i class="fas fa-paper-plane"></i> Submit Application</button>
+          <button id ="button" type="submit"><i class="fas fa-paper-plane"></i> Submit Application</button>
         </div>
       </form>
     </div>
@@ -316,6 +316,176 @@
       
   
     </section>
+
+
+    <section class="testi-section">
+      <h2 class="testi-title">Past Intern Testimonials</h2>
+      <p class="testi-description">
+        We deeply appreciate the dedication and energy our past interns brought to our mission.
+        Though their journeys with us were brief, their contributions left a meaningful and lasting impact.
+        Explore the stories of those who helped drive our zero-waste movement forward.
+      </p>
+
+      <div class="testi-carousel">
+        <button class="testi-nav testi-prev">&#10094;</button>
+        <div class="testi-track" id="testiTrack">
+          <div class="testi-card">
+            <img src="INTERN SPOTLIGHT (1).jpg" alt="Intern Testimonial 2" />
+          </div>
+          <div class="testi-card">
+            <img src="INTERN SPOTLIGHT (2).jpg" alt="Intern Testimonial 3" />
+          </div>
+          <div class="testi-card">
+            <img src="INTERN SPOTLIGHT (3).jpg" alt="Intern Testimonial 4" />
+          </div>
+          <div class="testi-card">
+            <img src="INTERN SPOTLIGHT (4).webp" alt="Intern Testimonial 5" />
+        </div>
+          <div class="testi-card">
+            <img src="INTERN SPOTLIGHT (5).jpg" alt="Intern Testimonial 6" />
+          </div>
+          <div class="testi-card">
+            <img src="INTERN SPOTLIGHT (6).jpg" alt="Intern Testimonial 6" />
+          </div>
+          <div class="testi-card">
+            <img src="INTERN SPOTLIGHT (7).jpg" alt="Intern Testimonial 6" />
+          </div>
+          <div class="testi-card">
+            <img src="INTERN SPOTLIGHT (8).jpg" alt="Intern Testimonial 6" />
+          </div>
+          <div class="testi-card">
+            <img src="INTERN SPOTLIGHT (9).jpg" alt="Intern Testimonial 6" />
+          </div>
+        </div>
+        <button class="testi-nav testi-next">&#10095;</button>
+    </section>
+
+    <!-- 
+    <script>
+      const track = document.getElementById('testiTrack');
+      const nextBtn = document.querySelector('.testi-next');
+      const prevBtn = document.querySelector('.testi-prev');
+      const cards = document.querySelectorAll('.testi-card');
+      let index = 0;
+      let visibleCards = window.innerWidth <= 768 ? 1 : 2;
+
+      function showSlide(i) {
+        const maxIndex = cards.length - visibleCards;
+        index = (i < 0) ? maxIndex : (i > maxIndex ? 0 : i);
+        track.style.transform = `translateX(-${index * (100 / visibleCards)}%)`;
+      }
+
+      nextBtn.addEventListener('click', () => showSlide(index + 1));
+      prevBtn.addEventListener('click', () => showSlide(index - 1));
+
+      setInterval(() => showSlide(index + 1), 5000);
+
+      window.addEventListener('resize', () => {
+        visibleCards = window.innerWidth <= 768 ? 1 : 2;
+        showSlide(index);
+      });
+
+    </script> 
+    -->
+
+    <script>
+      const track = document.getElementById('testiTrack');
+      const nextBtn = document.querySelector('.testi-next');
+      const prevBtn = document.querySelector('.testi-prev');
+      const cards = document.querySelectorAll('.testi-card');
+      let index = 0;
+      let visibleCards = window.innerWidth <= 768 ? 1 : 2;
+
+      function showSlide(i) {
+        const maxIndex = cards.length - visibleCards;
+        if (i < 0) {
+          index = maxIndex;
+        } else if (i > maxIndex) {
+          index = 0;
+        } else {
+          index = i;
+        }
+        // Move by one card width percentage: 100% / total cards
+        track.style.transform = `translateX(-${index * (100 / cards.length)}%)`;
+      }
+
+      nextBtn.addEventListener('click', () => showSlide(index + 1));
+      prevBtn.addEventListener('click', () => showSlide(index - 1));
+
+      setInterval(() => showSlide(index + 1), 5000);
+
+      window.addEventListener('resize', () => {
+        visibleCards = window.innerWidth <= 768 ? 1 : 2;
+        showSlide(index);
+      });
+
+      // Initialize first slide
+      showSlide(index);
+    </script>
+
+
+<section class="form" id="intern-form">
+  <div class="form-container">
+    <h2><i class="fas fa-user-plus"></i>Want to Be an Intern?</h2>
+    <form action="#" method="POST" enctype="multipart/form-data">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="phone">Phone Number</label>
+          <input type="number" id="phone" name="phone" required />
+        </div>
+        <div class="form-field">
+          <label for="location">Current Location</label>
+          <input type="text" id="location" name="location" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field form-full">
+          <label for="interest">Why do you want to intern with us?</label>
+          <textarea id="interest" name="interest" rows="4" required></textarea>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="availability">Availability (start date)</label>
+          <input type="text" id="availability" name="availability" />
+        </div>
+        <div class="form-field">
+          <label for="duration">Preferred Duration</label>
+          <select id="duration" name="duration">
+            <option value="">Select Duration</option>
+            <option value="1-month">1 Month</option>
+            <option value="2-months">2 Months</option>
+            <option value="3-months">3 Months</option>
+            <option value="flexible">Flexible</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field form-full">
+          <label for="resume">Upload Resume (PDF)</label>
+          <input type="file" id="resume" name="resume" accept=".pdf" required />
+        </div>
+      </div>
+
+      <button type="submit"><i class="fas fa-paper-plane"></i>Submit Application</button>
+    </form>
+  </div>
+</section>
+
 
 
     <!-- ----------------------------------------FOOTER SECTION---------------------------------------------------- -->
