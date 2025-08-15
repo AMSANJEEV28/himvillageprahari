@@ -142,7 +142,7 @@
 
       let daysUntilSunday = (7 - day) % 7;
       if (day === 0 && hours >= 10) {
-        // It's Sunday and past 10 AM — schedule for next Sunday
+        // It's Sunday and past 10 AM , schedule for next Sunday
         daysUntilSunday = 7;
       } else if (day !== 0) {
         // Upcoming Sunday
@@ -159,7 +159,7 @@
     const sundayDate = getNextSundayAt10AM();
     const messageEl = document.getElementById("sunday-message");
 
-    messageEl.innerHTML = `Join us this Sunday (${sundayDate}) at 10 AM for an impactful experience—door-to-door waste collection, community engagement, a refreshing nature walk, and exploring the serene beauty of Ganga Bhogpur. 
+    messageEl.innerHTML = `Join us this Sunday (${sundayDate}) at 10 AM for an impactful experience,door-to-door waste collection, community engagement, a refreshing nature walk, and exploring the serene beauty of Ganga Bhogpur. 
       <a href="https://chat.whatsapp.com/EHG47zccgll2fhEsA9Q9yH" class="volunteer-link">Click here to be a part of it! or contact at +91 8057646822</a>`;
 
   </script>
@@ -198,7 +198,7 @@
   }
 
   const dateString = getNextSundayAt10AM();
-  const bannerMessage = `Join us this Sunday (${dateString}) at 10 AM for an impactful experience—door-to-door waste collection, community engagement, a refreshing nature walk, and exploring the serene beauty of Ganga Bhogpur.`;
+  const bannerMessage = `Join us this Sunday (${dateString}) at 10 AM for an impactful experience,door-to-door waste collection, community engagement, a refreshing nature walk, and exploring the serene beauty of Ganga Bhogpur.`;
 
   // Update banner message
   document.getElementById("sunday-message").innerHTML =
@@ -227,27 +227,9 @@
     <h2>Our Mission</h2>
     <div class="sec3txt-img">
       <div class="sec3text">
-        <p>At Him Village ePrahari Foundation, our mission is deeply rooted in the preservation of the Himalayas, an irreplaceable
-          ecosystem that sustains countless lives. We are dedicated to protecting this vital environment by addressing
-          the pressing challenges of waste management, climate change, and environmental degradation. Our initiatives
-          focus on creating zero-waste villages, implementing effective waste management models, and promoting
-          sustainable practices that can be adopted by communities throughout the region. We believe that every village
-          and individual has the potential to be a guardian of the environment, and our mission is to empower them to
-          take action. Through education, we aim to instill a sense of responsibility in the next generation, ensuring
-          that they are equipped with the knowledge and resources needed to protect their surroundings.</p>
-        <br>
-        <p>Beyond environmental protection, our mission extends to the empowerment of local communities, particularly
-          those in rural areas where resources are scarce. We strive to improve the standard of education, provide
-          essential learning tools, and offer career counseling to children, helping them build a brighter future. Our
-          efforts also include supporting rag pickers' families by providing educational opportunities and developing
-          earning models for environmental volunteers. By fostering a sense of stewardship and community-driven change,
-          Him Village ePrahari Foundation is committed to creating a sustainable and resilient future for the Himalayas and its
-          people. Together, we can safeguard the natural beauty and cultural heritage of this region, ensuring that it
-          remains a lifeline for generations to come.</p>
+        <p>Empower Himalayan local communities by promoting environmental awareness, implement zero-waste practices aligned to the values, beliefs and traditions of the Garhwal belt.</p>
       </div>
-      <div class="sec3img">
-        <img loading="lazy" src="TEAM BANNER.jpeg" alt="TEAM Image">
-      </div>
+
     </div>
   </section>
 
@@ -257,7 +239,7 @@
         <span class="material-symbols-outlined">
           pets
         </span>
-        <h2>1</h2>
+        <h2>5</h2>
         <p>Village Impacted</p>
       </div>
       <div class="stat">
@@ -271,7 +253,7 @@
         <span class="material-symbols-outlined">
           eco
         </span>
-        <h2>3000 + kg</h2>
+        <h2>5000 + kg</h2>
         <p>Waste Items Collected/Repurposed</p>
       </div>
       <div class="stat">
@@ -394,13 +376,6 @@
           </div>
       </div>
       
-      <div class="volunteer-card">
-          <img src="gautam.jpeg" alt="Mr. Gautam Khattar">
-          <div class="volunteer-details"><div class="name-vol"><strong>Mr. Gautam Khattar</strong></div><p>Mr. Gautam Khattar is a renowned social media influencer and the Founder of Stantan Mahasang. He
-            inspires and motivates people through his unique storytelling and impactful content. His organization
-            focuses on raising awareness about religious literature and spiritual growth, making him a significant
-            figure in societal and spiritual enlightenment.</p></div>
-      </div>
       
       <div class="volunteer-card">
           <img src="Padmabati.jpeg" alt="Vashist Kumar Pandey">
@@ -412,10 +387,10 @@
       
       <div class="volunteer-card">
           <img src="moni.jpeg" alt="Miss Moni kumari">
-          <div class="volunteer-details"><div class="name-vol"><strong>Miss Moni kumari</strong></div><p>Agronomist from Bihar with 3+ years’ experience in agriculture and rural development, working on
-            sustainable projects in Uttarakhand. Skilled in project management, field research, and community
-            engagement. Committed to improving farming practices, livelihoods, and sustainable development through
-            education and grassroots leadership.</p></div>
+          <div class="volunteer-details"><div class="name-vol"><strong>Miss Moni kumari</strong></div><p>
+Moni Kumari is an agronomist and rural development professional committed to empowering farming communities, with a strong focus on women-led initiatives. Originally from Bihar, she holds a Bachelor's degree in Agriculture and a Master's in Agronomy from Uttarakhand.
+
+A former Sewa Fellow, Moni combines grassroots experience with scientific expertise to lead sustainable agriculture, climate resilience, and livelihood development initiatives in diverse agro-ecological regions.</p></div>
       </div>
       
       <div class="volunteer-card">
@@ -454,7 +429,6 @@
             <div class="name-vol">
               <strong>Mr. Sumit Singh</strong>
               <br>
-              <strong class="team-position">Founder & CEO</strong>
             </div>              
           <p>Mr. Sumit Singh from Rudraprayag, Uttarakhand, is a passionate advocate for social change and
             environmental conservation. His work with the UN Development Programme focuses on youth empowerment and
@@ -471,7 +445,7 @@
           <div class="name-vol">
             <strong>Mr. Sushant Kumar</strong>
             <br>
-            <strong class="team-position">Co-Founder & Social Work Professional</strong>
+            <strong class="team-position">Co-Founder</strong>
           </div>              
         <p>Sushant Kumar is a dedicated social worker and youth advocate, empowering over 5,000 young people
           through STEP-AHEAD INDIA. As a Gandhi Fellow (2022-2024), he collaborated with the Jharkhand government
