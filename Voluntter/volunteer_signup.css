@@ -2022,8 +2022,9 @@ nav {
   }
   
   .form-container {
-    width: 90%;
+    width: 70%;
     max-width: 1300px;
+    height: 550px;
     background: #fff;
     padding: 40px;
     border-radius: 20px;
