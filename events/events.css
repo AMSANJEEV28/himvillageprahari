@@ -1,12 +1,11 @@
+/* EVENTS PAGE */
 
-  /* EVENTS PAGE  */
-  
-  
-  
-.main-content{
+/* Main content wrapper */
+.main-content {
     min-height: 80vh;
-    margin-top:10%;
+    margin-top: 10%;
 }
+
 /* Header */
 .hv-events-header {
     color: #fff;
@@ -24,8 +23,7 @@
 .hv-events-header p {
     font-size: 1rem;
     opacity: 0.9;
-    color:#1b5e20;
-
+    color: #1b5e20;
 }
 
 /* Container */
@@ -49,6 +47,9 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column; /* allow pushing button down */
+    height: 100%; /* equal height cards */
 }
 
 .hv-event-card:hover {
@@ -62,7 +63,11 @@
     object-fit: cover;
 }
 
+/* Content inside card */
 .hv-event-content {
+    flex: 1; /* take up all space between image & button */
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
 }
 
@@ -81,20 +86,36 @@
 .hv-event-description {
     font-size: 0.95rem;
     margin-bottom: 0.8rem;
+    flex-grow: 0; /* text doesn't push button */
 }
 
+/* Button pinned to bottom */
 .hv-btn {
     display: inline-block;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.2rem;
     background: #2e7d32;
     color: #fff;
     border-radius: 6px;
     font-size: 0.9rem;
     transition: background 0.2s ease;
+    margin-top: auto; /* pushes button to bottom */
+    margin-left:auto;
+    margin-right:auto;
+    width:70%;
+    text-align: center;
+    align-items: center;
 }
 
 .hv-btn:hover {
     background: #1b5e20;
     color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
 }
