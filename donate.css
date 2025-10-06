@@ -731,6 +731,11 @@ button:focus {
     .qr-section img {
         width: 300px; /* smaller QR code on smaller screens */
     }
+
+    .btn-donate{
+      width:80vw;
+      font-size:1.1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -746,6 +751,11 @@ button:focus {
 
     .qr-section img {
         width: 300px; /* further reduce QR code size */
+    }
+
+    .btn-donate{
+      width:80vw;
+      font-size:1rem;
     }
 }
 

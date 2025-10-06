@@ -265,27 +265,27 @@ nav {
     
     .main-body h1 {
         font-size: 38px;
-        top:20%;
+        top:16%;
         left:8%;
     }
  
     .main-body-p{
         position: absolute;
         font-size: 18px;
-        top:28%;
+        top:24%;
         left:10%;
         padding:7px 5px;
     }
 
     .main-body-des{
-        top:35%;
+        top:31%;
         left:10%;
         width:55%;
         font-size: 15px;
     }
 
     .main-body-btn{
-        top:65.3%;
+        top:73% !important;
         left:10%;
         padding:5px 10px;
         font-size: 17px;
@@ -2450,7 +2450,7 @@ footer .underline span{
 
           /* top section styling */
 
-@media (min-width: 482px) and (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 768px) {
     .container {
         flex-direction: column;
         align-items: flex-start;
@@ -2478,8 +2478,8 @@ footer .underline span{
 
     .main-body h1 {
         font-size: 50px;  
-        top:32.4%;
-        left:10.7%; 
+        top:30%;
+        left:10%; 
         margin: 0px;
         padding-top: 25px;
     }
@@ -2495,7 +2495,7 @@ footer .underline span{
     .main-body-btn {
         font-size: 16px; 
         padding: 8px 16px; 
-        bottom:10%;
+        top:80%;
         left:10%;
     }
 
@@ -3677,25 +3677,24 @@ color: rgb(13, 114, 13);
     }
 
     .main-body h1{
-        margin-left:15px;
-        top:25%;
+        top:15%;
     }
 
     .main-body-p{
-        top: 32%;
+        top: 25%;
         width:55%;
     }
 
     .main-body-des{
         color:#00412e;
-        top:37%;
+        top:30%;
         width:55% !important;
     }
 
     .main-body-btn{
         font-size: 16px; 
         padding: 8px 16px; 
-        top:67%;
+        top:72%;
         left:10%
     }
 
