@@ -92,7 +92,8 @@
                     <li><a href="gallery epahari/Gallery2.html">Gallery</a></li>
                     <li><a href="./Voluntter/volunteer_signup.html">Volunteers</a></li>
                     <li><a href="events/events.html">Initiatives</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <!-- <li><a href="blog.html">Blog</a></li> -->
+                    <li><a href="donate.html">Donate</a></li>
                     <li><a href="./Contact Us/contactUs.html">Contact Us</a></li>
                 </ul>
             </nav>
@@ -103,7 +104,7 @@
     </header>
 
     <section class="main-body">
-        <h1 id="main-body-heading">Him Village E-Prahari Foundation</h1>
+        <h1 id="main-body-heading">Him Village E-Prahari <br>Foundation</h1>
         <p class="main-body-p">You can guard, so let's protect together</p>
         <p class="main-body-des">
             We are dedicated to preserving the natural beauty and ecological balance of the Himalayas
@@ -123,7 +124,7 @@
         <div class="txt-card1">
           <h6>Donation</h6>
           <p>Donate gloves, supplies & prizes for our NGO.</p>
-          <a href="#footerScanAndDonate"><button class="card-btn">Donate Now</button></a>
+          <a href="donate.html"><button class="card-btn">Donate Now</button></a>
         </div>
       </div>
 
@@ -132,16 +133,15 @@
         <div class="txt-card1">
           <h6>Fundraising</h6>
           <p>Support projects, volunteers & community initiatives. </p>
-          <a href="#footerScanAndDonate"><button class="card-btn">Donate Now</button></a>
+          <a href="donate.html"><button class="card-btn">Donate Now</button></a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="sundayVolunteering">
+  <!-- <section class="sundayVolunteering">
     <div class="sundayVolunteering-track">
       <p id="sunday-message">
-        <!-- Message will be injected via JavaScript -->
       </p>
     </div>
   </section>
@@ -177,7 +177,6 @@
   </script>
 
 
-<!-- Sunday Volunteering Popup -->
 <div id="sundayPopup" class="sunday-popup">
   <div class="sunday-popup-content">
     <span id="popupClose" class="popup-close">&times;</span>
@@ -231,6 +230,83 @@
   document.getElementById("popupClose").addEventListener("click", () => {
     document.getElementById("sundayPopup").style.display = "none";
   });
+</script>
+ -->
+
+
+
+
+ <!-- Sunday Volunteering / Volunteer Banner -->
+<section class="sundayVolunteering">
+  <div class="sundayVolunteering-track">
+    <p id="sunday-message">
+      <!-- Message will be injected via JavaScript -->
+    </p>
+  </div>
+</section>
+
+<!-- Sunday Volunteering Popup -->
+<div id="sundayPopup" class="sunday-popup">
+  <div class="sunday-popup-content">
+    <span id="popupClose" class="popup-close">&times;</span>
+    <h3 id="popupTitle">🌿 Volunteering Call!</h3>
+    <p id="sundayPopupMessage"></p>
+    <a href="https://chat.whatsapp.com/EHG47zccgll2fhEsA9Q9yH" class="volunteer-link">
+      Click here to be a part of it! or contact at +91 8057646822
+    </a>
+  </div>
+</div>
+
+<script>
+function getNextSundayAt10AM() {
+  const now = new Date();
+  const day = now.getDay();
+  let daysUntilSunday = (7 - day) % 7;
+  if (day === 0 && now.getHours() >= 10) daysUntilSunday = 7;
+  else if (day !== 0) daysUntilSunday = 7 - day;
+
+  const nextSunday = new Date();
+  nextSunday.setDate(now.getDate() + daysUntilSunday);
+  nextSunday.setHours(10, 0, 0, 0);
+
+  const options = { weekday: 'long', month: 'long', day: 'numeric' };
+  return nextSunday.toLocaleDateString(undefined, options);
+}
+
+const today = new Date().getDay(); // 0 = Sunday, 5 = Friday, 6 = Saturday
+const dateString = getNextSundayAt10AM();
+
+let bannerMessage = "";
+let popupTitle = "";
+
+if (today === 5 || today === 6) { // Friday or Saturday
+  bannerMessage = `Join us this Sunday (${dateString}) at 10 AM for an impactful experience: door-to-door waste collection, community engagement, a refreshing nature walk, and exploring the serene beauty of Ganga Bhogpur.`;
+  popupTitle = "🌿 Sunday Volunteering Call!";
+} else { // Other days
+  bannerMessage = "Join our Him Village EPrahari team! Contribute, volunteer, and support our mission to make Himalayan villages zero-waste and eco-friendly. Your support creates lasting impact!";
+  popupTitle = "💚 Volunteer & Contribute!";
+}
+
+// Update banner
+document.getElementById("sunday-message").innerHTML =
+  bannerMessage + ' <a href="https://chat.whatsapp.com/EHG47zccgll2fhEsA9Q9yH" class="volunteer-link">Click here to join!</a>';
+
+// Update popup
+document.getElementById("popupTitle").innerText = popupTitle;
+document.getElementById("sundayPopupMessage").innerText = bannerMessage;
+
+// Show popup once per session
+window.addEventListener("load", () => {
+  if (!sessionStorage.getItem("sundayPopupShown")) {
+    document.getElementById("sundayPopup").style.display = "flex";
+    sessionStorage.setItem("sundayPopupShown", "true");
+  }
+});
+
+// Close popup
+document.getElementById("popupClose").addEventListener("click", () => {
+  document.getElementById("sundayPopup").style.display = "none";
+});
 </script>
 
 
@@ -382,9 +458,7 @@
             <div class="name-vol">
               <strong>Mr. Kumar Subham</strong>
             </div>
-            <p>Kumar Subham is a policy enthusiast by heart and a social entrepreneur by work. He holds a Bachelors in
-            Computer Science from IIT Delhi and serves as an advisor and was the founding director for Sewa
-            Fellowship at Sewa International and part of the working committee at Chanakya University.</p>
+            <p>Kumar Subham, IIT Delhi CS graduate, is a social entrepreneur, policy enthusiast, and Co-founder & CEO of III India House. He advises Chanakya University, led the Sewa Fellowship, co-founded Rashtram School (now part of Rishihood University), and previously worked with Jio & Samsung. A passionate traveller, he’s lived in 240+ districts across India, shaping initiatives in education, leadership, and social development.</p>
           </div>
       </div>
       
@@ -440,11 +514,12 @@ A former Sewa Fellow, Moni combines grassroots experience with scientific expert
   <div class="grid-container">
 
       <div class="volunteer-card">
-          <img src="Sushant.jpeg" alt="Sumit Singh">
+          <img src="sumit.jpeg" alt="Sumit Singh">
           <div class="volunteer-details">
             <div class="name-vol">
               <strong>Mr. Sumit Singh</strong>
               <br>
+              <strong class="team-position">Founder & CEO</strong>
             </div>              
           <p>Mr. Sumit Singh from Rudraprayag, Uttarakhand, is a passionate advocate for social change and
             environmental conservation. His work with the UN Development Programme focuses on youth empowerment and
@@ -473,6 +548,30 @@ A former Sewa Fellow, Moni combines grassroots experience with scientific expert
       </div>
 
       <div class="volunteer-card">
+        <img src="deepak.jpeg" alt="Deepak Singh">
+        <div class="volunteer-details">
+          <div class="name-vol">
+            <strong>Mr. Deepak Singh</strong>
+            <br>
+            <strong class="team-position">Executive Director - Programs & Partnerships</strong>
+          </div>              
+        <p></p>
+      </div>
+      </div>
+
+      <div class="volunteer-card">
+          <img src="amit.jpeg" alt="Amit Gairola">
+        <div class="volunteer-details">
+          <div class="name-vol">
+              <strong>Mr. Amit Gairola</strong>
+            <br>
+            <strong class="team-position">Director - Compliance & Strategy</strong>
+        </div>              
+          <p></p>
+        </div>
+    </div>
+
+      <div class="volunteer-card">
         <img src="Sanjeev.jpg" alt="A M Sanjeev">
         <div class="volunteer-details">
           <div class="name-vol">
@@ -492,7 +591,7 @@ A former Sewa Fellow, Moni combines grassroots experience with scientific expert
         <div class="name-vol">
           <strong>Mr. Prakash Gopal Singh</strong>
           <br>
-          <strong class="team-position">Public Relations Advisor</strong>
+          <strong class="team-position">Media & Communications Coordinator</strong>
         </div>              
       <p>Prakash Gopal Singh holds a Diploma in Mass Communication, Social Media, and Public Relations from IMMT
         Institute, Dehradun. He currently serves as the Bureau Chief for Hastakshep Media Pvt Ltd, where he
@@ -502,6 +601,20 @@ A former Sewa Fellow, Moni combines grassroots experience with scientific expert
       </p>
     </div>
     </div>
+
+
+    <div class="volunteer-card">
+        <img src="aditya.jpg" alt="Aditya Pyakurel">
+      <div class="volunteer-details">
+        <div class="name-vol">
+            <strong>Mr. Aditya Pyakurel</strong>
+          <br>
+          <strong class="team-position">Operations Coordinator</strong>
+        </div>              
+        <p>Aditya Pyakurel, a social worker and environmental advocate, leads initiatives in sustainable development, rural livelihoods, and climate education. Passionate about youth empowerment, he equips students with skills to combat unemployment and foster innovation. As a cyber awareness activist, he promotes digital literacy, ensuring informed and resilient communities. His vision is a self-reliant society, driven by education, sustainability, and technology.</p>
+    </div>
+    </div>
+
 
   </div>
 
@@ -558,11 +671,7 @@ A former Sewa Fellow, Moni combines grassroots experience with scientific expert
               youth-driven projects promoting sustainability and societal growth, inspiring action and encouraging
               participation to build a better future for the region.</p></div>
         </div>
-        
-        <div class="volunteer-card">
-            <img src="aditya.jpg" alt="Aditya Pyakurel">
-            <div class="volunteer-details"><div class="name-vol"><strong>Mr. Aditya Pyakurel</strong></div><p>Aditya Pyakurel, a social worker and environmental advocate, leads initiatives in sustainable development, rural livelihoods, and climate education. Passionate about youth empowerment, he equips students with skills to combat unemployment and foster innovation. As a cyber awareness activist, he promotes digital literacy, ensuring informed and resilient communities. His vision is a self-reliant society, driven by education, sustainability, and technology.</p></div>
-        </div>
+      
         
         <div class="volunteer-card">
             <img src="paras.jpg" alt="Paras Tyagi">
@@ -572,11 +681,6 @@ A former Sewa Fellow, Moni combines grassroots experience with scientific expert
         <div class="volunteer-card">
             <img src="aman.jpg" alt="Aman Rawat">
             <div class="volunteer-details"><div class="name-vol"><strong>Mr. Aman Rawat</strong></div><p>Aman Rawat, a resident of Ganga Bhogpur, is a passionate nature enthusiast, cleanliness advocate, and YouTube vlogger. Dedicated to environmental conservation, he actively promotes eco-friendly practices and community cleanliness drives. Through his vlogs, he raises awareness about nature, sustainability, and local environmental issues, inspiring others to adopt a greener lifestyle. His commitment to preserving the beauty of Ganga Bhogpur reflects his vision of a cleaner and healthier future.</p></div>
-        </div>
-        
-        <div class="volunteer-card">
-            <img src="ritesh.jpeg" alt="Ritesh Pandey">
-            <div class="volunteer-details"><div class="name-vol"><strong>Mr. Ritesh Pandey</strong></div><p>Ritesh Pandey, an M.Tech scholar in Computer Science and Engineering, explores AI-powered trade analytics to drive economic growth. Passionate about cleanliness, education, and social upliftment, he actively works on initiatives that foster technology-driven development. Committed to policy optimization and innovation, he envisions a self-reliant and progressive India, inspiring change through research and community engagement.</p></div>
         </div>
 
         <div class="volunteer-card">

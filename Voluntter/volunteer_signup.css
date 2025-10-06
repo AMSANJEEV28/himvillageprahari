@@ -804,30 +804,7 @@ body {
           /* top section styling */
 
 @media (min-width: 482px) and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0 1rem; /* Reduced padding on smaller screens */
-        overflow: visible !important;
-
-    }
-
-    .nav-links {
-        display: none; /* Hide nav links for mobile */
-    }
-
-    .logo-section {
-        position: relative;
-        left: 0;
-        top: 0; /* Adjust logo position */
-        margin-bottom: 1rem; /* Space below logo */
-    }
-
-    nav {
-        width: 100%;
-        text-align: left;
-    }
-
+ 
     .main-body h1 {
         font-size: 50px;  
         top:32.4%;
@@ -860,10 +837,6 @@ body {
 
 @media (max-width: 480px) {
 
-    .nav-links li {
-        margin-left: 0; 
-        margin-bottom: 10px; 
-    }
 
     .cards {
         flex-direction: column;
@@ -1407,7 +1380,6 @@ body {
     .logo img{
         width: 50px;
         height: auto;
-        position: absolute;
         left: 0;
     }
 
@@ -1418,7 +1390,6 @@ body {
     
     .menu-toggle {
         display: block; /* Show menu button */
-        position: absolute;
         top:15px;
         left: 80vw;
     }
