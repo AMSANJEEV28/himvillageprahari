@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="about.css"> -->
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="donate.css">
+
+    <script src="https://kit.fontawesome.com/cf8e096da9.js" crossorigin="anonymous"></script>
+    <title>GBIC Sustainable Waste Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17593148223"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-17593148223');
+</script>
+
+<body>
+
+    <div class="container container-header">
+        <div class=" logo-section">
+            <div class="logo">
+                <a href="index.html"><img src="HIM VILLAGE E.png" alt="HimVillageePrahari Logo"></a>
+                <p>HimVillageePrahari Foundation</p>
+                <p>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="./gallery epahari/Gallery2.html">Gallery</a></li>
+                <li><a href="./Voluntter/volunteer_signup.html">Volunteers</a></li>
+                <li><a href="events/events.html">Initiatives</a></li>
+                <!-- <li><a href="../blog.html">Blog</a></li> -->
+                <li><a href="../donate.html">Donate</a></li>
+                <li><a href="./Contact Us/contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <i class="fa-solid fa-bars " onclick="toggleMenu()"></i>
+    </div>
+
+
+    <div class="main-container">
+
+
+
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>We Have Adopted <span style="background-color: rgb(255, 196, 0); font-size: 60px; padding: 0 30px;">
+                        Ganga Bhogpur
+                        Inter College
+                    </span></h1>
+                <p>The college campus is being transformed into a model of sustainable waste management. Students,
+                    staff, and local community members are trained in segregation, composting, and eco-friendly
+                    practices to create a green campus environment.</p><br><br>
+                <i>Your support helps us provide bins, training, and resources for students to build a Zero Waste
+                    culture.</i>
+            </div>
+        </section>
+
+        <!-- Donations Section -->
+        <section class="hme-donations-section">
+            <div class="section-title">
+                <h2>Support Our Zero Waste<br> Ganga Bhogpur Inter College Mission</h2>
+            </div>
+            <div class="hme-donations-grid">
+                <div class="hme-donation-card">
+                    <div class="donation-icon"><i class="fa-solid fa-trash-can"></i></div>
+                    <h3>Segregation Bins</h3>
+                    <p>Provide color-coded bins for classrooms, hostels, and campus areas.</p>
+                    <a href="http://m-lp.co/tomakehi?utm_medium=campaign_page_share&utm_source=copy">Donate ₹1,500</a>
+                </div>
+                <div class="hme-donation-card">
+                    <div class="donation-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <h3>Student Workshops</h3>
+                    <p>Conduct workshops and campaigns on composting and waste management.</p>
+                    <a href="http://m-lp.co/tomakehi?utm_medium=campaign_page_share&utm_source=copy">Donate ₹2,500</a>
+                </div>
+                <div class="hme-donation-card">
+                    <div class="donation-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <h3>Compost Units</h3>
+                    <p>Set up small composting units for wet waste and organic material.</p>
+                    <a href="http://m-lp.co/tomakehi?utm_medium=campaign_page_share&utm_source=copy">Donate ₹5,000</a>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Campaign Stats Section -->
+        <section class="hme-campaign-stats-section">
+            <div class="section-title">
+                <h2>Campaign Stats of Zero Waste<br> Ganga Bhogpur Inter College Mission 💚</h2>
+            </div>
+            <div class="campaign-stats-container">
+                <div class="stats-info">
+                    <div class="stat-item">
+                        <h3>₹0</h3>
+                        <p>Amount Raised</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>0%</h3>
+                        <p>Complete</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>₹2, 00,000</h3>
+                        <p>Goal Amount</p>
+                    </div>
+                </div>
+
+                <div class="progress-gbic-bar-container">
+                    <div class="progress-gbic-bar">
+                        <div class="progress-gbic-fill" style="width: 0%;"></div>
+                        <div class="progress-gbic-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script>
+            // Animate the progress-gbic fill bar dynamically
+            document.addEventListener("DOMContentLoaded", function () {
+                const progressFill = document.querySelector(".progress-gbic-fill");
+                const progressPercent = 0; // current percentage
+                progressFill.style.width = progressPercent + "%";
+            });
+
+        </script>
+
+
+
+
+
+
+        <div class="footerContainer">
+            <footer class="footer">
+                <div class="footerRow">
+                    <div id="firstFooterCol" class="footercol">
+                        <img class="logo" src="HIM VILLAGE E.png" alt="">
+                        <p class="aboutInFooter">We are dedicated to preserving the natural beauty of the Himalayas
+                            in
+                            Uttarakhand by
+                            empowering rural communities. Through education, waste management, and sustainable
+                            practices.</p>
+                    </div>
+                    <div id="office" class="footercol">
+                        <h3 class="cardo-regular">OUR OFFICE<div class="underline"><span></span></div>
+                        </h3>
+                        <div class="footerLocation">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            <p>Him Village ePrahari Foundation C/o Kamla Devi</p>
+
+                        </div>
+                        <div class="footerLocation2">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <p>Ramnagar,Ajabpur,Dehradun,Dehradun Uttarakhand PIN 248121,India </p>
+                        </div>
+                        <!-- <p>Uttarakhand PIN 248121,India</p> -->
+                        <div class="emailHere">
+                            <i class="fa-regular fa-envelope"></i>
+                            <p class="email-id"> admin@himvillageprahari.org</p>
+                        </div>
+                        <div class="telephoneInfo">
+                            <i class="fa-solid fa-phone"></i>
+                            <h4>+91 8057646822</h4>
+                        </div>
+                    </div>
+                    <div class="footercol">
+                        <h3>OUR WORKS <div class="underline"><span></span></div>
+                        </h3>
+                        <ul>
+                            <li><a href="./about.html">What we do</a></li>
+                            <li><a href="./about.html">How we use data</a></li>
+                            <li><a href="./about.html">Where we work</a></li>
+                            <li><a href="./about.html">Stories from field</a></li>
+                            <li><a href="">Blogs</a></li>
+                            <li><a href="gallery epahari/Gallery2.html">Visit Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div id="footerScanAndDonate" class="footercol">
+                        <h3>
+                            SCAN AND DONATE
+                            <div class="underline">
+                                <span></span>
+                            </div>
+                        </h3>
+                        <img src="QRC.jpeg" alt="">
+                        <!-- <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+
+            </div>  -->
+                    </div>
+                </div>
+                <hr>
+                <section>
+                    <h3 id="joinN">JOIN OUR NEWSLETTER <div class="underline">
+                            <span></span>
+                        </div>
+                    </h3>
+
+                    <section class="newsletterSection">
+                        <div class="outerNewsletter">
+                            <div class="blurBlack"></div>
+                            <div class="contentNewsletter">
+                                <h3>Subscribe and Stay Connected With Us</h3>
+                                <p>Be the first to know about our moving stories, new projects and opportunities.
+                                    Join
+                                    our community of
+                                    changemakers today!</p>
+
+                                <form action="">
+                                    <div class="textField">
+                                        <i class="fa-solid fa-user"></i>
+                                        <input type="text" placeholder="Enter your name">
+
+                                    </div>
+                                    <div class="emailField">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <input type="email" placeholder="Enter your email">
+                                    </div>
+                                    <button type="submit">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <hr>
+                <div class="footerCopyrightSection">
+
+                    <p class="copyright">Copyright &copy;2025 <span>Him Village ePrahari Foundation</span>.All Right
+                        Reserved.</p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.facebook.com/people/Him-village-Eprahari/61565435241173/#">
+                            <i class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/him-village-eprahari/"> <i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/himvillageprahari/?igsh=eHF2bmpqMmhtbmE3#"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://chat.whatsapp.com/EHG47zccgll2fhEsA9Q9yH"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+        const activePage = window.location.pathname;
+        const navLinks = document.querySelectorAll('nav a').forEach(link => {
+            if (link.href.includes(`${activePage}`)) {
+                link.classList.add('active');
+                console.log(link);
+            }
+
+        })
+    </script>
+
+    <!--nav script-->
+    <script>
+
+        let menuList = document.querySelector('.nav-links');
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "300px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+        // Close the menu when any link is clicked
+        let links = document.querySelectorAll('.nav-links a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menuList.style.maxHeight = "0px"; // Close the menu
+            });
+        });
+
+
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

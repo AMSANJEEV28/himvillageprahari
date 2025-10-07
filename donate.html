@@ -236,6 +236,138 @@
 
 
 
+<!-- 🌿 Material Donation Section: Project Ganga Bhogpur -->
+<section class="material-donation" id="material-donation">
+<section class="lower-arc-section">
+  <svg width="100%" height="180" viewBox="0 0 1000 180" preserveAspectRatio="xMidYMid meet">
+    <path id="lowerArc" d="M0,120 C250,180 750,180 1000,120" fill="transparent"/>
+    <text font-size="60" font-weight="bold">
+      <textPath href="#lowerArc" startOffset="0%" id="movingText">
+        <tspan fill="#FFD700">🌿 SUPPORT </tspan>
+        <tspan fill="#2E8B57">MISSION </tspan>
+        <tspan fill="#FFD700">GANGA BHOGPUR </tspan>
+        <tspan fill="#2E8B57">🌿 ZERO WASTE </tspan>
+        <!-- repeat for seamless loop -->
+        <tspan fill="#FFD700">🌿 SUPPORT </tspan>
+        <tspan fill="#2E8B57">MISSION </tspan>
+        <tspan fill="#FFD700">GANGA BHOGPUR </tspan>
+        <tspan fill="#2E8B57">🌿 ZERO WASTE </tspan>
+      </textPath>
+    </text>
+  </svg>
+</section>
+
+<script>
+const textPath = document.getElementById('movingText');
+let offset = 0; // initial startOffset in percent
+
+function animateText() {
+  offset -= 0.3; // adjust speed
+  if (offset < -100) offset = 0; // reset seamlessly
+  textPath.setAttribute('startOffset', offset + '%');
+  requestAnimationFrame(animateText);
+}
+
+animateText();
+</script>
+
+
+
+
+
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <div class="donation-container">
+    <h2 class="donation-title"><i class="fas fa-seedling"></i> Support Project Ganga Bhogpur</h2>
+    <p class="donation-subtitle">
+      Empower our <strong>Zero Waste Himalayan Village</strong> initiative by contributing to essential materials, tools, and awareness programs that make a real impact.
+    </p>
+
+    <div class="donation-grid">
+      
+      <!-- Awareness Programs -->
+      <div class="donation-card">
+        <h3><i class="fas fa-users"></i> Community Awareness Programs</h3>
+        <p>6 awareness sessions, reaching approx. 2,000 residents, students, and local communities.</p>
+        <div class="donation-cost">₹12,000</div>
+        <a href="http://m-lp.co/tomakehi?utm_medium=campaign_page_share&utm_source=copy" target="_blank" class="donate-btn">💚 Contribute</a>
+      </div>
+
+      <!-- Waste Worker Training -->
+      <div class="donation-card">
+        <h3><i class="fas fa-chalkboard-teacher"></i> Training for Him Sathi</h3>
+        <p>Training 2–3 local waste workers (Rag Pickers) in proper segregation & recycling. Frequency: 4 sessions</p>
+        <div class="donation-cost">₹20,000</div>
+        <a href="http://m-lp.co/tomakehi?utm_medium=campaign_page_share&utm_source=copy" target="_blank" class="donate-btn">💚 Sponsor Training</a>
+      </div>
+
+      <!-- Mini Waste Bags -->
+      <div class="donation-card donated">
+        <h3><i class="fas fa-shopping-bag"></i> Mini Waste Bags (Households)</h3>
+        <p>Distributed to 300 households. Frequency: One-time</p>
+        <div class="donation-status">🎁 Donated by SEWA International</div>
+      </div>
+
+      <!-- Jumbo Bags -->
+      <div class="donation-card donated">
+        <h3><i class="fas fa-dumpster"></i> Jumbo Collection Bags</h3>
+        <p>Distributed for village-wide waste collection. Frequency: One-time</p>
+        <div class="donation-status">🎁 Donated by SEWA International</div>
+      </div>
+
+      <!-- Tools & Safety Gear -->
+      <div class="donation-card">
+        <h3><i class="fas fa-hand-holding"></i> Cleaning Tools & Safety Gear</h3>
+        <p>Gloves, masks, and cleaning sticks for volunteers & Him Sathis. Frequency: One-time</p>
+        <div class="donation-cost">₹15,000</div>
+        <a href="http://m-lp.co/tomakehi?utm_medium=campaign_page_share&utm_source=copy" target="_blank" class="donate-btn">💚 Contribute</a>
+      </div>
+
+      <!-- Volunteer & Community Support -->
+      <div class="donation-card">
+        <h3><i class="fas fa-hand-holding-heart"></i> Field & Community Support</h3>
+        <p>Supports logistics, volunteer coordination, and operational costs. Frequency: Monthly</p>
+        <div class="donation-cost">₹25,000</div>
+        <a href="http://m-lp.co/tomakehi?utm_medium=campaign_page_share&utm_source=copy" target="_blank" class="donate-btn">💚 Support Now</a>
+      </div>
+
+      <!-- IEC Materials -->
+      <div class="donation-card">
+        <h3><i class="fas fa-bullhorn"></i> IEC Materials & Awareness Banners</h3>
+        <p>Printing posters, banners, and boards for educational campaigns. Frequency: One-time</p>
+        <div class="donation-cost">₹35,000</div>
+        <a href="http://m-lp.co/tomakehi?utm_medium=campaign_page_share&utm_source=copy" target="_blank" class="donate-btn">💚 Fund Awareness</a>
+      </div>
+
+      <!-- Temporary MRF -->
+      <div class="donation-card">
+        <h3><i class="fas fa-industry"></i> Mini Material Recovery Facility</h3>
+        <p>Establishing a small-scale waste processing center. Frequency: One-time</p>
+        <div class="donation-cost">₹2,00,000</div>
+        <a href="http://m-lp.co/tomakehi?utm_medium=campaign_page_share&utm_source=copy" target="_blank" class="donate-btn">💚 Sponsor Infrastructure</a>
+      </div>
+
+    </div>
+
+    <p class="donation-footer">
+      Every contribution matters. Together, we can build <strong>India’s first Zero Waste Himalayan Village</strong> in Ganga Bhogpur. 🌱
+    </p>
+  </div>
+</section>
+
+
+<!-- Load Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
 
 
 
@@ -257,7 +389,7 @@
       <div class="impact-donate">
         <button class="donate-btn" onclick="document.getElementById('mission-left').scrollIntoView({behavior:'smooth'})">Donate Monetary Support</button>
         <button class="donate-btn donate-material"  onclick="document.getElementById('mission-left').scrollIntoView({behavior:'smooth'})">Donate Materials / One-Time Support</button>
-        <button class="know-more"  onclick="document.getElementById('mission-left').scrollIntoView({behavior:'smooth'})">Know More</button>
+        <a class="know-more" href="projectGangaBhogpurInterCollege.html">Know More</a>
       </div>
     </div>
 
@@ -271,7 +403,7 @@
       <div class="impact-donate">
         <button class="donate-btn"  onclick="document.getElementById('mission-left').scrollIntoView({behavior:'smooth'})">Donate Monetary Support</button>
         <button class="donate-btn donate-material"  onclick="document.getElementById('mission-left').scrollIntoView({behavior:'smooth'})">Donate Materials / One-Time Support</button>
-        <button class="know-more"  onclick="document.getElementById('mission-left').scrollIntoView({behavior:'smooth'})">Know More</button>
+        <a class="know-more" href="projectVandeMatram.html" >Know More</a>
       </div>
     </div>
 
@@ -285,7 +417,7 @@
       <div class="impact-donate">
         <button class="donate-btn"  onclick="document.getElementById('mission-left').scrollIntoView({behavior:'smooth'})">Donate Monetary Support</button>
         <button class="donate-btn donate-material"  onclick="document.getElementById('mission-left').scrollIntoView({behavior:'smooth'})">Donate Materials / One-Time Support</button>
-        <button class="know-more"  onclick="document.getElementById('mission-left').scrollIntoView({behavior:'smooth'})">Know More</button>
+        <a class="know-more" href="projectAjitpur.html">Know More</a>
       </div>
     </div>
   </div>
