@@ -89,70 +89,7 @@ header {
     left:30px;
     top:10px;
 }
-/* 
-nav {
-    flex: 1;
-    text-align: right;
-    padding:25px 0;
-}
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    gap:20px;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    color:#ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-    font-size: large;
-}
-
-.nav-links a:hover {
-    color: #00b381;
-}
-
-.underline{
-    width:155px;
-    height:5px;
-    margin:2px 0;
-    background-color: #ffffff;
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav {
-        width: 100%;
-        text-align: left;
-    }
-
-    .logo {
-        margin-bottom: 1rem;
-    }
-}
-
-/*nav bar is hidden in 480 width*/
- /* @media (max-width: 480px) {
-    nav {
-        display: none;
-    }
-}  */
- */
 
 
 .main-body{
@@ -2459,22 +2396,7 @@ footer .underline span{
 
     }
 
-    /* .nav-links {
-        display: none; 
-    }
 
-    .logo-section {
-        position: relative;
-        left: 0;
-        top: 0; 
-        margin-bottom: 1rem; 
-    }
-
-    nav {
-        width: 100%;
-        text-align: left;
-    } 
-    */
 
     .main-body h1 {
         font-size: 50px;  
@@ -3153,181 +3075,12 @@ footer .underline span{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-
-
-.container {
-    display: flex;
-    
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 30px;
-    position: sticky;
-    width: 100% !important;
-    height: 120px;
-    max-width: inherit;
-    top: 0;
-    z-index: 1000;
-}
-
-nav {
-    flex: 1;
-    text-align: right;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: medium;
-    transition: all 0.3s ease-in-out;
-    padding: 15px 15px;
-    border-radius: 5px;
-    position: relative;
-}
-
-.nav-links a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 3px;
-    width: 0;
-    background-color: #0aa148;
-    transition: width 0.3s ease-in-out;
-}
-
-
-.nav-links a:hover::after {
-    width: 100%;
-}
-
-.nav-links a.active {
-    background-color: #0aa148;
-    color: #fff;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.nav-links a.active::after {
-    background-color: transparent; 
-}
-.nav-links a:hover{
-    color: rgb(13, 114, 13);
-}
-
-
-@media screen and (max-width:1000px) {
-    .nav-links li{
-        margin-left: 7px;
-    }
-    .nav-links{
-        gap: 4px;
-    }
-    .nav-links a{
-        padding: 6px 8px;
-    }
-    .nav-links a{
-        font-size:18px;
-    }
-}
-
-
-@media screen and (max-width:700px){
-    .nav-links a{
-        font-size: 15px;
-    }
-    .nav-links li{
-        margin-left: 3px;
-    }
-}
-
-@media screen and (max-width:600px){
-    
-    .fa-bars{
-        font-size: x-large;
-        color: rgb(255, 255, 255);
-    }
-
-    .nav-links {
-        position: absolute;
-        width: 100vw;
-        left:0;
-        top: 70%;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        background: rgb(205, 205, 205, 0.5);
-        overflow: hidden;
-        transition: all 0.3s ease-in-out;
-        margin:0 auto;
-        gap: 10px;
-    }
-    .nav-links a{
-        font-size: 16px;
-        padding: 8px 0;
-        display: block;
-        width:100%;
-        height: 100%;
-    }
-    .nav-links li{
-        margin-left: 0px;
-        width: 100%;
-        
-    }
-    
-} */
 @media screen and (min-width:600px){
     .fa-bars{
         display: none !important;
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -3586,6 +3339,20 @@ nav {
 .nav-links a:hover{
 color: rgb(13, 114, 13);
 }
+
+.nav-donate {
+    padding: 8px 15px;
+    border-radius: 5px;
+    animation: blink-bg 2s infinite;
+}
+
+/* Keyframes: background-color alternates */
+@keyframes blink-bg {
+    0%, 50%, 100% { background-color: rgb(255, 0, 0); }
+    25%, 75% { background-color: rgb(255, 255, 255); }
+}
+
+
 
 
 @media screen and (max-width:1000px) {
