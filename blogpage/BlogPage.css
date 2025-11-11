@@ -279,7 +279,7 @@ html{
 
 /* Author Footer Redesigned */
 .author-footer {
-  background-color: #004219 !important;
+  background-color: #003414 !important;
   padding: 30px;
   display: flex;
   justify-content: center;
@@ -319,6 +319,13 @@ html{
 .flex-item2 {
   flex: 1;
   min-width: 220px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
 }
 
 .author-footer-name {
