@@ -322,10 +322,15 @@ html{
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  max-width: 400px;
+  max-height: 400px;
+  height: 400px;
+  width: 400px;
   display: block;
   margin: 20px 0;
+  overflow: hidden;
+  object-fit: cover;   /* Prevents stretching, preserves ratio */
+  object-position: center; /* Centers the image */
 }
 
 .author-footer-name {
@@ -386,6 +391,7 @@ html{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: max-content !important;
   }
   .flex-item2 {
     min-width: auto;
