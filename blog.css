@@ -134,3 +134,11 @@ a{
     padding:20px 40px;
   }
 }
+
+
+.adsense-box{
+    margin-top:50px;
+    display:flex;
+    justify-content:center;
+    max-width: 80vw;
+}
