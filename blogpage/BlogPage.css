@@ -323,8 +323,7 @@ html{
 
 .img-fluid {
   max-width: 400px;
-  max-height: 400px;
-  height: 400px;
+  height: auto;
   width: 400px;
   display: block;
   margin: 20px 0;
@@ -402,8 +401,13 @@ html{
 
   .img-fluid {
     max-width: 300px;
-    max-height: 300px;
-    height: 300px;
+    height: auto;
     width: 300px;
   }
+}
+
+a{
+  color: #145a2f;
+  text-decoration: none;
+  font-style: italic;
 }
