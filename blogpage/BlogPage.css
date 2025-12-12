@@ -261,6 +261,7 @@ html{
   line-height: 1.65;
   max-width: 100%;
   min-width: 60%;
+  margin-top:-20px !important;
 }
 
 .blog-post h2 {
@@ -409,4 +410,212 @@ html{
 a{
   color: #145a2f;
   text-decoration: none;
+}
+
+
+
+.hv-poem-left-title {
+  width: 18%;
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+  font-family: 'Merriweather', serif;
+}
+
+.hv-poem-left-title h3 {
+  margin: 0 0 8px 0;
+  color: #145a2f;
+  font-size: 1.1rem;
+}
+
+.hv-poem-left-title p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+  .hv-poem-left-title { display: none; }
+}
+
+
+
+
+/* -----------------------------
+   Poem styles (Classical / Elegant)
+   Scoped to .hv-poem + .content.poem to avoid collisions
+   ----------------------------- */
+
+/* Load classical fonts (if your site already loads these, you can remove this import) */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+.content.poem.hv-poem,
+.hv-poem.content.poem {}
+
+/* Root variables for poem styling */
+.content.poem.hv-poem {
+  --hvp-accent: #145a2f;
+  --hvp-muted: #666666;
+  --hvp-bg: #ffffff;
+  --hvp-paper: #fbfdfb;
+  --hvp-maxwidth: 900px;
+}
+
+/* Article container */
+.content.poem.hv-poem {
+  font-family: 'Merriweather', Georgia, serif;
+  background: var(--hvp-bg);
+  color: #1b1b1b;
+  line-height: 1.9;
+  letter-spacing: 0.2px;
+  padding: 56px 44px;
+  max-width: var(--hvp-maxwidth);
+  margin: 4px auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(20,90,47,0.04);
+  box-sizing: border-box;
+}
+
+/* Poem meta (title + author + small divider) */
+.content.poem.hv-poem .poem-meta {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.content.poem.hv-poem .poem-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  color: var(--hvp-accent);
+  margin: 0 0 6px 0;
+  font-weight: 700;
+  line-height: 1.05;
+}
+.content.poem.hv-poem .poem-author {
+  color: var(--hvp-muted);
+  font-size: 0.95rem;
+  margin: 0;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+.content.poem.hv-poem .poem-divider {
+  width: 64px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--hvp-accent), #78b08a);
+  margin: 1px auto;
+  border-radius: 2px;
+}
+
+/* Poem body - center aligned for classical look */
+.content.poem.hv-poem .poem-body {
+  text-align: center;
+  margin-top: 1px;
+  font-size: 1.05rem;
+  color: #222;
+}
+
+/* Stanza + line */
+.content.poem.hv-poem .stanza {
+  margin-bottom: 1.9rem; /* space between stanzas */
+}
+/* CSS: paste into your CSS file (scoped classes so no collisions) */
+.hv-poem-container { 
+  --hv-accent: #145a2f;
+  max-width: 900px;
+  margin: 3px auto;
+  padding: 40px 36px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 26px rgba(20,90,47,0.04);
+  box-sizing: border-box;
+}
+
+.hv-poem-paragraph {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #1b1b1b;
+  white-space: pre-wrap;       /* preserves line breaks exactly as in HTML */
+  text-align: center;          /* classical/elegant centered layout */
+  margin: 0;
+  letter-spacing: 0.2px;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px !important;
+}
+
+/* smaller screens: left-align for better readability */
+@media (max-width: 720px) {
+  .hv-poem-container { padding: 24px 18px; margin: 20px 12px; }
+  .hv-poem-paragraph { text-align: left; font-size: 1rem; line-height: 1.7; }
+}
+
+.content.poem.hv-poem .line {
+  margin: 0;
+  padding: 0;
+  display: block;
+  white-space: pre-wrap; /* preserve line breaks and spacing */
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Drop cap for first stanza first line */
+.content.poem.hv-poem .stanza:first-of-type .line:first-of-type::first-letter{
+  float: left;
+  font-size: 4.4rem;
+  line-height: 0.75;
+  padding-right: 10px;
+  font-weight: 700;
+  color: var(--hvp-accent);
+  font-family: 'Playfair Display', serif;
+}
+
+/* Optional small italic credit style */
+.content.poem.hv-poem .poem-credit {
+  margin-top: 8px;
+  color: var(--hvp-muted);
+  font-size: 0.95rem;
+}
+
+/* Illustration inside poem (if any) */
+.content.poem.hv-poem .poem-illustration {
+  display:block;
+  max-width:60%;
+  margin: 28px auto;
+  border-radius:8px;
+  object-fit:cover;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+/* Author footer minimal */
+.content.poem.hv-poem .poem-author-footer {
+  text-align:center;
+  margin-top:2px;
+  color: var(--hvp-muted);
+  font-size: 0.95rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .content.poem.hv-poem {
+    padding: 36px 26px;
+    margin: 28px 12px;
+  }
+  .content.poem.hv-poem .stanza { margin-bottom: 1.6rem; }
+  .content.poem.hv-poem .poem-title { font-size: 1.9rem; }
+  .content.poem.hv-poem .stanza:first-of-type .line:first-of-type::first-letter { font-size: 3.6rem; }
+  .content.poem.hv-poem .poem-illustration { max-width: 80%; }
+}
+
+@media (max-width: 720px) {
+  .content.poem.hv-poem {
+    padding: 24px 16px;
+    line-height: 1.8;
+  }
+  .content.poem.hv-poem .poem-title { font-size: 1.6rem; }
+  .content.poem.hv-poem .stanza:first-of-type .line:first-of-type::first-letter { font-size: 3.0rem; float:none; display:block; margin-bottom:6px; }
+  .content.poem.hv-poem .poem-body { text-align: left; }
+  .content.poem.hv-poem .line { text-align: left; }
 }
