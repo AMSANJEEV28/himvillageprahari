@@ -992,7 +992,7 @@ a:hover {
   text-align: center;
 }
 
-.section-title h2 {
+.section-title h2, h2 {
   font-size: 50px !important;
   /* Increased title font */
   color: #2a5d38 !important;
@@ -1221,4 +1221,63 @@ a:hover {
     flex-direction: column;
     gap: 20px;
   }
+}
+
+
+/* ==============================
+Shrunkhala Institutional Support
+============================== */
+
+.shrunkhala-summary {
+  background: #f4fff6;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.shrunkhala-summary-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.shrunkhala-summary img {
+  max-width: 280px;
+  margin-bottom: 25px;
+}
+
+
+.shrunkhala-summary p {
+  font-size: 1.1rem;
+  color: var(--gray);
+  margin-bottom: 25px;
+}
+
+.shrunkhala-points {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: var(--forest-green);
+}
+
+.shrunkhala-funds {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(6, 78, 59, 0.08);
+  font-weight: 700;
+  color: var(--forest-green);
+}
+
+/* Fulfilled Donation Card */
+.hme-donation-card.donated {
+  background-color: #fff4db !important;
+  border: 2px solid #f4b400 !important;
+}
+
+.hme-donation-card.donated .donation-status {
+  font-weight: 700;
+  color: #f4b400;
+  margin-top: 10px;
 }
